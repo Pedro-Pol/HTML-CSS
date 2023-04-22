@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com Imagens</title>
+    <style>
+        body {
+            margin: 50pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testes com Imagens</h1>
+    <p>Existem diferentes métodos para que arquivos de imagens sejam inseridos no portal desenvolvido. A primeira é a inserção de uma imagem <strong>pertencente à pasta do aquivo HTML</strong>; a segunda, uma imagem <strong>pertencente à uma sub-pasta onde encontra-se o arquivo de HTML</strong>; e, a terceira, uma imagem externa, <strong>pertencente à alguma página na Internet</strong>.</p>
+    <br>
+    <hr>
+    <p>Os arquivos de imagens podem ser inseridos, quando o arquivo de imagem encontrar-se na mesma pasta em que o arquivo HTML original está. Abaixo, segue uma imagem inserida, empregando a seguinte tag:
+    <br><br><strong>&lt;img src="arquivo.png" alt="descição da imagem"&gt;</strong>.</p>
+    <br>
+    <img src="html-200.png" alt="Logo da HTML5">
+    <br>
+    <hr>
+    <p>Importante: quando o arquivo de imagem estiver salvo em uma sub-pasta, o source deverá indicar também a pasta, além do nome do arquivo. Neste caso, a tag está assim escrita:
+    <br><br><strong>&lt;img src="sub-pasta/arquivo.png" alt="descrição da imagem"&gt;</strong>.</p>
+    <br>
+    <img src="sub-pasta/css-200.png" alt="Logo das CSS3">
+    <br>
+    <hr>
+    <p>Quando a origem do arquivo de imagem é externo, isto é, fora do computador em algum endereço da Internet, a fonte deve ser indicada com o endereço URL da imagem. Nesta circunstância a tag é preenchida da seguinte maneira:
+    <br><br><strong>&lt;imag src="https://portaldaintenet.com/algumacoisa/outracoisa/coisaoutra/arquivo.png" alt="descrição da imagem"&gt;</strong></p>
+    <br>
+    <img src="https://1.bp.blogspot.com/-TGQt5uRcAkg/XuMIJoAhwnI/AAAAAAAAA38/FaJQpUUDsGEYR1zBK1wqLWUA9DTYp5CiQCPcBGAYYCw/w1200-h630-p-k-no-nu/js.png" alt="Logo do JavaScript">
+</body>
+</html>

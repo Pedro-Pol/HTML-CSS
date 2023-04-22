@@ -1,0 +1,196 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Droid;
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-size: normal;
+    font-style: normal;
+}
+
+/*
+Importante recordar do seguinte:
+
+(i) A possibilidade de empregar o asterisco (*) como seletor global, isto é, o seletor hábil para modificar todos os elementos de um documento.
+(ii) A possibilidade de empregar variáveis em CSS. Inicialmente, abre-se a pseudo-classe ":root" e são declaradas as variáveis, que começam, em CSS, por dois hífens (--), como em:
+
+    :root {
+        --cor1:             #d2d8c4;
+        --cor2:             #a4B494;
+        --cor3:             #519872;
+        --cor4:             #3B5249;
+        --cor5:             #271c23;
+
+        --fonteNormal:      'Segoe UI', sans-serif;
+        --fonteDestaque:    Droid, serif;
+    }
+
+    Isso é útil, quando houver a necessidade de substituir, digamos, uma cor ou uma fonte de todo o documento, poupando-nos de reescrever cada declaração individual, meramente alterando o valor de uma variável. Como valor as variáveis são retomadas da seguinte forma:
+
+        div {
+            background-color:   var(--cor5);
+            font-family:        var(--fonteNormal);
+        }
+*/
+
+body {
+    font:               normal 16px 'Segoe UI';
+    text-align:         justify;
+    letter-spacing:     0.9px;
+    margin:             0px;
+    background-color:   #A4B494;
+    color:              #271c23;
+}
+p {
+    text-indent: 80px;
+    line-height: 25px;
+}
+.centralizado {
+    display: block;
+    margin: 30px auto;
+}
+
+header {
+    background-image:   linear-gradient(to bottom, #519872, #3B5249 60%);
+    padding:            15px;
+    margin-bottom:      0px;
+    box-shadow: 0px 3px 3px #271c233d;
+}
+.principal {
+    color:              #d2d8c4;
+    text-align:         center;
+}
+#titulo {
+    font-family:        Georgia, 'Times New Roman', Times, serif;
+    letter-spacing:     3px;
+    margin-bottom:      0px;
+    font-size:          2.7em;
+}
+#subtitulo {
+    font-size:          0.9em;
+    margin-top:         -2px;
+    margin-bottom:      35px;
+    letter-spacing:     0px;
+    text-indent:        0px;
+}
+nav {
+    text-align:         center;
+}
+a {
+    margin-left:        none;
+}
+a:link, a:visited {
+    color:              #d2d8c4;
+    text-decoration:    none;
+    padding:            15px 15px;
+    border-radius:      15px 15px 0px 0px;
+    background-color:   transparent;
+    transition:         background-color 1s;
+}
+a:hover {
+    background-color:   #271c23;
+}
+
+a.texto:link, a.texto:visited {
+    color:              #271c23;
+    text-decoration:    none;
+    padding:            1px 8px;
+    margin:             1px 1px;
+    border-radius:      12px;
+    background-color:   #A4B494;
+}
+a.texto:hover {
+    color:              #3B5249;
+    background-color:   transparent;
+}
+
+a.adendo:link, a.adendo:visited {
+    color:              #d2d8c4;
+    text-decoration:    none;
+    padding:            0px 5px 3px 5px;
+    margin:             1px 0px 1px 0px;
+    border-radius:      12px;
+    background-color:   #3B5249;
+}
+a.adendo:hover {
+    color:              #3B5249;
+    background-color:   #d2d8c4;
+}
+
+a.rodape:link, a.rodape:visited {
+    color:              #271c23;
+    text-decoration:    none;
+    padding:            2px 5px 4px 6px;
+    margin:             1px 0px 1px 0px;
+    border-radius:      12px;
+    background-color:   #A4B494;
+}
+a.rodape:hover {
+    color:              #d2d8c4;
+    background-color:   #3B5249;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+
+main {
+    max-width: 600px;
+    min-width: 320px;
+    margin: auto;
+    background-color: #d2d8c4;
+    padding: 1px 20px 10px 20px;
+    margin-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 0px 7px #271c2360;
+}
+
+h2, h3, h4 > main {
+    font-family: Droid, serif;
+    color: #3B5249;
+    background-image: linear-gradient(to right, #a4b49471, #bec5ad00);
+    border-radius: 10px 0px 0px 10px;
+    text-indent: 10px;
+    letter-spacing: 5px;
+    margin-top: 30px;
+}
+iframe {
+    display: block;
+    width: 93.3%;
+    margin: 40px auto;
+}
+
+aside {
+    background-color: #3B5249;
+    color: #d2d8c4;
+    box-shadow: 3px 3px 2px #271c232f;
+    padding: 20px;
+    border-radius: 10px;
+}
+aside > h3 {
+    color: #d2d8c4;
+    margin-top: 0px;
+    display: inline;
+}
+aside > p {
+    margin: 0px;
+    text-indent: 0px;
+    font-weight: 100;
+}
+ul {
+    column-count: 2;
+    column-gap: 35px;
+    list-style-image: url('imagens/favicon3.ico');
+
+}
+li {
+    text-indent: 10px;
+    font-size: 0.9em;
+}
+
+footer {
+    margin: 30px;
+    font-size: 0.7em;
+    word-spacing: 2px;
+    line-height: 30px;
+}

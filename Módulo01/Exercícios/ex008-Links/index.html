@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncoras</title>
+    <style>
+        body {
+            font: normal 12pt arial;
+            margin: 50px;
+            text-align: justify;
+        }
+        p#example {
+            margin-left: 20px;
+            font: normal 11pt arial;
+        }
+        ul {
+            line-height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Links e Âncoras Externos</h1>
+
+    <p>Um link, um texto que contenha um hyperlink que redireciona para outra página, pode ser criado empregando a tag <strong>&lt;a&gt;</strong>, do inglês <em>anchor</em>. Um atributo obrigatórioo da tag é o <strong><em>href</em></strong>, <em>hyperlink reference</em>, isto é, a referência para onde o internauta deve ser redirecionado. Existem dois tipos de link: o externo e o interno. O primeiro conduz para uma página da web; enquanto o segundo, para uma arquivo da máquina (do mesmo modo como ocorre com as imagens, podendo essas serem de fonte externa ou interna).</p>
+    <p id="example">Exemplo: <br>
+        "Um dos grandes cantores brasileiros, <a href="https://pt.wikipedia.org/wiki/Djavan">Djavan</a>, discursou na universidade, no último domingo. Infelizmente, ocorreu um incidente que acabou ferindo o convidado: <a href="https://www.youtube.com/watch?v=aGm4vAxxiW0">ele bateu seu pé na quina da mesa</a>."
+    </p>
+    <p>Os links, normalmente, acessam a referência, executando-a sobre a janela ou a aba na qual originalmente estava rodando o documento HTML original. O atributo <strong><em>target</em></strong> indica se a referência deve ser executada na mesma aba ou em uma nova. Para executar na mesma página, o que é o padrão, emprega-se o texto <strong><em>_self</em></strong>; já para executar em outra aba, emprega-se o comando <strong><em>_blank</em></strong>. Vejamos isso aplicado ao exemplo anterior</p>
+    <p id="example">
+        Exemplo: <br>
+        "Um dos grandes cantores brasileiros, <a href="https://pt.wikipedia.org/wiki/Djavan" target="_blank" rel="external">Djavan</a>, discursou na universidade, no último domingo. Infelizmente, ocorreu um incidente que acabou ferindo o convidado: <a href="https://www.youtube.com/watch?v=aGm4vAxxiW0" target="_blank" rel="external">ele bateu seu pé na quina da mesa</a>."
+    </p>
+
+    <h1>Links e Âncoras Interno</h1>
+    <p>
+        Para fazer referência a uma outra página interna, isso é, que esteja armazaenada no mesmo computador, basta realizar a referência do mesmo modo feito para indicar a origem de imagens: se o arquivo estiver na mesma pasta, basta inserir seu nome, como em "pag002.html"; se estiver em uma subpasta, basta inserir a subpasta e o nome do arquivo, como em "subpasta/pag003.html"; e, se estiver em um outra pasta, basta inserir o endereço completo, como em "c:\usuário\eu\documentos\html-e-css\arquivos\pag003.html".      
+    </p>
+    <p id="example">
+        Exemplo: <br>
+        "Para testes, eu escrevi alguns documentos com o famoso <em>lorem ipsum</em>. Um desses escrevi <a href="pag002.html" rel="next">na mesma pasta</a>; outro, <a href="subpasta/pag003.html" hreflang="en" rel="next">em uma subpasta</a>; e outro, <a href="../ex006-FormataçãoTextual/index.html" target="_blank" rel="author">em outro diretório qualquer</a>, sobre modos de formatação.
+    </p>
+
+    <h2>Relação com Página do Link</h2>
+    <p>
+        Novamente, esse tópico é relevante considerando os mecanismo de busca da Internet. Uma dos atributos que podem ser empregados no link é a <strong><em>rel</em></strong>, do inglês <em>relationship</em>, definindo qual a relação entre os documentos. Alguns dos valores desse atributo são:
+        <ul type="circle">
+            <li><em>external</em>: muito importante, pois comunica aos mecanismo de busca que o documento ancorado não possui relação com o documento de origem. Uso frequente;</li>
+            <li><em>author</em>: informa que ambos os documentos possuem o mesmo autor;</li> 
+            <li><em>next</em> e <em>prev</em>: informa que o documento ancorado está em uma série, do qual é o documento ancorado é o próximo ou o anterior, respectivamente;</li>
+            <li><em>nofollow</em>: informa que o documento referenciado não deve ou não precisa ser analisado pelos mecanismos de busca.</li>
+        </ul>
+        <p>Outros valores do atributo <strong><em>rel</em></strong> incluem o tipo de documento, como em <em>help</em>, <em>licence</em>, <em>alternate</em>, etc.</p>
+    </p>
+
+    <h1>Links de Download</h1>
+    <p>
+        Para disponibilizar um arquivo para download emprega-se a mesma tag, inserindo o atributo <em>download</em> com o valor correspondente ao nome que se dejesa salvar o arquivo a baixar, junto com a sua terminação (.pnj; .pdf; .mp4; etc.)
+    </p>
+    <p id="example">
+        Exemplo: <br>
+        "O historiador alemão Joseph Hoffmeister comenta que existem áudios gravando as primeiras impressões de Stalin, quando foi informado sobre assassinatos de prisioneiros de guerra nazistas, durante a batalha de Stalingrado. O áudio pode ser escutado <a href="primeiramente.mp3" type="audio/mp3">aqui</a>. Faça o download desse áudio histórico <a href="primeiramente.mp3" download="stalin-reage.mp3" type="audio/mp3">aqui</a>." <br>
+        "Um livro bastante recomendado para o aprendizado de JavaScript é o título <em>JavaScript - O Guia Definitivo</em> pelo americano David Flanagan. Você pode baixá-lo <a href="David Flanagan - JavaScript (2013).pdf" download="David Flanagan - JavaScript (2013)" type="application/pdf">aqui</a> ou o ler <a href="David Flanagan - JavaScript (2013).pdf" type="application/pdf">aqui</a>."
+    </p>
+</body>
+</html>

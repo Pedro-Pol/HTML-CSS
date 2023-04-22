@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Koulen;
+    src: url('Koulen-Regular.ttf');
+}
+body {
+    background-color: #E1CE7A;
+    color: #252323;
+    font: normal normal 1em 'Segoe UI', Calibri, sans-serif;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    margin: 50px;
+}
+
+main {
+    background-color: #FBFFB9;
+    margin: auto;
+    width: 450px;
+    padding: 40px;
+    padding-bottom: 50px;
+    border-radius: 15px;
+    
+}
+
+p {
+    text-indent: 60px;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #754F44;
+    font-family: Koulen, serif;
+    letter-spacing: 5px;
+    
+}
+h1 {
+    color: #EC7357;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-family: Koulen, serif;
+    font-size: 2.8em;
+    letter-spacing: 7px;
+}
+
+a {
+    margin: 35px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: Koulen, serif;
+    font-size: 1.5em;
+    letter-spacing: -1px;
+}
+.voltar {
+    margin-right: 10px;
+}
+.avante {
+    margin-left: 10px
+}
+
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #EC7357;
+}
+a:hover {
+    color:#E1CE7A
+}
+a:active {
+    color: #252323;
+}
+a::after {
+    content: ' ►';
+}
+
+.voltar::before {
+    content: '◄ ';
+}
+.voltar::after {
+    content: none;
+}

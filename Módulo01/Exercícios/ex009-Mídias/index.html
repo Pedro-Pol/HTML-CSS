@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídia em HTML</title>
+   
+    <style>
+        body {
+            margin: 50px;
+            font: normal 10pt arial;
+            text-align: justify;
+        }
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+        p#img {
+            text-align: center;
+        }
+        p#code {
+            font: normal 8pt arial;
+        }
+        ul {
+            list-style-type: circle;
+        }
+        div#audio {
+            text-align: center;
+        }
+        span#empha {
+            font: normal 8pt arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mídias em HTML</h1>
+    <hr>
+
+    <h2>Imagens Dinâmicas</h2>
+    <p>
+        Com a possibilidade de um mesmo portal ou programa ser acessado por diferentes dispositivos, com telas de diferentes tamanhos e processadores diferentes, é necessário considerar o tamanho das imagens em um documento HTML. As <em>imagens dinâmicas</em> são diferentes arquivos de imagens que se alternam de acordo com o tamanho atual da página, adaptando-se a diferentes gastos de banda do internauta.
+    </p>
+    <p>
+        Para que isso seja feito, é empregada a tag <strong>&lt;picture&gt</strong>; que envolopa a tag <strong>&lt;img&gt;</strong>. Dentro do bloco em que é contiga a tag de imagem, adiciona-se quantas forem as variações da imagem original, inserindo a tag <strong>&lt;source&gt;</strong>. Dentro da tag, adiciona-se, pelo menos, dois atributos: <strong><em>media</em></strong>, que estabelece a dimenção que marca a mudança de um arquivo de imagem para o outro; e <strong><em>srcset</em></strong>, que faz referência a essa outra imagem substitutiva.
+    </p>
+    <p>
+        Por exemplo:
+    </p>
+    <p id="img">
+        <picture>
+            <source media="(max-width: 850px)" srcset="Imagens/img-p.png">
+            <source media="(max-width: 1300px)" srcset="Imagens/img-m.png">
+            <img src="Imagens/img-g.png" alt="Imagem grande">
+        </picture>
+    </p>
+    <br>
+    <p id="code">
+        O código empregado:<pre><code>
+&lt;picture>
+    &lt;source media="(max-width: 850px)" srcset=
+    "Imagens/img-p.png">
+    &lt;source media="(max-width: 1300px)" srcset=
+    "Imagens/img-m.png">
+    &lt;img src="Imagens/img-g.png" alt="Imagem grande">
+&lt;/picture>
+        </code></pre>
+    </p>
+
+    <h2>Áudios</h2>
+    <p>
+        Para inserção de arquivos de áudio no documento, basta criar uma tag <strong>&lt;source&gt;</strong>, envelopada em uma tag <strong>&lt;audio&gt;</strong>. Assim como a inserção de uma imagem dinâmica, o áudio pode possuir várias fontes, <em>sources</em>, internas, para que um formato de áudio alternativo seja carregado, caso o navegador não suporte o formato de áudio principal. Os três formatos de áudio que abrangem quase todos os navegadores são o <em>.mp3</em>, <em>.ogg</em> e <em>.wav</em>. É preferível disponibiizá-los nesta ordem, preterindo os arquivos <em>.wav</em>, porque são os mais pesados entre os formato mencionados.
+    </p>
+    <p>
+        Os atributos da tag <strong>&lt;audio&gt;</strong> disponibilizam uma série de opções. O atributo <strong><em>controls</em></strong> mostra au internauta os botões de opções do arquivo de áudio reproduzido; o atributo <strong><em>autoplay</em></strong> inicia a reprodução do arquivo assim que a página é aberta; o atributo <strong><em>loop</em></strong> determina a repetição indefinida do áudio. Importante é o atributo <strong><em>preload</em></strong>, que determina o carregamento do arquivo de áudio, possuindo os seguintes valores: 
+        <ul>
+            <li> <strong><em>auto</em></strong> &#6; determinando o carregamento de todo o áudio, juntamente com a página. Representa o acréscimo perigoso ao gasto de banda do usuário, tornando o documento mais pesado.</li>
+            <li> <strong><em>metadata</em></strong> &#6; determinando o carregamento de alguns dados informativos do aquivo de áudio, sem carregar sua substância. Esse é o valor recomendado, genericamente.</li>
+            <li> <strong><em>none</em></strong> &#6; determina nenhum carregamento até o internauta pressionar o botão de play.</li>
+        </ul>
+    </p>
+    <p>Por exemplo:</p>
+    <div id="audio">
+        <audio preload="metadata" controls>
+            <source src="audios/euamovoce.mp3" type="audio/mpeg">
+            <source src="audios/euamovoce.wav" type="audio/wav">
+            <source src="audios/euamovoce.ogg" type="audio/ogg">
+            <p>Seu navegador não suporta os formatos de áudio disponíveis (.mp3; .wav; e .ogg). Faça download do áudio <a href="audios/euamovoce.mp3" download="euamovoce.mp3" type="audio/mpeg">aqui</a></p>
+        </audio>
+    </div>
+    <br>
+    <p id="code">
+        O código empregado:
+        <pre><code>
+&lt;audio preload="metadata" controls>
+    &lt;source src="audios/euamovoce.mp3" type="audio/mpeg">
+    &lt;source src="audios/euamovoce.ogg" type="audio/ogg">
+    &lt;source src="audios/euamovoce.wav" type="audio/wav">
+
+    &lt;p>Seu navegador não suporta os formatos de áudio 
+    disponíveis (.mp3; .wav; e .ogg). Faça download do
+    áudio &lt;a href="audios/euamovoce.mp3" download=
+    "euamovoce.mp3" type="audio/mpeg">aqui&lt;/a>&lt;/p>
+&lt;/audio>
+        </code></pre>
+    </p>
+
+    <h2>Vídeos</h2>
+
+    <h3>Arquivo de Vídeo de Servidor Interno</h3>
+
+    <p>
+        O mesmo método aplicado aos arquivos de áudio inseridos aplica-se ao arquivos inseridos de vídeo. Uma série de tags <strong>&lt;source&gt;</strong>, indicando formatos alternativos de arquivos armazenados no dispositivo, é envelopada em uma tag <strong>&lt;video&gt;</strong>. Os atributos são os mesmos daqueles da tag &lt;audio&gt;, com o acréscimo de dois diferentes: <strong><em>height</em></strong> e <strong><em>width</em></strong>; altura e largura, respectivamente. Esses atributos determinam em seus valores a altura e a largura do quadro em que o vídeo será reproduzido. Além disso, o atributo <strong><em>poster</em></strong> possibilita inserir uma imagem de capa ao vídeo, indicando um documento como seu valor. <br>
+    </p>
+    <p>
+        Os formatos de vídeo suportados são <em>.mp4</em>; <em>.m4v</em>; <em>.webm</em> e <em>.ogv</em>, dando preferência a ordem de arquivo mais leve. <span id="empha">IMPORTANTE:</span> os arquivos de vídeo reproduzidos em uma página consomem uma quantidade altíssima de banda, refletindo nos custos de hospedagem do portal. Para exemplificar por contraste: o vídeo exemplifcado tem, aproximadamente, 1 MB de espaço; consumindo, em uma situação hipotética de 500 acessos diários, 500 MB. Em contraste, todo este documento HTML pesa apenas 10 KB.
+    </p>
+    <p>
+        Por exemplo:
+    </p>
+
+    <div id="audio">
+        <video preload="metadata" poster="Imagens/lars-thumb.PNG" height="300px" width="450px" controls>
+            <source src="video/comonotransito.mp4" type="video/mp4">
+            <source src="video/comonotransito.m4v" type="video/mp4">
+            <source src="video/comonotransito.webm" type="video/webm">
+            <source src="video/comonotransito.ogv" type="video/ogv">
+            <p>O seu navegador não possui compatibilidade com nenhum dos formatos de reprodução de vídeo disponíveis.</p>
+        </video>
+    </div> <br>
+    <p id="code"> O código utilizado:
+        <pre><code>
+&lt;video preload="metadata" poster="Imagens/lars-thumb.PNG" 
+    height="300px" width="450px" controls>
+    &lt;source src="video/comonotransito.mp4" type="video/mp4">
+    &lt;source src="video/comonotransito.m4v" type="video/mp4">
+    &lt;source src="video/comonotransito.webm" type="video/webm">
+    &lt;source src="video/comonotransito.ogv" type="video/ogv">
+    
+    &lt;p>O seu navegador não possui compatibilidade com nenhum
+    dos formatos de reprodução de vídeo disponíveis.&lt;/p>
+&lt;/video>
+        </code></pre>
+    </p>
+
+    <h3>Arquivos de Vídeo de Servidor Externo</h3>
+
+    <p>
+        Para solucionar o problema do alto gasto de banda inserindo um arquivo de vídeo do próprio servidor é referenciar uma fonte externa. Em outros termos, um portal que ofereça serviços de armazenamento de vídeo (como o Youtube ou o Vimeo), ao qual será arremetido o consumo de banda da reprodução do vídeo.
+    </p>
+    <p>    
+        Para realizar a inserção destes vídeos basta clicar na opção compartilhar, slecionando a incorporação, que gera um código HTML para copiar e colar, no código-fonte, a tag <strong>&lt;iframe&gt;</strong>.
+    </p>
+    <p>
+        Considere os dois vídeos, respectivamente, do Youtube e do Vimeo, por exemplo:
+    </p> <br>
+
+    <div id="audio">
+        <iframe width="450" height="300" src="https://www.youtube.com/embed/DuKNk93q-Uw?start=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div> <br> <br>
+
+    <div id="audio">
+        <iframe src="https://player.vimeo.com/video/60563294?h=6ae50090cf&portrait=0" width="450" height="283" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div> <br>
+
+    <p id="code"> Os códigos utilizados, respectivamente:
+        <pre><code>
+&lt;iframe width="450" height="300" src="https://www.youtube.com/embed/
+DuKNk93q-Uw?start=58" title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+gyroscope; picture-in-picture; web-share" allowfullscreen>&lt;/iframe>
+
+&lt;iframe src="https://player.vimeo.com/video/60563294?h=6ae50090cf&
+portrait=0" width="450" height="283" frameborder="0" allow="autoplay;
+fullscreen; picture-in-picture" allowfullscreen>&lt;/iframe>
+        </code></pre>
+    </p>
+</body>
+</html>

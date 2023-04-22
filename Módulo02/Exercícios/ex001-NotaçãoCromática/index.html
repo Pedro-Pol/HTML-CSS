@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="palette.png" type="image/png">
+    <title>Cores</title>
+    <link rel="stylesheet" href="style.css">   
+    
+    <style>
+        span#a {
+            color: rgba(255, 0, 0, 0.5);
+        }
+        span#b {
+            color: rgba(0, 128, 0, 0.5);
+        }
+        span#c {
+            color: rgba(0, 0, 255, 0.5)
+        }
+    </style>
+    
+</head>
+<body>
+    <section>
+        <h1 style="margin-top: 15px;">Psicologia das Cores <span id="a">•</span> <span id="b">•</span> <span id="c">•</span></h1>
+
+        <p>
+            Psicologia das cores é uma expressão para a uma disciplina provavelemente acientífica, como tantos outros produtos literários provindos dos EUA, que se baseia nos efeitos psicológicos da interação humana com as cores, ressaltando a resposta supostamente instintiva dos seres humanos. Parece ignorar o componente cultural que, provavelmente, é o maior determinante na associação de ideias com matizes específicos.
+        </p>
+
+        <h1>Notação de Cores</h1>
+
+        <p>
+            Os nomes das cores indicadas nas CSS podem ser das seguintes formas: (a) terminológico; (b) hexadecimal; (c) RGB e (d) HSL.
+        </p>
+
+        <h3>Notação &#x6 Terminológica</h3>
+        <p>
+            Como o nome sugere, as cores são indicadas através dos nomes a elas registradas. Exemplo:
+        </p>
+        <p id="code">
+            background-color:   blue; <br>
+            color:              white;
+        </p>
+
+        <h3>Notação &#x6 Hexadecimal</h3>
+        <p>
+            A notação hexadecimal estabelece um código com 6 algarismos; em que a primeira dupla representa <em>red</em>; a dupla intermediária, <em>green</em>; e a última, <em>blue</em>. Como percebido, a notação hexadecimal baseia-se no sistema RGB. Essa notação é denominada hexadecimal pois considera 16 algarismos. Considere o seguinte:
+        </p>
+        <p style="text-indent: 0em;">
+            Base decimal: <br>
+            <span id="spaced">0 1 2 3 4 5 6 7 8 9</span> <br>
+            Base hexadecimal: <br>
+            <span id="spaced">0 1 2 3 4 5 6 7 8 9 a b c d e f</span>
+        </p>
+        <p>
+            Para representar o mesmo estilo exposto no exemplo anterior, isto é, cor da fonte branca e fundo azul, em notação hexadecimal teríamos o seguintes códigos:
+        </p>
+        <p id="code">
+            background-color:   #0000ff; <br>
+            color:              #ffffff;
+        </p>
+        <p style="background-color: #0000ff; color: #ffffff; text-indent: 0em;">
+            Este é um exemplo de texto com as configurações acima demonstrados, no qual o estilo foi introduzido pela tag &lt;style&gt;.
+        </p>
+
+        <h3>Notação &#x6 RGB</h3>
+
+        <p>
+            A abreviação RGB significa <em>red, green and blue</em> (vermelho, verde e azul) que corresponde ao sistema de adição de luzes; em oposição ao CYMK, <em>cian, yellow, magenta and black</em>, que corresponde ao sistema de subtração de pigmentos. <br>
+        </p>
+        <p>
+            O código RGB considera uma determinada cor como a mistura entre esses três elementos, cuja variação de cada um dos três valores é de 0 a 255. Para repetir o exemplo anterior teríamos o seguinte código:
+        </p>
+        <p id="code">
+            background-color:   rgb(0, 0, 255); <br>
+            color:              rgb(255, 255, 255);
+        </p>
+        <p style="background-color: rgb(0, 0, 255); color: rgb(255, 255, 255); text-indent: 0em;">
+            Este é um exemplo de texto com as configurações acima demonstrados, no qual o estilo foi introduzido pela tag &lt;style&gt;.
+        </p>
+
+        <h3>Notação &#x6 HSL</h3>
+        <p>
+            Outra notação, alternativa ao RGB, é a HSL, que é acrônimo de <em>hue, saturation and luminosity</em>, isto é: matiz, saturação (pureza) e luminosidade. Alternativamente, essa forma de notação é também referenciada como HSV, na qual <em>value</em> substitui <em>luminosity</em>; ou, ainda, como HSB, na qual <em>brightness</em> substitui <em>luminosity</em>.
+        </p>
+        <p>
+            Para repeitr o exemplo anterior, em formato HSL, teríamos o seguinte código:
+        </p>
+        <p id="code">
+            background-color:   hsl(240, 100%, 50%); <br>
+            color:              hsl(0, 0%, 100%);
+        </p>
+        <p style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%); text-indent: 0em;">
+            Este é um exemplo de texto com as configurações acima demonstrados, no qual o estilo foi introduzido pela tag &lt;style&gt;.
+        </p>
+
+        <h2>Transparência</h2>
+
+        <p>
+            Ainda, há a possibilidade de adicionar uma quarta variável: transparência. Em notação hexadecimal, será adicionado um quarto par de algarismos, responasável por determinar a transparência, entre 00 a ff. Em notação RGB e HSL, ambos se tornarão RGBA e HSLA, na qual este "a" significa <em>alpha</em> e termina a transparência do elemento, em um intervalo de 0 a 0.999.
+        </p>
+
+    </section>
+</body>
+</html>

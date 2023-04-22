@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>FONTES EM CSS</h1>
+        
+        <h2>DECLARAÇÃO FONT-FAMILY</h2>
+        <p>
+            É possível determinar um grupo de fontes, simultaneamente, para compor a escolha estilística do documento. Essa declaração é feita da seguinte forma:
+        </p>
+        <p id="code">
+            <span id="codesin">
+                body { <br>
+                font-family:
+            </span> Arial, Helvetica, serif; <br>
+                <span id="codesin">}
+            </span>
+        </p>
+        <p>
+            Nesta declaração, informa-se a máquina que a fonte Arial deve ser selecionada. Caso, não a encontre nos bancos de dados do dispositivo leitor, tentará a próxima que, neste caso, é a fonte Helvética. Caso também não seja encontrada a segunda opção, então, é indicada um <em>categoria de fonte</em>, que é a das serifadas, neste caso.
+        </p>
+        <p>
+            Estes conjuntos possuem fontes semelhantes e têm a função de assegurar que o aparelho leitor consiga reproduzir um resultado estético idêntico ou parecido ao projeto finalizado. As combinações já testadas e conhecidas recebem a expressão de <em>web safe font combinations</em> ou <em>fallback fonts</em>. O W3Schools mantém uma lista compreensiva destas combinações.<sup><a href="https://www.w3schools.com/cssref/css_fonts_fallbacks.php" target="_blank" rel="external">[acesse aqui]</a></sup>
+        </p>
+
+        <h2>DECLARAÇÃO FONT-SIZE</h2>
+        <p>
+            É possível alterar o tamanho das fontes, empregando uma declaração em especíico, a seguinte:
+        </p>
+        <p id="code">
+            <span id="codesin">body { <br>
+            font-family: Arial, Helvetica, serif;
+            </span> <br>
+            font-size: 1.2em; <br>
+            <span id="codesin">}</span>
+        </p>
+        <p>
+            Nesta declaração, é possível inserir medidas absolutas e medidas relativas. As primeiras são compostas pelas seguintes unidades: <em>cm</em> (centímetros), <em>mm</em> (milímetros), <em>px</em> (pixels), <em>pt</em> (pontos) e <em>pc</em> (paicas); em que os dois últimos são unidades criadas para impressão e não telas. As medidas relativas são as seguintes: <em>em</em> (<em>emphemeral unit</em>, que representa a largura da letra maiúscula M, na fonte referenciada), <em>ex</em> (<em>ephemeral x-height</em>, que representa a altura-x, na fonte referenciada), <em>rem</em> (<em>root ephemeral unit</em>), <em>Vw</em> (<em>view width</em>), <em>Vh</em> (<em>view height</em>) e <em>%</em> (porcentagem).
+        </p>
+        <p>
+            A WC3 recomenda o emprego preferencial dos <em>pixels</em>, como unidade absoluta, e, principalmente, da <em>ephemeral unit</em>, como unidade relativa; considerando o desempenho e regularidade apresentado em diversos dispositivos.
+        </p>
+        <p>
+            Elaborando mais: a <em>ephemeral unit</em> é uma relação de proporção com o tamanho da letra maíuscula M da fonte selecionada. A medida 1em significa 100% dessa medida, enquanto que 1.2em significa 120% dessa medida, e assim em diante.
+        </p>
+        <h2>DECLARAÇÃO FONT-WEIGHT</h2>
+        <p>
+            É possível, em algumas fontes, estabelecer o peso da fonte, isto é, o quão largas são seus glifos, assemelhando-se a variações maiores ou menores de negrito. A declaração que torna isso possível, em fontes com essa variação é a seguinte:
+        </p>
+        <p id="code">
+            <span id="codesin">body { <br>
+            font-family: "work Sans", sans-serif; <br>
+            font-size: 1.2em; <br></span>
+            font-weight: lighter;<span id="codesin"> <br>
+            }</span>
+        </p>
+        <p>
+            É possível alterar o peso nominal ou numericamente. Nominalmente, existem os comandos: <em>lighter</em>, <em>normal</em>, <em>bold</em> e <em>bolder</em>. Numericamente, o peso é determinado com valores entre 100 e 900.
+        </p>
+        <h2>FONT-STYLE & TEXT-DECORATION</h2>
+        <p>
+            É possível indicar itálico, sublinhado, riscado, sobrelinhado, entre outros, com as seguintes declarações:
+        </p>
+        <p id="code">
+            <span id="codesin">
+                body { <br>
+                font-family: "Work Sans", sans-serif; <br>
+                font-size: 1.2em; <br>
+                font-weight: lighter; <br>
+            </span>
+                font-style: italic; <br>
+                text-decoration: underline; <br>
+            <span id="codesin">}</span>
+        </p>
+        <h2><em>SHORTHAND</em> DA DECLARAÇÃO FONT</h2>
+        <p>
+            É possível condensar as quatro declarações de fonte, em uma única declaração, desde que observada a ordem <em>font-style</em>, <em>font-weight</em>, <em>font-size</em> e <em>font-family</em>. Se fosse reduzida a essa declaração única, o exemplo anterior estaria resumido na expressão:
+        </p>
+        <p id="code">
+            <span id="codesin">body {</span> <br>
+                font: italic lighter 1.2em "Work Sans", sans-serif; <br>
+            <span id="codesin">}</span>
+        </p>
+        <p id="link">
+            <a href="pag02.html" target="_self" rel="prev" style="text-align: center;">◄</a>
+            <a href="pag04.html" target="_self" rel="next" style="text-align: center;">►</a>
+        </p>
+    </main>
+    <footer>
+        <br> <br>
+        Todos os Direitos Resrvados à Ateneu Municipal de Artes de Vespaziano Côrrea<sup>&copy;</sup> <br>
+
+        Contato | Endereço | Bairro Centro, Rua Machado de Assis, nº <span style="font-size:9pt;">7.845</span><br>
+        Desenvolvido por Delirante Produções&trade;
+    </footer>
+</body>
+</html>

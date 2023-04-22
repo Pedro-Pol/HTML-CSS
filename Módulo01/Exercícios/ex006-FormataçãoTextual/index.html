@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+    <style>
+        body {
+            background-color: rgb(99, 99, 171);
+            font: normal 12pt Calibri;
+            color: rgb(225, 255, 235);
+            margin: 50px;
+        }
+        h2 {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PRINCIPAIS FORMATAÇÕES DE TEXTO</h1>
+    
+    <h2>Negrito / Destaque</h2>
+    <p>Existem duas maneira de destacar uma palavra ou expressão com negrito: uma formal e uma semântica. É importante notar que a maneira formal é passível de descontinuação em próximas versões do HTML, além que não ser compatível com alguns navegadores. A primeira forma emprega a tag <strong>&lt;b&gt;</strong>, abreviação a palavra <em>bold</em>; enquanto que a segunda emprega-se a tag <strong>&lt;strong&gt;</strong>.</p>
+    <p>Exemplos: <br>
+    "Eu não sugeri que você matasse ela <strong>aqui</strong>." <br>
+    "Eu não sugeri que você matasse <b>ela</b> aqui."</p>
+    
+    <h2>Itálico / Ênfase</h2>
+    <p>Da mesma maneira mencionada anteriormente, existem duas maneira de enfatizar uma palavra expressão: um modo menos atualizado, em vias de obsolecência; e um mais recente, em acordo com o princípio semântico. A primeira forma emprega a tag <strong>&lt;i&gt;</strong>, abreviação sucinta de <em>italics</em>; enquanto que a segunda forma, <strong>&lt;em&gt;</strong>, é uma abreviação de <em>emphasis</em>, isto é, ênfase, fazendo indicação da sua função semântica.</p>
+    <p>Exemplo: <br>
+    "Eu não sugeri que você <i>matasse</i> ela aqui."<br>
+    "Eu não sugeri que <em>você</em> matasse ela aqui."</p>
+    
+    <h2>Texto Marcado</h2>
+    <p>Para simular o efeito do destaque da marcação realizada com uma caneta marca-texto, emprega-se a tag <strong>&lt;mark&gt;</strong>. Para alterar a cor do marca-texto, assim como em outras alterções de estilo pontuais, basta inserir o parâmetro <em>style</em>, acesando uma função das CSS no corpo do HTML.</p>
+    <p>Exemplo: <br>
+    "Embora a frequência de emprego, o termo <mark>não é de origem bibliográfica</mark> consistente." <br>
+    "Embora a frequência de emprego, o termo <mark style="background-color: rgba(0, 255, 0, 0.479);">não é de origem bibliográfica</mark> consistente." <br> <br>
+    Nesta última marcação, o código foi transcrito da seguinte maneira: <br>
+    <em>&lt;mark style="background-color: lime;"> não é de origem bibliográfica &lt;/mark></em>.</p>
+
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Existem duas tags para que o texto fique maior ou menor. No entanto, a tag <strong>&lt;big&gt;</strong> está considerada como obsoleta, sem implicações semântica. A tag <strong>&lt;small&gt;</strong>, para diminuir o tamanho do texto, não é considerada obsoleta, visto seu uso em contratos e outros documentos que exijam passagens menores.</p>
+    <p>Exemplo: <br>
+    "Que coisa horrível, Andreia, <big>melhor não comentar isso com ninguém!</big>" <br>
+    "...E-eu gostaria de... convidar você <small>para um encontro</small>. Você aceita?"</p>
+
+    <h2>Texto Desconsiderado / Riscado</h2>
+    <p>Para causar o efeito de um risco sobre uma palavra, expressão ou sentença, emprega-se a tag <strong>&lt;del&gt;</strong>. O efeito semântico do uso significa que o texto riscado teve validade e não mais; ou que deve ser desconsiderado de todo modo.</p>
+    <p>Exemplo: <br>
+    "Sim, eu conheço o Daniel. Foi <del>o maior desgraçado que mundo jamais conheceu</del> meu colega de classe nos anos de ginásio."</p>
+
+    <h2>Texto "Inserido" / Sublinhado</h2>
+    <p>Em virtude do princípio semântico, passou-se a interpretar a função do significado de determinadas formas de configuração de texto. O sublinhado, infelizmente, não recebeu nenhuma interpretação muito convincente. Supostamente, o texto sobre a linha, interpreta-se, teria sido <em>inserido</em> ali, como se fosse uma lacuna vazia que, em dado momento, foi preenchida. Portanto, emprega-se a tag <strong>&lt;ins&gt;</strong>, do inglês <em>inserted</em>. A tag obsoleta <strong>&lt;u&gt;</strong>, do inglês <em>underline</em>, era a alternativa não-semântica, prestes a ser descontinuada.</p>
+    <p>Exemplo: <br>
+    "Eu, <ins>Fulano Beltranício de Sicrão</ins>, autorizo o emprego de meu nome como cognome genérico empregado amplamente na língua portuguesa, por sorte do regulamento mencionado."
+    </p>
+
+    <h2>Texto Sobrescrito e Subescrito</h2>
+    <p>Para que o texto apareça sobrescrito ou subescrito, como é comum em fórmulas matemáticas e químicas respectivamente, empregam-se as tags <strong>&lt;sup&gt;</strong>, do inglês <em>superscript</em>, e <strong>&lt;sub&gt;</strong>, do inglês <em>subscript</em>.</p>
+    <p>Exemplo: <br>
+    "A fórmula 'Gt<sup>24</sup> = Gp<sup>-24</sup>' foi inventado por Groetius Morcus.<sup>[Carece de Fontes]</sup><br>
+    "Observa-se a reação da particula de Cl<sub>2</sub>CH<sub>4</sub>O, liberando H<sub>2</sub>O e O<sub>3</sub>."</p>
+
+    <h1 style="margin-top: 60px;">Outras Formatações</h1>
+
+    <h2>Código-Fonte</h2>
+    <p>Para que seja impressa uma fonte monoespaçada, isto é, ideal para leitura de código-fonte, emprega-se a tag <strong>&lt;code&gt;</strong>. No entanto, a tag não manterá as configurações de identação do código, sendo recomendado envelopar o bloco na tag <strong>&lt;pre&gt;</strong>, do inglês <em>preformatted text</em>, que imprime todas as configurações do código fonte (espaços, indentação, quebra de linha, etc.)</p>
+    <p>Exemplo: <br>
+    "Normalmente, nesta função, utiliza-se o <code>window.documento.getElementById('')</code> do JavaScript."<br>
+    <br>
+    "Considere isso:<pre><code style="font-size: medium;">    var numero = window.document.getElementById('numbertxt')
+    var n = Number(numero.value)
+    if (n % 2 == 0) {
+        window.alert(`O número ${n} é par!`)
+    } else {
+        windo.alert(`O número ${n} é ímpar!`)
+    }</code>"</pre></p>
+    
+    <h2>Citações Curtas e Longas</h2>
+    <p>Para realizar citações curtas, basta empregar a tag <strong>&lt;q&gt;</strong>, do inglês <em>quotes</em>, que o texto será iniciado e terminado por aspas. Em casos de citação longa, emprega-se a tag <strong>&lt;blockquote&gt;</strong>, que, além de criar um recuo automático, permite a adição do parâmetro <em>cite</em>, na qual se indica a origem da citação, o que é relevante para os mecanismos de busca.</p>
+    <p>Exemplo: <br>
+    "Como dizia o professor Guanabara: <q>se você faz isso, você tá muito errado na sua vida.</q>"<br>
+    "Segundo os comentários do historiador Ilya Ivanovinsk:
+    <blockquote cite="IVANOVINSK, Ilya. Problemas Linguísticos Contemporâneos. Editora Saber. 2004. Fls 51-52." style="text-align: justify;">O manuscrito de Voynich representa um os grandes enigmas linguísticos do século. Inúmeras pesquisas foram conduzidas sobre a possibilidade, ou não, do alfabeto desconhecido conter uma linguagem falsa. O que, posteriormente, concluiu-se que, efetivamente, trata-se de uma língua verídica, considerando os padrões de repetições averiguados em várias línguas."</blockquote></p>
+
+    <h2>Abreviações</h2>
+    <p>Para que uma caixa de texto surja, explicando o conteúdo de uma abreviação, basta empregar a tag <strong>&lt;abbr&gt;</strong>, inserindo no parâmetro <em>title</em> o texto que aparecerá ao internauta e aos algoritmos de pesquisa.</p>
+    <p>Exemplo: <br>
+    "Após a aprovação de um crédito, os associados da cooperativa de crédito assinam o <abbr title="Carta de Crédito Bancário">CCB</abbr>, como signatário e avalista, e o <abbr title="Certidão Efetiva do Título">CET</abbr>, apenas como signatário."
+    </p>
+
+    <h2>Texto Invertido</h2>
+    <p>Embora de utilidade questionável, os caracteres de uma sentença podem ser invertidos empregando a tag <strong>&lt;bdo&gt;</strong>, do inglês <em>bi-directional override</em>. Importante recordar-se de indicar a direção <em>rtl</em>, isto é, <em>right to left</em>. Caso contrário, a disposição do texto da esquerda para a direita será... apenas um texto normal.</p>
+    <p>Exemplo: <br>
+    "O texto 'os pássaros saúdam a chegada da primavera, e as gotículas cintilantes do riacho convidam a puerilidade escondida em todos os corações' torna-se: <br>
+    <bdo dir="rtl">'os pássaros saúdam a chegada da primavera, e as gotículas cintilantes do riacho convidam a puerilidade escondida em todos os corações'</bdo>."</p>
+</body>
+</html>

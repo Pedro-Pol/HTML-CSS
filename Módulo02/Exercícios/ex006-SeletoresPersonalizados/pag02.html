@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div {
+            margin: auto;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            background-color: brown;
+            line-height: 50px;
+            border-radius: 15px;
+            box-shadow: 10px 10px 10px rgba(0, 255, 255, 0.288);
+        }
+        div:hover {
+            color: rgb(172, 0, 0);background-color: blue;
+            font-weight: bolder;
+        }
+        div:active {
+            color: black;
+            background-color: aliceblue;
+            background-image: image('imagens/rick.gif');
+        }
+
+        pre > span {
+            display: none;
+        }
+        pre:hover > span {
+            display: block;
+        }
+
+        ul {
+            list-style-type: circle;
+        }
+
+        .novo::after {
+            content: ' \2605';
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 id="principal">Seletores Personalizados</h1>
+
+        <div>MERDA</div>
+
+        <h2>Pseudo-Classes</h2>
+        <p>
+            As pseudo-classes governam o estado dos elementos de HTML. Por exemplo, os links possuem vários estados estéticos: se o link nunca tive sido acessado, mostra-se em cores azuis; se já acessado, em roxo; se o link possuir um IRL inexistente, vermelho. Essas modificações são feitas através pseudo-classes, que são demarcados, no documento CSS, por sinal de dois pontos (:) e seguido pelo termo que indica uma função específica.
+        </p>
+        <p>
+            Os links entre páginas, encontrados na porção inferior deste documento, foram modificados para sempre apresentarem-se no tom de marrom saturado, apresentando um tom avermelhado quando clicado. O código empregado para realizar tais alterações no padrão de apresentação dos links foi o seguinte:
+        </p>
+        <p id="codigo">
+            <pre>
+    a:link {
+        color:                 #7B6B43;
+        text-decoration:       none;
+    }
+    a:visited {
+        color:                 #7B6B43;
+        text-decoration:       none;
+    }
+    a:hover {
+        color:                 #7B6B43;
+        text-decoration:       none;
+    }
+    a:active {
+        color:                 #7b4e43;
+        text-decoration:       none;
+    }
+            </pre>
+        </p>
+
+        <p>
+            Ainda, é possível esconder uma passagem de texto no interior de outro, empregando sinais de maior que (>) ou de menor que (<), para indicar que um elemento está contigo &#x6 é um elemento <em>child</em> &#x6 dentro de um elemento que o contém &#x6 elemento <em>parent</em>.
+        </p>
+        <p>
+            Por exemplo, para ver o código fonte de como foi transcrita essa técnica, passe o mouse no seletor abaixo:
+        </p>
+        <p><pre>
+        pre > span {<span>
+            display:        none;
+        }
+        
+        pre:hover > span {
+            display:        block;
+        }</span></pre></p>
+
+        <h2>Pseudo-Elementos</h2>
+        <p>Pseudo-elementos são seletores especiais que condicionam o conteúdo das tags. São demercados com um duplo dois pontos (::), e são seguidos do termo que especifica a função desejada.</p>
+        <p>
+            Por exemplo, imaginemos que o portal encomendado tenha que realçar todo conteúdo novo postado recentemente com, digamos, um estrela. Uma seletor de pseudo-elemento do tipo <em>::after</em> poderia ser criado para solucionar o problema.
+        </p>
+        <p>Por exemplo:</p>
+        <ul>
+            <li>Episódio 004</li>
+            <li>Episódio 005</li>
+            <li>Episódio 006</li>
+            <li class="novo">Episódio 007</li>
+            <li class="novo">Episódio 008</li>
+            <li class="novo">Episódio 009</li>
+        </ul>
+        <p>
+            Para o exemplo, foi empregado o seguinte código, respectivamente, em HTML e CSS:
+        </p>
+        <p>
+            <pre>
+    &lt;ul>
+        &lt;li>Episódio 004&lt;/li>
+        &lt;li>Episódio 005&lt;/li>
+        &lt;li>Episódio 006&lt;/li>
+        &lt;li class="novo">Episódio 007&lt;/li>
+        &lt;li class="novo">Episódio 008&lt;/li>
+        &lt;li class="novo">Episódio 009&lt;/li>
+    &lt;/ul>
+
+    .novo::after {
+        content: ' \2605';
+    }
+            </pre>
+        </p>
+
+        <p class="link">
+            <a href="index.html" target="_self" rel="prev"> ◄ </a>
+            <a href="pag03.html" target="_self" rel="next"> ► </a>
+        </p>
+    </main>
+    <footer>
+        <p style="text-indent: 0px;">
+            Centro de Informática de Aribelo Meloso | Departamento de Tecnologia Municipal | Prefeitura de Aribelo Meloso <br>
+            Contato | Sugestões | Reclamações
+        </p>
+        <p class="centro" style="margin-top: 10px; margin-bottom: 10px;">
+            * * *
+        </p>
+        <p style="text-indent: 0px;">
+            Desenlvolvido por Salamandra Manca na Manta Santa<sup><span style="font-size: 0.8em;">&copy</span></sup> | Contato
+        </p>
+    </footer>
+</body>
+</html>

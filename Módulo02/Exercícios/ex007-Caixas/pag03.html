@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags - Exemplo</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0px;
+        }
+        p {
+            text-align: center;
+            margin: 5px;
+            text-indent: 0px;
+        }
+        main > p, aside > p {
+            text-align: justify;
+        }
+        .ass {
+            display: inline;
+        }
+        header {
+            background-color: #FBFFB9;
+            margin: 15px auto 30px auto;
+            width: 500px;
+            padding: 40px 40px 20px 40px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px rgba(7, 7, 88, 0.212);
+        }
+        nav {
+            text-align: center;
+        }
+        nav > a {
+            margin: 0px;
+            margin-right: 45px;
+        }
+        nav > a#last {
+            margin-right: 0px;
+        }
+        a.nada:link, a.nada:visited {
+            color: #754F44;
+        }
+        a.nada:hover {
+            color: #E1CE7A;
+        }
+
+        section {
+            background-color: #E1CE7A;
+            border-radius: 15px;
+            border-style: solid;
+            border-color: #754f4471;
+            margin: 30px 0px;
+            padding: 0px 15px 15px 15px;
+        }
+
+        aside {
+            background-color: #EC7357;
+            color: #FBFFB9;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        aside > h3 {
+            color: #FBFFB9;
+            margin: 0px;
+        }
+
+
+        footer {
+            max-width: 600px;
+            margin: auto;
+            padding-top: 25px;
+            color: #FBFFB9;
+            margin-bottom: 50px;
+        }
+        footer > h3 {
+            color: #FBFFB9;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            height: 5px;
+        }
+        footer > span {
+            line-height: 30px;
+        }
+
+        header > p, #main > p, nav > p, main > p, section > p, article > p, article > aside, footer > span {
+            display: none;
+        }
+
+        header:hover > p, nav:hover > p, #main:hover > p, nav:hover > p, main:hover > p, section:hover > p, article:hover > p, article:hover > aside {
+            display: block;
+        }
+        footer:hover > span {
+            display: inline;
+        }
+
+        nav {
+            margin: 8px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Cabecalho</h1>
+        <p>Para criar o cabeçalho, emprega-se a tag <strong>&lt;header&gt;</strong>; no qual, normalmente, serão transcritos o título do portal e o índice de navegação. Opcionalmente, lemas e outras ordens de subtítulos também podem ser adicionados.</p>
+        <nav>
+            <a class="nada" href="">link</a>
+            <a class="nada" href="">link</a>
+            <a class="nada" href="">link</a>
+            <a id="last" class="nada" href="">link</a>
+            <p>Para cria o índice de navegação, emprega-se a tag <strong>&lt;nav&gt;</strong>, no qual serão transcritos os menus temáticos de navegação e seus links correspondentes.</p>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Conteudo</h1>
+        <p>A principal parte de um portal é destacada por conter o conteúdo do documento. Para criar essa porção especial, emprega-se a tag <strong>&lt;main&gt;</strong>. Como mencionado, nesta porção, será dedicada ao conteúdo principal a que se dedica o portal.</p>
+        <section>
+            <h2>Seccao I</h2>
+            <p style="text-align: justify;">
+                A distinção entre secções e artigos é arbitrária. É possível desenvolver artigos dentro de secções, assim como secções dentro de artigos. O emprego de ambos depende da necessidade. Para criar uma secção, emprega-se a tag <strong>&lt;section&gt;</strong>.
+            </p>
+            <article>
+                <h3>artigo</h3> 
+                <p style="text-align: justify;">
+                    Agora, para criar um artigo, basta empregar a tag <strong>&lt;article&gt;</strong>. Conforme mencionado anteriormente, a distinção entre os dois elementos é arbitrário, com pouco implicação semântica.
+
+                </p>
+            </article>
+            <article>
+                <h3>artigo</h3>
+                <p style="text-align: justify;">
+                    A ideia mais importante de entender é que ambas os elementos podem ser criados uns dentro dos outros, em um <em>aninhamento</em> de conteúdo.
+                </p>
+            </article>
+
+        </section>
+
+        <section>
+            <h2>Seccao II</h2>
+            <article>
+                <h3>Artigo</h3>
+                <p style="text-align: justify; margin-bottom: 20px;">Importante recordar que também podem ser inclusos os elementos &lt;aside&gt; no interior de artigos e secções.</p>
+                <aside style="background-color: #754f4471;">
+                    <p style="font-weight: bold;">É bastante natural a inclusão dessas notas laterais para enriquecer as informações disponíveis no site.</p>
+                </aside>
+            </article>
+        </section>
+        
+        <aside id="main">
+            <h3>nota</h3>
+            <p>Para realizar anotações referentes ao conteúdo, mas não imediatamente reacionado &#x6; como uma breve descrição do autor de um artigo, por exemplo &#x6;, emprega-se a tag <strong>&lt;aside&gt;</strong>, em inglês <em>ao lado</em>.</p>
+        </aside>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a class='voltar' href="pag02.html" target="_self" rel="prev">VOLTAR</a>
+            <a class="avante" href="pag04.html" target="_self" rel="next">CONTINUE LENDO</a>
+        </div>
+
+    </main>
+
+    <footer style="font-weight: bold;">
+        <h3 style="display: inline;">Rodape</h3>
+        <span>&#x6; O espaço dedicado ao rodapé é criado com a tag <strong style="color: #EC7357;">&lt;footer&gt;</strong>, no qual são escritas informações gerais, como contatos, indicação direitos autorias, desenvolvedores, entre outros.</span>
+    </footer>
+</body>
+</html>

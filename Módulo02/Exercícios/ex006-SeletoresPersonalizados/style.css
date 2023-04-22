@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+body {
+    background-color:           #7B6B43;
+    color:                      #352208;
+    text-align:                 justify;
+    font:                       500 normal 1.05em Calibri;
+    letter-spacing:             0.5px;
+    margin:                     50px;
+}
+main {
+    background-color:           #eccc9b;
+    margin:                     auto;
+    min-width:                  450px;
+    max-width:                  500px;
+    padding:                    40px;
+    padding-top:                10px;
+    padding-bottom:             10px;
+    border-radius:              5px;
+    border-top-left-radius:     50px;
+    border-bottom-right-radius: 50px;
+}
+footer {
+    color:                      #eccc9b;
+    font-size:                  0.8em;
+    margin:                     auto;
+    margin-top:                 30px;
+    min-width:                  700px;
+    max-width:                  700px;
+    text-indent:                0px;
+}
+
+h1, h2, h3, h4 {
+    font-family:                Cambria, serif;
+    letter-spacing:             4px;
+    margin-top:                 30px;
+}
+h2 {
+    font-size: 1.7em;
+}
+
+#principal {
+    font-family:                'Yeseva One', cursive;
+    text-indent:                0px;
+    margin-top:                 45px;
+    margin-bottom:              40px;
+    text-align:                 center;
+    line-height:                20px;
+}
+
+p {
+    text-indent:                60px;
+    margin: 0px;
+}
+.codigo {
+    text-indent:                0px;
+    font-family:                monospace;
+    font-size:                  1.1em;
+    margin-left:                30px;
+    margin-top:                 20px;
+    margin-bottom:              20px;
+}
+.desin {
+    color:                      #6856348f;
+}
+.link {
+    text-align:                 center;
+    margin:                     30px;
+    text-indent:                0px;
+    font-size:                  2em;
+}
+a:link {
+    color:                      #7B6B43;
+    text-decoration:            none;
+}
+a:visited {
+    color:                      #7B6B43;
+    text-decoration:            none;
+}
+a:hover {
+    color:                      #7B6B43;
+    text-decoration:            none;
+}
+a:active {
+    color:                      #7b4e43;
+    text-decoration:            none;
+}
+.centro {
+    text-align: center;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Especiais</title>
+    <style>
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /*
+        Sem especificação além da tag, alterará todos os elementos do documento.
+        */
+
+        main p {
+            text-align: justify;
+        }
+        /*
+        Pode ser especificado a caixa na qual está contida. Nesse seletor, lê-se o seguinte: todos os parágrafos dentro de main, independende do nível.
+        */
+        main > p {
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        /*
+        O combinador maior que (>) indica uma tag filha de outra. No seletor acima, lê-se: seleciona-se as tag p, filhas de main; e apenas as tags p filhas de main. Tags p, filhas de article, filha de main não estão dentro dessa especificação.
+        */
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Seletor Especializado</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut illo sunt exercitationem eius, dolores facilis. Repellat adipisci odit rerum ut <strong>dolorem nulla</strong> vero eaque quisquam totam facere dolores earum laborum nesciunt eos, et perspiciatis consequatur hic, officia consequuntur ratione dolor placeat sequi? Illum obcaecati quasi, harum incidunt distinctio sapiente tempore!
+        </p>
+        <article>
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam voluptates iusto tenetur! Fugiat officia, eius laborum similique doloribus maiores eum, fugit maxime consequatur incidunt, explicabo magnam iure pariatur repudiandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt excepturi doloremque libero, sapiente eum iusto? <strong>Nemo voluptas</strong> vero fugiat quae maxime minima ipsa error at porro beatae eaque, voluptates iste?
+            </p>
+        </article>
+        <article>
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam voluptates iusto tenetur! Fugiat officia, eius laborum similique doloribus maiores eum, fugit maxime consequatur incidunt, explicabo magnam iure pariatur repudiandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt excepturi doloremque libero, sapiente eum iusto? <strong>Nemo voluptas</strong> vero fugiat quae maxime minima ipsa error at porro beatae eaque, voluptates iste?
+            </p>
+        </article>
+    </main>
+    <footer>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, totam autem, corrupti necessitatibus sit deserunt est rerum voluptatem ab nihil eos suscipit, omnis nisi cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla accusamus ipsum quia doloremque ab, expedita illo doloribus rem possimus? Laudantium repellendus minus iure temporibus soluta fugiat alias quibusdam <strong>officia dolore</strong>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, facilis deleniti? Cumque explicabo nobis, ex ab, at accusantium reprehenderit consequatur ea nisi magni aliquam distinctio et mollitia temporibus nulla delectus minima, deserunt numquam fugit est voluptatem possimus! Impedit assumenda, consectetur repellendus in pariatur exercitationem. Hic ab dignissimos iusto consequatur est!
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+
+body {
+    background-image: linear-gradient(to left, #81ADC8 0.1%, #DEA47E 99.9%);
+    color: #9E6240;
+    margin: 15px;
+    font-size: 14pt;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+section {
+    margin: auto;
+    background-color: #F8F2DC;
+    padding: 40px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    min-width: 530px;
+    max-width: 630px;
+}
+
+p#code {
+    font-family: monospace;
+    font-size: smaller;
+    color: #CD4631;
+    letter-spacing: 0px;
+}
+
+h1, h2, h3 {
+    color: #CD4631
+}

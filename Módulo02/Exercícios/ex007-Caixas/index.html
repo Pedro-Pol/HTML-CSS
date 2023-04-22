@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Caixas</h1>
+        <p>
+            Todos os elementos de HTML estão encerrados em quadradados, denominados caixas. Entender as características dessas caixas é essencial para manipulá-las em CSS.
+        </p>
+        <h2>CARACTERISTICAS DE CAIXAS</h2>
+        <p>
+            O conteúdo de um elemento HTML está encerrado entre um quadrado com duas dimenções, a altura &#x6; <em><strong>height</strong></em> &#x6; e a largura &#x6; <em><strong>width</strong></em> &#x6;. Imediatamente posterior a esses limites está a borda &#x6; <em><strong>border</strong></em> &#x6;. Ao espaçamento entre a borda e o conteúdo, o espaço interior, é concedido o nome de acolchoamento &#x6; <em><strong>padding</strong></em> &#x6;; e, ao espaçamento entre a borda e os outros elementos adjcentes, o espaço exterior, é concedido o nome de margem &#x6; <em><strong>margin</strong></em> &#x6;. Também há o <em><strong>outline</strong></em>, o contorno, que é uma área no interior da margem, em divisa com a borda.
+        </p>
+
+        <h3>SHORTHANDS</h3>
+
+        <p>
+            A <em>margin</em> e o <em>padding</em> possuem propriedades parecidas; assim como <em>border</em> e o <em>outline</em>. Observe:
+        </p>
+        <p>
+            <pre>
+    div#box {
+        margin-top:     25px;
+        margin-right:   20px;
+        margin-bottom:  15px;
+        margin-left:    10px;
+
+        padding-top:    10px;
+        padding-right:  15px;
+        padding-bottom: 20px;
+        padding-left:   25px;
+
+        border-width:   10px
+        border-style:   dotted;
+        border-color:   red;
+
+        outline-width:  10px
+        outline-style:  solid;
+        outline-color:  blue;
+    }
+            </pre>
+        </p>
+        <p>Existem <em>shorthands</em> &#x6; isto é, reduções de código &#x6; semelhantes para propriedades semelhantes. Observe o exemplo que conserva os valores do exemplo anterior:</p>
+        <p>
+            <pre>
+    div#box {
+        margin:     25px 20px 15px 10px;
+        padding:    10px 15px 20px 25px;
+
+        border:     10px dotted red;
+        outline:    10px solid blue;
+    }
+            </pre>
+        </p>
+        <p>
+            A <em>margin</em> e o <em>padding</em> ainda possuem um <em>shorthand</em> ainda mais sumário: (a) se houver apenas dois valores, para os intervalos verticais e outro para os horizontais, nesta ordem; e (b) se os valores, tanto dos intervalos verticais ou horizontais, forem os mesmos. Observe:
+        </p>
+        <p>
+            <pre>
+    div#box {
+        margin:     20px 10px;
+        padding:    15px 25px;
+
+        margin:     15px;
+        padding:    20px;
+    }
+            </pre>
+        </p>
+
+        <h2>Classificacao de Caixas</h2>
+
+        <p>
+            Ainda, as caixas podem ser classifcadas como <em><strong>inline-level</strong></em> ou <em><strong>box-level</strong></em>. No primeiro caso, a inserção do elemento classificado como <em>inline-level</em> não cria nenhuma quebra de linha. Do modo contrário, os classificados como <em>box-level</em> criam um espaço entre elementos, separando-os por uma quebra de linha.
+        </p>
+
+        <h3>ALTERACOES</h3>
+
+        <p>
+            É possível, ainda, alterar a característica de um elemento como <em>box-level</em> ou como <em>inline-level</em>. Para isso, basta empregar a propriedade <em><strong>display</strong></em>, acrecendo os valores: (i) <em><strong>block</strong></em>, para torná-lo um elemento <em>box-level</em>; (ii) <em><strong>inline</strong></em>, para torná-lo um elemento <em>inline-level</em>; ou ainda (iii) <em><strong>inline-block</strong></em>, para configurá-lo como um elemento <em>inline-level</em> com propriedades modificáveis de elemento <em>box-level</em>, como <em>height</em> e <em>width</em>.
+        </p>
+
+        <a style="display: block;" href="pag02.html" target="_self" rel="next">CONTINUE LENDO</a>
+    </main>
+</body>
+</html>

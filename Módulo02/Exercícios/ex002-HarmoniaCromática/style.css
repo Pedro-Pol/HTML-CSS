@@ -1,0 +1,26 @@
+body {
+    margin:             50px;
+    font-size:          14pt;
+    text-align:         justify;
+    background-color:   rgb(243, 239, 244);
+    color:              hsl(210, 50%, 8%);
+}
+section {
+    margin:             auto;
+    background-color:   rgb(212, 204, 127);
+    padding:            30px;
+    padding-top:        10px;
+    border-radius:      15pt;
+    min-width:          500px;
+    max-width:          600px;
+}
+
+h1, h2, h3 {
+    margin-top:         35px;
+}
+dt {
+    margin-bottom:      5px;
+}
+dd {
+    margin-bottom:      12px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="picture.ico" type="image/x-icon">
+    <title>Desafio de Imagem Dinâmica</title>
+
+    <style>
+        body {
+            margin:         50px;
+            font:           normal 12pt arial;
+        }
+        div#image {
+            text-align:     center;
+        }
+        img {
+            border-radius: 5pt;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+
+    <hr>
+    
+    <p> <br>
+        Amplie e diminua as dimenções do seu navegador. Observe como a imagem abaixo reage às mudanças. &#x1f92f
+    </p> <br>
+
+    <div id="image">
+        <picture>
+            <source media="(max-width: 850px)" srcset="paisagem-p.png" type="image/png">
+            <source media="(max-width: 1300px)" srcset="paisagem-m.png" type="image/png">
+            <img src="paisagem-g.png" alt="paisagem mulher braços abertos montanha">
+        </picture>
+    </div>
+</body>
+</html>

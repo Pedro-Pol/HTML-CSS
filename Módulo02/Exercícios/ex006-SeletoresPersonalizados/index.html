@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 id="principal">Seletores Personalizados</h1>
+        <p>
+            É possível atribuir qualidades específicas a determinados elementos do documento, para que, quando alteradas as propriedades de estilo, apenas as tags atribuídas respondam a tais mudanaças. Isso é feito operando <em>seletores personalizados</em>, quais sejam: identificadores, classes, pseudo-identificadores e pseudo-classes.
+        </p>
+        <h2>Identificadores</h2>
+        <p>
+            É possível identificar um elemento do documento HTML atribuindo-lhe o atributo global <em><strong>id</strong></em>, complementado por qualquer valor desejável. Nas CSS, esse identificador é demarcado por uma cerquilha &#x6 o símbolo # &#x6, seguido do denominador, o valor escolhido.
+        </p>
+        <p>
+            Por exemplo, o título principal de um documento &#x6 texto esse envelopado por uma tag &lt;h1&gt; &#x6 é de especial importância estética para a apresentação de qualquer portal eletrônico. Portanto, é desejável alterar-lhe o estilo, tornando-o mais chamativo. No entanto, também não é desejável alterar todos os elementos envelopados nas tags &lt;h1&gt;. Para tanto, atribuiremos o atributo global <em>id</em> para o título dessa página, com o valor principal.
+        </p>
+        <p class="codigo">
+            <pre>&lt;h1 id="principal"><span class="desin">Seletores Personalizados</span>&lt;/h1></pre>
+        </p>
+        <p>
+            Em um segundo momento, realiza-se as mudanças nas CSS, indicando a tag, a cerquilha e o valor com o qual foi nomeado. Neste caso, a alteração para um fonte mais chamativa, procedendo às seguintes alterações no código:
+        </p>
+        <p class="codigo">
+            <pre>
+    #principal<span class="desin">
+        {
+            font-family:       'Yeseva One', cursive;
+            text-indent:       0px;
+            margin-top:        30px;
+            margin-bottom:     30px;
+            text-align:        center;
+        }</span></pre>
+        </p>
+        <h2>Classes</h2>
+        <p>
+            É possível classificar um elemento HTML introduzindo um atributo global denominado <em><strong>class</strong></em>, complementando-o com um valor qualquer desejado. Semelhante ao identificador, sua função é conferir propriedades particulares de estilo aos elementos classificados com esse atributo. Diferente do identificador, a classe pode ser empregada várias tags, iguais ou diferentes.
+        </p>
+        <p>
+            Por exemplo, em algumas porções do texto deste documento, que foram configuradas para transcrever o código-fonte, foi empregada a classes. Veja:
+        </p>
+        <p class="codigo">
+            <pre>
+    &lt;p class="codigo">
+        <span class="desin">&lt;h1 id="principal">Seletores Personalizados&lt;/h1></span>
+    &lt;/p></pre>
+        </p>
+        <p>
+            Novamente, em um segundo momento, são configuradas as propriedade especiais desses trechos, isto é, desse parágrafos classificados pelo valor "codigo".
+        </p>
+        <p>
+            <pre>
+    .codigo<span class="desin">
+    {
+        text-indent:          0px;
+        font-family:          monospace;
+        font-size:            1.1em;
+        margin-left:          30px;
+        margin-top:           20px;
+        margin-bottom:        20px;
+    }</span></pre>
+        </p>
+        <p>
+            Importante salentar as diferenção entreos atributos <em><strong>id</strong></em> e <em><strong>class</strong></em>. Um identificador deve ser empregado para alterar apenas um único elemento em um documento, conforme conselho da W3C. Já os classificadores podem ser empregados multiplas vezes em múltiplos elementos de um mesmo elemento. Em dúvida, utiliza-se o segundo.
+        </p>
+        <p class="link">
+            <a href="pag02.html" target="_self" rel="next">►</a>
+        </p>
+    </main>
+    <footer>
+        <p style="text-indent: 0px;">
+            Centro de Informática de Aribelo Meloso | Departamento de Tecnologia Municipal | Prefeitura de Aribelo Meloso <br>
+            Contato | Sugestões | Reclamações
+        </p>
+        <p class="centro" style="margin-top: 10px; margin-bottom: 10px;">
+            * * *
+        </p>
+        <p style="text-indent: 0px;">
+            Desenlvolvido por Salamandra Manca na Manta Santa<sup><span style="font-size: 0.8em;">&copy</span></sup> | Contato
+        </p>
+    </footer>
+</body>
+</html>

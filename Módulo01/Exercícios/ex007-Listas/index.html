@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas em HTML</title>
+
+    <style>
+        body {
+            margin: 90px;
+            font: normal 12pt arial;
+            text-align: justify;
+            background-color: rgb(117, 183, 185);
+            color: rgb(21, 10, 63);
+        }
+        h1 {
+            margin-top: 60px;
+            margin-bottom: 36px;
+        }
+        h2 {
+            margin-top: 48px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listas em HTML</h1>
+
+    <p>Para que seja criada uma lista em HTML, emprega-se as tags <abbr title="Ordered List"><strong>&lt;ol&gt;</strong></abbr> e <abbr title="Unordered List"><strong>&lt;ul&gt;</strong></abbr>. Respectivamente, são apreviações para <em>ordered list</em> e <em>unordered list</em>; no qual no primeiro caso haverá marcadores especificando a ordem daquele item. Em relação aos itens dessas listas, eles também são envelopados na tag <abbr title="Listed Item"><strong>&lt;li&gt;</strong></abbr>, isto é, <em>listed item</em>.</p>
+    <p>Exemplo: <br>
+    "O conteúdo do livro abrangia os seguintes tópicos:
+    <ol>
+        <li>Introdução</li>
+        <li>Histórico</li>
+        <li>Propedéutica</li>
+        <li>Principiologia</li>
+        <li>Tecnica e Normas"</li>
+    </ol>
+    "Escrevo a lista de supermercado desse mês:
+    <ul>
+        <li>Granola;</li>
+        <li>Iogurte;</li>
+        <li>Rúcula;</li>
+        <li>Gergelim."</li>
+    </ul></p>
+
+    <h2>Parâmetros e Atributos</h2>
+
+    <p>Uma lista ainda pode receber os seguintes parâmetros e atributos: (a) <strong><em>type</em></strong>, indicando qual tipo dos marcadores na lista; que, em listas ordenadas, as opções são "1", para números (definição padrão); "A", para ordem alfabética maiúscula; "a", para ordem alfabética minúscula; "I" para algarismos romanos maiúsculos; e "i" para algarismos romanos minúsuculos; enquanto que, em listas não ordenadas, as opções são <em>disc</em>, uma bolinha preta (definição padrão); <em>circle</em>, um círculo sem preenchimento; e <em>square</em>, uma quadrado preenchido. Outro parâmetro é o (b) <strong><em>start</em></strong> que indica por qual número uma lista ordenada deve começar. Além disso, há o atributo (c) <strong><em>reversed</em></strong> que inverte as listas ordenadas, tornando-as decrescentes.</p>
+    <p>Exemplo: <br>
+    <br>
+    "O conteúdo do livro abrangia os seguintes tópicos:
+    <ol type="I">
+        <li>Introdução</li>
+        <li>Histórico</li>
+        <li>Propedéutica</li>
+        <li>Principiologia</li>
+        <li>Tecnica e Normas"</li>
+    </ol><code>&lt;ol type="I"></code> <br> <br>
+    "Escrevo a lista de supermercado desse mês:
+    <ul type="circle">
+        <li>Granola;</li>
+        <li>Iogurte;</li>
+        <li>Rúcula;</li>
+        <li>Gergelim."</li>
+    </ul></p> <code>&lt;ul type="circle"></code>
+
+    <h2>Lista Aninhadas</h2>
+    <p>As listas podem ser inseridas umas dentro das outras, formando um conjunto de subitens listados, mais complexo e que atende às demandas mais específicas. Basta recordar-se de que a nova lista deve ser introduzida dentro e antes do fechamento da tag &lt;li&gt;.</p>
+    <p>Exemplo: <br>
+        "O conteúdo do livro abrangia os seguintes tópicos:
+    <ol type="I">
+        <li>Introdução</li>
+        <li>Histórico
+            <ol type="i">
+                <li>Concepção Antiga</li>
+                <li>Concepção Renascentista</li>
+                <li>Concepção Contemporânea</li>
+            </ol>
+        </li>
+        <li>Propedéutica</li>
+        <li>Principiologia
+            <ol type="i">
+                <li>Princípios Processuais</li>
+                <li>Princípios Materiais</li>
+            </ol>
+        </li>
+        <li>Tecnica e Normas
+            <ol type="i">
+                <li>Direito Internacional</li>
+                <li>Ordenamento Jurídico</li>
+                <li>Jurisprudência
+                    <ul type="circle">
+                        <li>Decisões do Tribunais</li>
+                        <li>Jurisprudência do STJ</li>
+                        <li>Jurisprudência do STF"</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+    </ol></p>
+
+    <h2 id="ult">Anotações Adicionais</h2>
+    <p>Atributo obsoleto denominado <strong style="color: red;"><em>compact</em></strong> diminuia o espaço entre as linhas de uma listagem, normalmente, para satisfazer normas de formatação acadêmica, nas quais isso é requisitado. Como está obsoleto, prefere-se o comando das CSS <strong>style="<em>line-height:100%</em>"</strong>, na qual a porcentagem indicada é o espaçamento entre linhas.</p>
+
+    <p>Exemplo: <br>
+        "O conteúdo do livro abrangia os seguintes tópicos:
+    <ol type="I">
+        <li>Introdução</li>
+        <li>Histórico
+            <ol type="i" style="line-height: 90%;">
+                <li>Concepção Antiga</li>
+                <li>Concepção Renascentista</li>
+                <li>Concepção Contemporânea</li>
+            </ol>
+        </li>
+        <li>Propedéutica</li>
+        <li>Principiologia
+            <ol type="i" style="line-height: 90%;">
+                <li>Princípios Processuais</li>
+                <li>Princípios Materiais</li>
+            </ol>
+        </li>
+        <li>Tecnica e Normas
+            <ol type="i" style="line-height: 90%;">
+                <li>Direito Internacional</li>
+                <li>Ordenamento Jurídico</li>
+                <li>Jurisprudência
+                    <ul type="circle" style="line-height: 80%;">
+                        <li>Decisões do Tribunais</li>
+                        <li>Jurisprudência do STJ</li>
+                        <li>Jurisprudência do STF"</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+    </ol></p>
+
+    <h2>Listas de Definição</h2>
+    <p>À maneira de um dicionário, as listas de definição, contidas pela tag <strong>&lt;dl&gt;</strong>, <em>definition list</em>, possui termos individuais, contido pela tag <strong>&lt;dt&gt;</strong>, <em>definition term</em>, com descrições correspondentes envelopados pela tag <strong>&lt;dd&gt;</strong>, <em>definition description</em>. Embora a formatação não seja alterada substancialmente, ela associa os termos às suas descrições, auxiliando os mecanismos de busca.</p>
+    <p>Exemplo (CSS locais modificadas): <br>
+    <dl>
+        <dt style="margin-top: 15px; font: bold 11pt arial;">HTML</dt>
+        <dd><em style="font: italic 9pt arial;">SUBS FEM SING</em>; do inglês <em>Hypertext Markup Language</em>, isto é, linguagem de marcação de hipertexto, é uma linguagem de marcação empreagada para desenvolver o conteúdo de páginas da web, em oposição às esferas de estilo e interatividade.</dd>
+
+        <dt style="margin-top: 15px; font: bold 11pt arial;">CSS</dt>
+        <dd><em style="font: italic 9pt arial;">SUBS FEM PL</em>; do inglês <em>Cascading Style Sheets</em>, isto é, folhas de estilo em cascata, é uma linguagem de marcadores empregada para manipular as especificações de estilo de páginas da web, em oposição às esferas de conteúdo e interatividade.</dd>
+
+        <dt style="margin-top: 15px; font: bold 11pt arial;">JavaScript</dt>
+        <dd><em style="font: italic 9pt arial;">SUBS FEM SING</em>; é uma linguagem de programação para desenvolvimento da interatividade de programas e portais, em oposição às esferas de conteúdo e estilo.</dd>
+    </dl></p>
+
+    <!--Além do comando Ctrl + Shift + P, para envelopar uma expressão; o professor também ensinou a empregar um outro recurso: pressionando a tecla Alt e clicando em múltiplas partes do texto, são escritos simultaneamente as mesmas teclas digitadas, facilitando a edição de parâmetros e CSS locais em vários objetos semelhantes.-->
+</body>
+</html>

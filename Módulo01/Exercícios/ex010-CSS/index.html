@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="palette.png" type="image/png">
+    <title>CSS: Inline, Internal e External</title>
+
+    <style>
+        body {
+            font:               normal 12pt Arial;
+            text-align:         justify;
+            margin:             50px;
+            background-color:   rgb(206, 213, 219);
+        }
+        section {
+            max-width:          550px;
+            margin:             auto;
+            padding:            50px;
+            border-radius:      25px;
+            background-color:   azure;
+        }
+        h1 {
+            letter-spacing:     2px;
+            font-size:          1.6em;
+            text-align:         center;
+        }
+        h2 {
+            margin-top:         35px;
+            margin-bottom:      25px;
+        }
+        p {
+            margin-left:        20px;
+        }
+        p#code
+        {
+            font:               normal 11pt Consolas;
+            text-align:         left;
+            margin-left:        0px;
+        }
+        span#desin {
+            color:              rgba(0, 0, 0, 0.603);
+        }
+
+    </style>
+
+</head>
+<body>
+    <section>
+        <h1>CSS: Cascading Style Sheets</h1>
+        <hr> <br>
+        <p style="margin-left: 0px;">
+            As folhas de estilo encadeadas, as CSS, são a parte do código nas quais são empregados <em>seletores</em> para realizar <em>declarações</em>, indicando como os elementos estéticos do documento devem ser apresentados. Existem três formas de escrever os códigos de CSS: <em>inline</em>, <em>internal</em> e <em>external</em>.
+        </p>
+
+        <h2>CSS &#x6 Inline</h2>
+        <p>
+            As declarações de estilo podem ser efetuadas dentro das tags de HTML, efetando-a apenas essa tag. Basta inserir o atributo global <span style="font: normal 13pt Consolas;">style</span> no interior da tag, modificando seus seletores, conforme o necessário. Por exemplo, para escrever o termo <em>style</em> acima, empregou-se o seguinte código:
+        </p>
+        <p id="code">
+            &lt;span style="font: normal 13pt Consolas;">style&lt;/span>
+        </p>
+
+        <h2>CSS &#x6 Internal e External</h2>
+        <p>
+            Podem ser escritas declarações de estilo válidas para todo o documento HTML, declarando no documento (internal) ou em um documento de CSS em separado (external).
+        </p>
+        <p>
+            No primeiro caso, uma tag <strong>&lt;style&gt;</strong> é aberta dentro da tag <strong>&lt;head&gt;</strong>, normalmente após o título e antes do encerramento dessa secção. Todas as declarações inseridas nessa secção condensada, dedicada ao estilo e à apresentação do documento, valeráão para todo o documento. Se por exemplo, fossem declaradas alterações para a tag &lt;span&gt;, como no exemplo anterior, todas as tags &lt;span&gt; do documento seriam afetadas; não apenas uma.
+        </p>
+        <p>
+            Por exemplo, para editar a apresentação desse documento, foram trasncritas as seguintes declarações:
+        </p>
+        <p id="code">
+<pre style="font: normal 11pt Consolas;">
+&lt;head><span id="desin">
+        &lt;meta charset="UTF-8">
+        &lt;meta http-equiv="X-UA-Compatible">
+        &lt;meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        &lt;title>CSS: Inline, Internal e External&lt;/title>
+    </span>
+    &lt;style>
+        body {
+            font:               normal 12pt Arial;
+            text-align:         justify;
+            margin:             50px;
+            background-color:   rgb(206, 213, 219);
+        }
+        section {
+            max-width:          550px;
+            margin:             auto;
+            padding:            50px;
+            border-radius:      25px;
+            background-color:   azure;
+        }
+        h1 {
+            letter-spacing:     2px;
+            text-align:         center;
+        }
+        h2 {
+            margin-top:         35px;
+            margin-bottom:      25px;
+        }
+    &lt;/style>
+&lt;/head>
+&lt;body> ...
+</pre>
+        </p>
+
+        <br><p>
+            Em virtude de melhor organização, existe a possibilidade de criar um texto <em>externo</em> para depositar esses comandos gerais de CSS. Basta incluir, após a tag &lt;title&gt; a tag &lt;link:css&gt;, que criará uma tag <strong>&lt;link&gt;</strong> contendo os atributos <em><strong>href</strong></em>, <em>hyperlink reference</em>, e <em><strong>rel</strong></em>, <em>relationship</em>. Caso o documento não exista, o VSCode permitirá a criação automática de um desses arquivos. O código se parece do seguinte modo:
+        </p>
+        <p id="code">
+            &lt;link rel="stylesheet" href="style.css">
+        </p>
+            <p>
+                Quando um mesmo portal possuir muitas páginas e uma identidade visual comum, é mais eficiente criar um único arquivo externo que determinará todas as múltiplas páginas do que escrever em cada página os mesmo comando estéticos. Alterações eventuais também se tornariam desnecessariamente laboriosas com numerosas CSS locais para cada página. Além disso, é possível que um documento esteja ligado a mais de um arquivo de CSS externo.
+            </p>
+
+        <h2>Ordem de Preferência</h2>
+
+        <p>
+            É imortante ressaltar, como nota final, que as CSS transcrito na secção da tag &lt;head&gt;ou em um documento externo determinam as <em>regras gerais</em> de estilo e de apresentação do documento; enquanto que as CSS inseridas dentro das tags determinam <em>regras específicas</em>. Comandos específicos sempre tem preferência aos genéricos, inclusive quando uma tag é especificada por <em>id</em> ou <em>class</em>.
+        </p> 
+    </section>
+</body>
+</html>

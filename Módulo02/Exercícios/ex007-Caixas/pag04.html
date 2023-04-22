@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customização de Caixas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main {
+            box-shadow: 5px 5px 5px hsla(0, 3%, 14%, 0.275);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>CUSTOMIZACAO DE CAIXAS</h1>
+        <h2>Sombreamento de Caixas</h2>
+        <p>
+            É possível adicionar um efeito gráfico que simula uma sombra, empregando, para isso, a propriedade de CSS <em><strong>box-shadow</strong></em>. Os valores inseridos nesta propriedade são cinco, na seguinte ordem: (i) deslocamento horizontal; (2) deslocamento vertical; (3) embassamento; (4) espalhamento; e (5) a cor da sombra. Além disso, a propriedade, por padrão, projeta uma sombra externa, <em><strong>outset</strong></em>; todavia, é possível, declarando como primeiro valor o contrário, isto é: <em><strong>inset</strong></em>, uma sombra interna.
+        </p>
+        <p>
+            Neste documento foi inserida uma sombra no elemento &lt;main&gt;. O código empregado foi o seguinte:
+        </p>
+        <p><pre>
+    main {
+        width:      450px;
+        box-shadow: 5px 5px 5px hsla(0, 3%, 14%, 0.275);
+    }</pre></p>
+
+    <p>
+        É interessante ressaltar o emprego de uma cor com o vetor <em>alpha</em>, isto é, onde é aplicada a transparência. Isso torna mais suave o impacto exagerado de uma cor sólida.
+    </p>
+
+        <h2>Vertices Arredondados</h2>
+        <p>
+            É possivel aredondar os vértices, os cantos, das caixas. Para tanto emprega-se a propriedade <em><strong>border-radius</strong></em>. Essa propriedade, em si, é um <em>shorthand</em> para quatro propriedades, nesta ordem: (i) <em>border-top-left-radius</em>; (ii) <em>border-top-right-radius</em>; (iii) <em>border-bottom-right-radius</em>; e (iv) b<em>order-bottom-left-radius</em>. E, assim como os <em>shothands</em> de <em>margin</em> e <em>padding</em>, os valores podem ser inseridos de três modos: (a) abrangendo todos os quatro valores, no orderm supramencionada; (b) dois valores, em que o primeiro valor determina os vértices superior esquerdo e inferior direito; enquanto que o segundo valor determina os vértices superior direito e inferio esquerdo; e (c) um único valor que será aplicado a cada vértice.
+        </p>
+        <p>
+            Esse documento possui o elemento &lt;main&gt; com a propriedade de arredondamento de vértices. Esse é o código empregado para fazê-lo:
+        </p>
+        <p><pre>
+    main {
+        border-radius:  15px;
+    }</pre></p>
+
+    <a class='voltar' href="pag03.html" target="_self" rel="prev">VOLTAR</a>
+    <a class="avante" href="#" target="_self" rel="next">CONTINUE LENDO</a>
+        
+    </main>
+</body>
+</html>

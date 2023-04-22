@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importanto Fontes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>IMPORTAR FONTES</h1>
+        <p>
+            É natural que as fontes pré-instaladas no dispositivo não satisfassam todas as demandas do desenvolvimento de portais. Portanto é necessário baixar novas fontes.
+        </p>
+        <h2>REGRA @import</h2>
+        <p>
+            É possível fazer referência a um link externo, no qual o documento buscará a fonte indicada. Para tanto, é necessário transcrever um <em>regra</em> de CSS, que são postas no topo das folhas e antecedidas por arroba. Neste caso, a regra é <em>@import url('')</em>. Neste exemplo, foi encontrada a fonte no <a href="https://fonts.google.com/" target="_blank" rel="external">Google Fonts</a>
+        </p>
+        <p>
+            Em uma circunstância hipotética, quer-se empregar a fonte <em>Barrio</em> para um detemrinado título. Devido a essa fonte não estar presente no repositório do dispositivo, anexou-se assim uma ligação externa:
+        </p>
+        <p id="code">
+            @import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap'); <br>
+            <br>
+            h1#special { <br>
+            font-size: 3em; <br>
+            font-family: 'Barrio', cursive; <br>
+            }
+            [...]
+        </p>
+        <p>
+            O resultado desse código fonte seria o seguinte:
+        </p>
+        <h1 id="special">"Fontes em CSS"</h1>
+        <h2>REGRA @font-face</h2>
+        <p>
+            A segunda possibilidade é fazer o download de um arquivo que contenha uma fonte. Os formatos desses arquivos podem ser: <em>.otf</em> (<em>open type font</em>); <em>.ttf</em> (<em>true type font</em>); .svg (<em>scalable vector graphics</em>). É necessário acrescer uma regra de CSS: a <em>@font-face</em>. Isso permitira indicar uma URL que contenha o arquivo de fonte desejado. Além disso, permite nomear a fonte dentro do documento, que correspondera ao valor inserido na propriedade <em>font-family</em>.
+        </p>
+        <p>
+            Em uma circunstância hipotética, é desejável incluir uma fonte, semelhante a anterior, no entanto, que cubra texto normal, isto é, que inclua minúsculas. A fonte <em>Barriecito</em> satisfaz essa demanda. O código inserido seria o seguinte:
+        </p>
+        <p id="code">
+            @font-face { <br>
+                font-family: Barriecito; <br>
+                src: url('fonts/Barriecito-Regular.ttf') format('truetype'); <br>
+                font-size: normal; <br>
+                font-weight: normal; <br>
+                font-style: normal; <br>
+            } <br>
+            <br>
+            p#special { <br>
+                font-family: Barriecito, sans-serif; <br>
+                font-size: 1.3em; <br>
+            }
+        </p>
+        <p>
+            O resultado seria algo como:
+        </p>
+        <p id="special">
+            Regras, declarações, propriedades e valores em CSS
+        </p>
+        <p>
+            As propriedades e valores adicionais declados dentro da regra, indicam como a fonte deve ser lida, especialmente quando o arquivo de fonte contém variações de peso (como mencionada, a variação de negrito).
+        </p>
+        <p>
+            Além disso, algumas fontes possuem símbolos que podem ser empregados com outras finalidade estéticas. Para exemplificar, é indicada a fonte <em>Agathodaimon</em>:
+        </p>
+        <p id="special2">
+            pae fsn dor
+        </p>
+        <p>
+            Ou ainda, a fonte <em>Numismatic</em>:
+        </p>
+        <p id="special3">
+            b c d
+        </p>
+        <p id="link">
+            <a href="pag003.html" target="_self" rel="prev" style="text-align: center;">◄</a>
+            <a href="" target="_self" rel="next" style="text-align: center;">►</a>
+        </p>
+
+    </main>
+    <footer>
+        <br> <br>
+        Todos os Direitos Resrvados à Ateneu Municipal de Artes de Vespaziano Côrrea<sup>&copy;</sup> <br>
+
+        Contato | Endereço | Bairro Centro, Rua Machado de Assis, nº <span style="font-size:9pt;">7.845</span><br>
+        Desenvolvido por Delirante Produções&trade;
+    </footer>
+</body>
+</html>
