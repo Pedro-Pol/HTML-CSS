@@ -18,7 +18,7 @@ Curso de HTML5 e CSS3 do Curso em Vídeo
 <h3>Desafios</h3>
 • <a href="Módulo01/Desafios/des001/index.html" target="_blank" rel="author">Desafio 001</a>;  
 • <a href="Módulo01/Desafios/des002/index.html" target="_blank" rel="author">Desafio 002</a>;  
-•<a href="Módulo01/Desafios/des003/index.html" target="_blank" rel="author">Desafio 003</a>;  
+• <a href="Módulo01/Desafios/des003/index.html" target="_blank" rel="author">Desafio 003</a>;  
 • <a href="Módulo01/Desafios/des004/index.html" target="_blank" rel="author">Desafio 004</a>;  
 • <a href="Módulo01/Desafios/des005/index.html" target="_blank" rel="author">Desafio 005</a>;  
 • <a href="Módulo01/Desafios/des006/index.html" target="_blank" rel="author">Desafio 006</a>;  
