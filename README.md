@@ -20,15 +20,15 @@ Curso de HTML5 e CSS3, com o Profº Guanabara, do Curso em Vídeo. *Observação
 
 ### Desafios
 
-- <a href="Módulo01/Desafios/des001/index.html" target="_blank" rel="author">Desafio 001</a>;  
-- <a href="Módulo01/Desafios/des002/index.html" target="_blank" rel="author">Desafio 002</a>;  
-- <a href="Módulo01/Desafios/des003/index.html" target="_blank" rel="author">Desafio 003</a>;  
-- <a href="Módulo01/Desafios/des004/index.html" target="_blank" rel="author">Desafio 004</a>;  
-- <a href="Módulo01/Desafios/des005/index.html" target="_blank" rel="author">Desafio 005</a>;  
-- <a href="Módulo01/Desafios/des006/index.html" target="_blank" rel="author">Desafio 006</a>;  
-- <a href="Módulo01/Desafios/des007/index.html" target="_blank" rel="author">Desafio 007</a>;  
-- <a href="Módulo01/Desafios/des008/index.html" target="_blank" rel="author">Desafio 008</a>;  
-- <a href="Módulo01/Desafios/des009/index.html" target="_blank" rel="author">Desafio 009</a>.  
+- <a href="Módulo01/Desafios/des001/index.html" target="_blank" rel="author">Desafio 001 - Contagem</a>;  
+- <a href="Módulo01/Desafios/des002/index.html" target="_blank" rel="author">Desafio 002 - Imagens</a>;  
+- <a href="Módulo01/Desafios/des003/index.html" target="_blank" rel="author">Desafio 003 - Mapa-mundi</a>;  
+- <a href="Módulo01/Desafios/des004/index.html" target="_blank" rel="author">Desafio 004 - Emojis</a>;  
+- <a href="Módulo01/Desafios/des005/index.html" target="_blank" rel="author">Desafio 005 - Redes Sociais</a>;  
+- <a href="Módulo01/Desafios/des006/index.html" target="_blank" rel="author">Desafio 006 - Tags em HTML5</a>;  
+- <a href="Módulo01/Desafios/des007/index.html" target="_blank" rel="author">Desafio 007 - Imagem Dinâmica</a>;  
+- <a href="Módulo01/Desafios/des008/index.html" target="_blank" rel="author">Desafio 008 - Desafio de Navegação</a>;  
+- <a href="Módulo01/Desafios/des009/index.html" target="_blank" rel="author">Desafio 009 - Desafio de Vídeos</a>.  
 
 
 ## Módulo 2
