@@ -1,6 +1,6 @@
-<h1 style="text-align:justify;"> CURSO DE HTML5 & CSS3 </h1>
+<h1 style="text-align:center; letter-spacing:5px;"> CURSO DE HTML5 & CSS3 </h1>
 
-Curso de HTML5 e CSS3, com o Profº Guanabara, do Curso em Vídeo. *Observação*: os exercícios listados abaixo condensam uma ou mais aulas de uma mesma temática. Por exemplo: todas as aulas sobre formatação de texto foram reduzidas a um único documento descritivo (exercício 006). Portanto, os exercícios não conincidem com aqueles propostos pelo curso, embora abranjam todo o conteúdo lecionado.
+Este é um repositório de exercícios e desafios do **Curso de HTML5 e CSS3**, com o Profº Gustavo Guanabara, do **Curso em Vídeo**. *Observação*: os exercícios listados abaixo condensam uma ou mais aulas de uma mesma temática. Por exemplo: todas as aulas sobre formatação de texto foram reduzidas a um único documento descritivo (exercício 006). Portanto, os exercícios não conincidem com aqueles propostos pelo curso, embora abranjam todo o conteúdo lecionado.
   
   
 ## Módulo 1

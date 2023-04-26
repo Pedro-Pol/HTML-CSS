@@ -5,19 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parágrafos</title>
+    <style>
+        body {
+            margin: 15px;
+            text-align: justify;
+        }
+        .listagem {
+            margin: 0px 0px 2px 0px;
+            text-indent: 10px;
+        }
+        ul {
+            list-style-type: circle;
+        }
+    </style>
 </head>
 <body>
-    <h1>Parágrafos e Quebras de Linha</h1>
+    <h1>Elementos Básicos e Símbolos</h1>
     <hr>
-    <p>Você pode escrever um parágrafo de qualquer jeito, basta que você coloque entre o par de tags <strong>< p ></strong> e <strong>< /p ></strong>.</p>
-    <p>Se for necessário quebrar uma linha, imitando a funcionalidade comum da tecla Enter, basta empregar a seguinte tag: <br> <strong>< br ></strong>.</p>
-    <p>Para inserir símbolos especiais, basta incluir seu código, que podem ser de três tipos: (a) uma entidade HTML, um código especial de linguagem par a inclusão rápida do símbolo; (b) código unicode decimal; e (c) código unicode hexadecimal. Por exemplo ambos os três códigos abaixo representam o símbolo &spades;:
-        <br>
-        <strong>& spades;</strong> <br>
-        <strong>& #9824</strong> <br>
-        <strong>& #2660</strong>
+    <h3>Parágrafos e Quebra de Linha</h3>
+
+    <p>
+        Um dos elementos mais basilares do conteúdo de um documento HTML é o <em>parágrafo</em>. É possível transcrever um texto no interior das tags <strong>&lt;p&gt;</strong> e <strong>&lt;/p&gt;</strong>. Isso atribuirá uma série de características de estilo, como margens, automaticamente. Já para inserir uma <em>quebra de linha</em>, basta empregar a <em>empty tag</em> <strong>&lt;br&gt;</strong>.
     </p>
-    <p>Para aplicar <strong>emojis</strong>, basta procurar o código do emoji desejado em algum repositório da internet do códigos unicode. Por exempo, o emoji de mãos levantada tem o seguinte código: <strong>U+1F64C</strong>. Para alterá-lo de modo que esteja compativel com a lingugem HTML, basta subistituir o pré-fixo <strong>U+</strong> por <strong>&#x</strong>. Portanto <strong>&#x 1F64C</strong> imprime o seguinte emoji: <br>
-    &#x1F64C </p> 
+    <p>
+        A maioria dos elementos de HTMl requer um par de tags, uma de abertura e outra de encerramento (como o elemento &lt;p&gt; e &lt;/p&gt;). Agora, existem os elementos que dispensam o encerramento. Essa tags são denominadas <em>empty tags</em>, ou marcas vazias (como o elemento &lt;br&gt;).
+    </p>
+    <h3>Símbolos e Caracteres Especiais</h3>
+
+    <p>
+        Inicialmente, é nessário conhecer o Consórcio Unicode, que desenvolveu um catálogo de todos os caracteres; alfabéticos, numéricos, simbólicos ou diacríticos de todas as linguagens conhecidas. Cada caracter recebeu um nome numérico, um código. Esse código pode ser lido pelo programa executor do documento. Cada caracter possui um código de base <em>decimal</em> e de base <em>hexadecimal</em>. Esses caracteres são trnascritos com o inicío <strong>&#</strong>, para código decimal; e <strong>&#x</strong> para código hexadecimal. Ambos são encerrados por ponto e vírgula (<strong>;</strong>).
+    </p>
+    <p>
+        Além disso, a HTML mantém um pequeno léxico de <em>entidades HTML</em> que reduzem o código de determinados caracteres a uma abrevição alfabética. Por exemplo, o símbolo &rArr; é transcrito como <strong>&#x0026;rArr;</strong>, do inglês <em>right arrow</em>: flecha para direita. Isso busca facilitar o emprego dos símbolos e caacteres mais correntes. As entidades HTML também são encerradas por ponto e vírgula.
+    </p>
+    
+    <p>
+        Veja a seguir alguns exemplos:
+    </p>
+
+    <ul>
+        <p class="listagem">Símbolo de Direitos Autorais &#x2014; <strong>&copy;</strong></p>
+        <li><strong>&#x0026;copy;</strong> &#x2014; <em>Entidade HTML</em>;</li>
+        <li><strong>&#x0026;#169;</strong> &#x2014; <em>Código decimal</em>;</li>
+        <li><strong>&#x0026;#x00A9;</strong> &#x2014; <em>Código hexadecimal</em>;</li>
+    </ul>
+
+    <ul>
+        <p class="listagem">Símbolo de Marca Registrada &#x2014; <strong>&trade;</strong></p>
+        <li><strong>&#x0026;trade;</strong> &#x2014; <em>Entidade HTML</em>;</li>
+        <li><strong>&#x0026;#8482;</strong> &#x2014; <em>Código decimal</em>;</li>
+        <li><strong>&#x0026;#x2122;</strong> &#x2014; <em>Código hexadecimal</em>;</li>
+    </ul>
+
+    <ul>
+        <p class="listagem">Símbolo de Registro de Patente Comercial &#x2014; <strong>&reg;</strong></p>
+        <li><strong>&#x0026;reg;</strong> &#x2014; <em>Entidade HTML</em>;</li>
+        <li><strong>&#x0026;#174;</strong> &#x2014; <em>Código decimal</em>;</li>
+        <li><strong>&#x0026;#x00ae;</strong> &#x2014; <em>Código hexadecimal</em>;</li>
+    </ul>
+
+    <p>
+        A simples inserção desses códigos serão lidos pelo documento HTML como o símbolo a ele correspondente. <em>Importante</em>: nem todo símbolo ou caracter possui uma entidade HTML correspondente, mas todos possuirão código unicode, decimal e e hexadecimal.
+    </p>
+    
+    <h3>Emojis</h3>
+
+    <p>
+        Para aplicar <strong>emojis</strong>, basta procurar o código do emoji desejado em algum repositório da internet do códigos unicode. Por exempo, o emoji de mãos levantada tem o seguinte código: <strong>U+1F64C</strong>. Para alterá-lo de modo que esteja compativel com a lingugem HTML, basta subistituir o pré-fixo <strong>U+</strong> por <strong>&#x</strong>. Portanto <strong>&#x 1F64C</strong> imprime o seguinte emoji: <br>
+    &#x1F64C 
+    </p> 
 </body>
 </html>
