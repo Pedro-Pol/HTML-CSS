@@ -6,8 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Teste de Favicon</title>
+
+    <style>
+        body {
+            color: rgb(85, 5, 5);
+        }
+        main {
+            background-color: rgb(241, 234, 225);
+            padding: 15px;
+            text-align: justify;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+            letter-spacing: 0.2px;
+            word-spacing: 0.5px;
+        }
+        h1 {
+            color: rgb(37, 0, 0);
+            text-align: center;
+            letter-spacing: 8px;
+            margin-bottom: 0px;
+            margin-top: 35px;
+        }
+        h3 {
+            color: rgba(85, 5, 5, 0.74);
+            text-align: center;
+            margin: -8px 0px 25px 0px;
+            font-weight: 100;
+            font-size: 1.2em;
+            letter-spacing: -2px;
+            word-spacing: 3px;
+        }
+        p.code {
+            font-family: monospace;
+            background-color: rgb(255, 255, 255);
+            padding: 15px 5px 15px 20px;
+            letter-spacing: -0.5px;
+            word-spacing: 0px;
+            margin: 0px -15px;
+        }
+        div{
+            margin: 0px -15px 0px -15px;
+        }
+        img {
+            background-color: rgb(255, 255, 255);
+            display: block;
+            margin: auto;
+            padding: 15px 255px;
+            height: 30px;
+
+        }
+    </style>
+
 </head>
 <body>
-    <h1>Olha o Favicon no Canto Superior Esquerdo! ↑</h1>
+    <h1>FAVICON</h1>
+    <h3>OBSERVE O CANTO SUPERIOR ESQUERDO</h3>
+    <main>
+        <p>
+            Para incluir um <strong><em>favicon</em></strong>, isto é, um pequeno ícone que representa a página e está exposto no canto superior esquerdo da aba da página; basta incluir um link, na &lt;head&gt;, conforme o exemplo:
+        </p>
+        <p class="code">
+            &lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        </p>
+        <p>
+            No qual, é necessário indicar o valor do atributo <strong><em>href</em></strong> &#x2013; em inglês, o <i>hyperlink reference</i> &#x2013;, que funciona também como uma fonte, podendo indicar documentos do dispositivo. O atributo <strong><em>type</em></strong> simplesmente descreve, no valor, o tipo do arquivo; que, na grande maioria das vezes, será formato x-icon ou image-png.
+        </p>
+
+        <div><img src="favicon.ico" alt="Emoji do Goblin"></div>
+
+        <p>
+            Por exemplo, nesta página, foi empregado a imagem acima, o emoji do goblin &#x2013; versão mais recente do Twitter, que possui direitos livres para uso &#x2013; como favicon.
+        </p>
+    </main>
 </body>
 </html>
