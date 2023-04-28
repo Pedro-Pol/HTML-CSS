@@ -9,6 +9,7 @@
         body {
             margin: 15px;
             text-align: justify;
+            letter-spacing: 0.4px;
         }
         .listagem {
             margin: 0px 0px 2px 0px;
@@ -17,62 +18,89 @@
         ul {
             list-style-type: circle;
         }
+        main {
+            background-color: rgb(235, 235, 235);
+            padding: 15px;
+            margin: auto;
+            max-width: 600px;
+            border-radius: 15px;
+        }
+        aside {
+            background-color: rgb(211, 211, 211);
+            padding: 10px;
+            border-radius: 5px;
+            color: rgb(0, 0, 0);
+        }
+        aside > p {
+            margin: 0px;
+        }
+        h1 {
+            text-align: center;
+            letter-spacing: 2px;
+        }
     </style>
 </head>
 <body>
-    <h1>Elementos Básicos e Símbolos</h1>
-    <hr>
-    <h3>Parágrafos e Quebra de Linha</h3>
+    <main>
+        <h1>Elementos Básicos e Símbolos</h1>
+        <hr>
+        <h3>Parágrafos e Quebra de Linha</h3>
+        <p>
+            Um dos elementos mais basilares do conteúdo de um documento HTML é o <em>parágrafo</em>. É possível transcrever um texto no interior das tags <strong>&lt;p&gt;</strong> e <strong>&lt;/p&gt;</strong>. Isso atribuirá uma série de características de estilo, como margens, automaticamente. Já para inserir uma <em>quebra de linha</em>, basta empregar a <em>empty tag</em> <strong>&lt;br&gt;</strong>.
+        </p>
+        <p>
+            A maioria dos elementos de HTMl requer um par de tags, uma de abertura e outra de encerramento (como o elemento &lt;p&gt; e &lt;/p&gt;). Agora, existem os elementos que dispensam o encerramento. Essa tags são denominadas <em>empty tags</em>, ou marcas vazias (como o elemento &lt;br&gt;).
+        </p>
+        <h3>Símbolos e Caracteres Especiais</h3>
+        <p>
+            Inicialmente, é nessário conhecer o Consórcio Unicode, que desenvolveu um catálogo de todos os caracteres; alfabéticos, numéricos, simbólicos ou diacríticos de todas as linguagens conhecidas. Cada caracter recebeu um nome numérico, um código. Esse código pode ser lido pelo programa executor do documento. Cada caracter possui um código de base <em>decimal</em> e de base <em>hexadecimal</em>. Os códigos unicode são distinguidos por serem escritos com o prefixo <strong>U+</strong> seguido de algarismos que identificam o glifo. Para que seja lido por um arquivo HTML, o prefixo inicial é mudado para <strong>&#</strong>, para código decimal; e <strong>&#x</strong> para código hexadecimal. Ambos são encerrados por ponto e vírgula (<strong>;</strong>).
+        </p>
+        <aside>
+            <p>Além disso, o código hexadecimal de uma letra, diacrítico ou símbolo pode ser empregado em CSS. Neste caso, é necessário alterar o prefixo do código para <strong>\</strong>.</p>
+        </aside>
+        <p>
+            Além disso, a HTML mantém um pequeno léxico de <em>entidades HTML</em> que reduzem o código de determinados caracteres a uma abrevição alfabética. Por exemplo, o símbolo &rArr; é transcrito como <strong>&#x0026;rArr;</strong>, do inglês <em>right arrow</em>: flecha para direita. Isso busca facilitar o emprego dos símbolos e caacteres mais correntes. Por exemplo, todos os colchetes angulares empregados no texto deste documento foram criados utilizando <strong>&#x0026;lt;</strong> e <strong>&#x0026;gt;</strong>. As entidades HTML também são encerradas por ponto e vírgula.
+        </p>
+        
+        <p>
+            Veja a seguir alguns exemplos:
+        </p>
+        <ul>
+            <p class="listagem">Símbolo de Direitos Autorais &#x2014; <strong>&copy;</strong></p>
+            <li><strong>&#x0026;copy;</strong> &#x2014; <em>Entidade HTML</em>;</li>
+            <li><strong>&#x0026;#169;</strong> &#x2014; <em>Código decimal</em>;</li>
+            <li><strong>&#x0026;#x00A9;</strong> &#x2014; <em>Código hexadecimal</em>;</li>
+        </ul>
+        <ul>
+            <p class="listagem">Símbolo de Marca Registrada &#x2014; <strong>&trade;</strong></p>
+            <li><strong>&#x0026;trade;</strong> &#x2014; <em>Entidade HTML</em>;</li>
+            <li><strong>&#x0026;#8482;</strong> &#x2014; <em>Código decimal</em>;</li>
+            <li><strong>&#x0026;#x2122;</strong> &#x2014; <em>Código hexadecimal</em>;</li>
+        </ul>
+        <ul>
+            <p class="listagem">Símbolo de Registro de Patente Comercial &#x2014; <strong>&reg;</strong></p>
+            <li><strong>&#x0026;reg;</strong> &#x2014; <em>Entidade HTML</em>;</li>
+            <li><strong>&#x0026;#174;</strong> &#x2014; <em>Código decimal</em>;</li>
+            <li><strong>&#x0026;#x00ae;</strong> &#x2014; <em>Código hexadecimal</em>;</li>
+        </ul>
+        <p>
+            A simples inserção desses códigos serão lidos pelo documento HTML como o símbolo a ele correspondente. <em>Importante</em>: nem todo símbolo ou caracter possui uma entidade HTML correspondente, mas todos possuirão código unicode, decimal e e hexadecimal.
+        </p>
+        
+        <h3>Emojis</h3>
 
-    <p>
-        Um dos elementos mais basilares do conteúdo de um documento HTML é o <em>parágrafo</em>. É possível transcrever um texto no interior das tags <strong>&lt;p&gt;</strong> e <strong>&lt;/p&gt;</strong>. Isso atribuirá uma série de características de estilo, como margens, automaticamente. Já para inserir uma <em>quebra de linha</em>, basta empregar a <em>empty tag</em> <strong>&lt;br&gt;</strong>.
-    </p>
-    <p>
-        A maioria dos elementos de HTMl requer um par de tags, uma de abertura e outra de encerramento (como o elemento &lt;p&gt; e &lt;/p&gt;). Agora, existem os elementos que dispensam o encerramento. Essa tags são denominadas <em>empty tags</em>, ou marcas vazias (como o elemento &lt;br&gt;).
-    </p>
-    <h3>Símbolos e Caracteres Especiais</h3>
-
-    <p>
-        Inicialmente, é nessário conhecer o Consórcio Unicode, que desenvolveu um catálogo de todos os caracteres; alfabéticos, numéricos, simbólicos ou diacríticos de todas as linguagens conhecidas. Cada caracter recebeu um nome numérico, um código. Esse código pode ser lido pelo programa executor do documento. Cada caracter possui um código de base <em>decimal</em> e de base <em>hexadecimal</em>. Esses caracteres são trnascritos com o inicío <strong>&#</strong>, para código decimal; e <strong>&#x</strong> para código hexadecimal. Ambos são encerrados por ponto e vírgula (<strong>;</strong>).
-    </p>
-    <p>
-        Além disso, a HTML mantém um pequeno léxico de <em>entidades HTML</em> que reduzem o código de determinados caracteres a uma abrevição alfabética. Por exemplo, o símbolo &rArr; é transcrito como <strong>&#x0026;rArr;</strong>, do inglês <em>right arrow</em>: flecha para direita. Isso busca facilitar o emprego dos símbolos e caacteres mais correntes. As entidades HTML também são encerradas por ponto e vírgula.
-    </p>
-    
-    <p>
-        Veja a seguir alguns exemplos:
-    </p>
-
-    <ul>
-        <p class="listagem">Símbolo de Direitos Autorais &#x2014; <strong>&copy;</strong></p>
-        <li><strong>&#x0026;copy;</strong> &#x2014; <em>Entidade HTML</em>;</li>
-        <li><strong>&#x0026;#169;</strong> &#x2014; <em>Código decimal</em>;</li>
-        <li><strong>&#x0026;#x00A9;</strong> &#x2014; <em>Código hexadecimal</em>;</li>
-    </ul>
-
-    <ul>
-        <p class="listagem">Símbolo de Marca Registrada &#x2014; <strong>&trade;</strong></p>
-        <li><strong>&#x0026;trade;</strong> &#x2014; <em>Entidade HTML</em>;</li>
-        <li><strong>&#x0026;#8482;</strong> &#x2014; <em>Código decimal</em>;</li>
-        <li><strong>&#x0026;#x2122;</strong> &#x2014; <em>Código hexadecimal</em>;</li>
-    </ul>
-
-    <ul>
-        <p class="listagem">Símbolo de Registro de Patente Comercial &#x2014; <strong>&reg;</strong></p>
-        <li><strong>&#x0026;reg;</strong> &#x2014; <em>Entidade HTML</em>;</li>
-        <li><strong>&#x0026;#174;</strong> &#x2014; <em>Código decimal</em>;</li>
-        <li><strong>&#x0026;#x00ae;</strong> &#x2014; <em>Código hexadecimal</em>;</li>
-    </ul>
-
-    <p>
-        A simples inserção desses códigos serão lidos pelo documento HTML como o símbolo a ele correspondente. <em>Importante</em>: nem todo símbolo ou caracter possui uma entidade HTML correspondente, mas todos possuirão código unicode, decimal e e hexadecimal.
-    </p>
-    
-    <h3>Emojis</h3>
-
-    <p>
-        Para aplicar <strong>emojis</strong>, basta procurar o código do emoji desejado em algum repositório da internet do códigos unicode. Por exempo, o emoji de mãos levantada tem o seguinte código: <strong>U+1F64C</strong>. Para alterá-lo de modo que esteja compativel com a lingugem HTML, basta subistituir o pré-fixo <strong>U+</strong> por <strong>&#x</strong>. Portanto <strong>&#x 1F64C</strong> imprime o seguinte emoji: <br>
-    &#x1F64C 
-    </p> 
+        <p>
+            O Consórcio Unicode também abrange <em>emojis</em>. É importante firsar, no entanto, que dependendo do navegador e da atualização do sistema operacional, apenas uma ou outra versão de um emoji pode ser lida. Versões antigas do sistema operacional não permiter a atualização mais recente dos navegadores, o que reproduz emojis em um versão já ultrapassada.
+        </p>
+        <p>
+            Depois de consultar a listagem de <a href="https://unicode.org/emoji/charts/full-emoji-list.html" target="_blank" rel="external">emojis da Unicode</a> e selecionar o desejado, copie o código unicode, com prefixo <strong>U+</strong>, e o substitua pelo prefixo <strong>&#x</strong>; pois todos os emojis são codificados em base hexadecimal.
+        </p>
+        <p>
+            Por exemplo, o emoji sorridente tem o código U+1F601. Transcrevendo-o com a inicial alterada, temos o seguinte resultado:
+        </p>
+        <p style="text-align: center; font-size: 3em; margin: 0px;">
+            &#x1F601
+        </p>
+    </main>
 </body>
 </html>

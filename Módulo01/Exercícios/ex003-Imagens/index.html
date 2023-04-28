@@ -7,30 +7,77 @@
     <title>Testes com Imagens</title>
     <style>
         body {
-            margin: 50pt;
+            margin: 15pt;
+            padding: 0px;
+            text-align: justify;
+            letter-spacing: 0.5px;
+        }
+        h1 {
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        main {
+            background-color: rgb(247, 237, 228);
+            padding: 15px;
+            border-radius: 20px;
+        }
+        aside {
+            background-color: rgb(226, 214, 203);
+            padding: 15px 8px;
+            margin: 25px 0px;
+            font-family: monospace;
+            font-size: 1em;
+            text-align: left;
+            border-radius: 10px;
+        }
+        aside > p {
+            margin: 0px;
         }
     </style>
 </head>
 <body>
-    <h1>Testes com Imagens</h1>
-    <p>Existem diferentes métodos para que arquivos de imagens sejam inseridos no portal desenvolvido. A primeira é a inserção de uma imagem <strong>pertencente à pasta do aquivo HTML</strong>; a segunda, uma imagem <strong>pertencente à uma sub-pasta onde encontra-se o arquivo de HTML</strong>; e, a terceira, uma imagem externa, <strong>pertencente à alguma página na Internet</strong>.</p>
-    <br>
-    <hr>
-    <p>Os arquivos de imagens podem ser inseridos, quando o arquivo de imagem encontrar-se na mesma pasta em que o arquivo HTML original está. Abaixo, segue uma imagem inserida, empregando a seguinte tag:
-    <br><br><strong>&lt;img src="arquivo.png" alt="descição da imagem"&gt;</strong>.</p>
-    <br>
-    <img src="html-200.png" alt="Logo da HTML5">
-    <br>
-    <hr>
-    <p>Importante: quando o arquivo de imagem estiver salvo em uma sub-pasta, o source deverá indicar também a pasta, além do nome do arquivo. Neste caso, a tag está assim escrita:
-    <br><br><strong>&lt;img src="sub-pasta/arquivo.png" alt="descrição da imagem"&gt;</strong>.</p>
-    <br>
-    <img src="sub-pasta/css-200.png" alt="Logo das CSS3">
-    <br>
-    <hr>
-    <p>Quando a origem do arquivo de imagem é externo, isto é, fora do computador em algum endereço da Internet, a fonte deve ser indicada com o endereço URL da imagem. Nesta circunstância a tag é preenchida da seguinte maneira:
-    <br><br><strong>&lt;imag src="https://portaldaintenet.com/algumacoisa/outracoisa/coisaoutra/arquivo.png" alt="descrição da imagem"&gt;</strong></p>
-    <br>
-    <img src="https://1.bp.blogspot.com/-TGQt5uRcAkg/XuMIJoAhwnI/AAAAAAAAA38/FaJQpUUDsGEYR1zBK1wqLWUA9DTYp5CiQCPcBGAYYCw/w1200-h630-p-k-no-nu/js.png" alt="Logo do JavaScript">
+    <main>
+        <h1>&#x1F662; Testes com Imagens &#x1F660;</h1>
+        <p>
+            Imagens podem ser inseridas dentro do arquivo HTML empregando a tag <strong>&lt;img&gt;</strong>, do inglês <em>image</em>. Dois dos atributos necessários da tag são <strong><em>src</em></strong>, uma abreviação para <em>source</em>, e <strong><em>alt</em></strong>, de <em>alternative text</em>. Dependendo da localidade do arquivo, a valor da fonte deve ser descrita diferentemente. Imagens podem ter fontes internas ou externas; nos documentos da máquina ou de alguma fonte da Internet. As <em>fontes internas</em> podem ser divididas em cinco:
+        </p>
+        <ol style="list-style-type: lower-roman;">
+            <li>Quando o arquivo pertence ao mesmo diretório do arquivo <em>index.html</em> &#x2014; nesse caso, o valor da fonte indicada é, simplesmente, o nome do arquivo seguido de seu formato. Exemplo: <i>src= "foto.png"</i>; </li>
+            <li>Quando o arquivo pertence a um subdiretório dentro do diretório no qual encontra-se o arquivo <em>index.html</em> &#x2014; nesse caso, basta indicar a sub-pasta, na qual encontra-se o arquivo, e o nome do arquivo seguido do seu formato. Exemplo: <i>src="imagens\foto.png"</i>;</li>
+            <li>Quando o arquivo pertence um diretório anterior ao arquivo <em>index.html</em> &#x2014; nesse caso, emprega-se pontos para indicar o retorno a pastas anteriores: um ponto significa a própria pasta; dois pontos uma pasta anterior, e assim sucessivamente. Portanto, nomeia-se com pontos, seguidos por todo o caminho de pastas até o nome do arquivo seguido pelo seu formato. Por exemplo: <i>src=..\OutroProjeto\imagens\foto.png</i>;</li>
+            <li>Quando o arquivo de imagem encontra-se em um arquivo distante ao arquivo <em>index.html</em> &#x2014; devido a limitações do método anterior &#x2013; há um limite de quantos pontos podem ser empregados para retornar a diretórios anteriores &#x2013; pode ser copiado todo o endereço, desde o HD até o arquivo. Por exemplo: <i>src="C:\Usuários\Fulano\Documents\Projetos\Projeto1\imagens\foto.png".</i></li>
+        </ol>
+        <p>
+            <span style="font-size: 0.8em;">RECOMENDAÇÃO</span>: prefira o segundo método, porque é mais organizado: atribuindo pastas para gêneros de arquivos distintos, mantendo-os próximos do arquivo principal. O primeiro método é o segundo ideal, no entanto, impraticável em um grande projeto. Enquanto que o terceiro método é arriscado, o quarto deve ser evitado em todos os casos, pois qualquer mudança (como o download do projeto em outro dispositivo) invalida o endereço da fonte.
+        </p>
+        <p>
+            O arquivo de imagem pode, ainda, ser oriundo de uma <em>fonte externa</em>, isto é, de uma página na Internet. Basta introduzir como valor o endereço eletrônico (URL) do arquivo. Por exemplo:
+        </p>
+        <p><em>src="https://imagox.com.br/search/photos%20and%shit/photo.png"</em>.</p>
+        <p>
+            Já o atributo <em>alt</em> deve ser preenchido, isto é, como valor, uma descrição da imagem. Essa descrição será exposta, quando a imagem não for carregada pelo navegador, em casos de erro ou de incopatibilidade de formato. Além disso servirá como elemento textual a ser analisado para mecanismos de busca. Também, é um texto lido em programas de acessibilidade.
+        </p>
+        <p>
+            A seguir foram inseriadas algumas imagens. O código correspondente é descrito depois da imagem:
+        </p>
+        <img src="html-200.png" alt="Logo da HTML5" style="display: block; margin: auto;">
+        <aside>
+            <p>
+                &lt;img <strong>src</strong>="html5-logo.png" <strong>alt</strong>="Logo da HTML5"&gt;
+            </p>
+        </aside>
+        <img src="sub-pasta/css-200.png" alt="Logo das CSS3" style="display: block; margin: auto;">
+        <aside>
+            <p>
+                &lt;img <strong>src</strong>="imagens\css3-logo.png" <strong>alt</strong>="Logo das CSS3"&gt;
+            </p>
+        </aside>
+        <img src="https://1.bp.blogspot.com/-TGQt5uRcAkg/XuMIJoAhwnI/AAAAAAAAA38/FaJQpUUDsGEYR1zBK1wqLWUA9DTYp5CiQCPcBGAYYCw/w1200-h630-p-k-no-nu/js.png" alt="Logo do JavaScript" style="display: block; margin: auto;">
+        <aside>
+            <p>
+                &lt;img <strong>src</strong>="https://1.bp.blogspot.com/-TGQt5uRcAkg/XuMIJoAhwnI/AAAAAAAAA38/ FaJQpUUDsGEYR1zBK1wqLWUA9DTYp5CiQCPcBGAYYCw/ w1200-h630-p-k-no-nu/js.png" <strong>alt</strong>="Logo do JavaScript">
+            </p>
+        </aside>
+    </main>
 </body>
 </html>
