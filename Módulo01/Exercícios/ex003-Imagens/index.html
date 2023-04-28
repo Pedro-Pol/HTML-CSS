@@ -48,7 +48,7 @@
             <li>Quando o arquivo pertence ao mesmo diretório do arquivo <em>index.html</em> &#x2014; nesse caso, o valor da fonte indicada é, simplesmente, o nome do arquivo seguido de seu formato. Exemplo: <i>src= "foto.png"</i>; </li>
             <li>Quando o arquivo pertence a um subdiretório dentro do diretório no qual encontra-se o arquivo <em>index.html</em> &#x2014; nesse caso, basta indicar a sub-pasta, na qual encontra-se o arquivo, e o nome do arquivo seguido do seu formato. Exemplo: <i>src="imagens\foto.png"</i>;</li>
             <li>Quando o arquivo pertence um diretório anterior ao arquivo <em>index.html</em> &#x2014; nesse caso, emprega-se pontos para indicar o retorno a pastas anteriores: um ponto significa a própria pasta; dois pontos uma pasta anterior, e assim sucessivamente. Portanto, nomeia-se com pontos, seguidos por todo o caminho de pastas até o nome do arquivo seguido pelo seu formato. Por exemplo: <i>src=..\OutroProjeto\imagens\foto.png</i>;</li>
-            <li>Quando o arquivo de imagem encontra-se em um arquivo distante ao arquivo <em>index.html</em> &#x2014; devido a limitações do método anterior &#x2013; há um limite de quantos pontos podem ser empregados para retornar a diretórios anteriores &#x2013; pode ser copiado todo o endereço, desde o HD até o arquivo. Por exemplo: <i>src="C:\Usuários\Fulano\Documents\Projetos\Projeto1\imagens\foto.png".</i></li>
+            <li>Quando o arquivo de imagem encontra-se em um arquivo distante ao arquivo <em>index.html</em> &#x2014; devido a limitações do método anterior &#x2013; há um limite de quantos pontos podem ser empregados para retornar a diretórios anteriores &#x2013; pode ser copiado todo o endereço, desde o HD até o arquivo. Por exemplo: <i>src="C:\Usuários\Fulano-da-Silva\Documents\Projetos\Projeto-1\imagens\foto.png".</i></li>
         </ol>
         <p>
             <span style="font-size: 0.8em;">RECOMENDAÇÃO</span>: prefira o segundo método, porque é mais organizado: atribuindo pastas para gêneros de arquivos distintos, mantendo-os próximos do arquivo principal. O primeiro método é o segundo ideal, no entanto, impraticável em um grande projeto. Enquanto que o terceiro método é arriscado, o quarto deve ser evitado em todos os casos, pois qualquer mudança (como o download do projeto em outro dispositivo) invalida o endereço da fonte.
@@ -56,7 +56,7 @@
         <p>
             O arquivo de imagem pode, ainda, ser oriundo de uma <em>fonte externa</em>, isto é, de uma página na Internet. Basta introduzir como valor o endereço eletrônico (URL) do arquivo. Por exemplo:
         </p>
-        <p><em>src="https://imagox.com.br/search/photos%20and%shit/photo.png"</em>.</p>
+        <p><em>src="https://imagox.com.br/search-expression/photos%20and%shit-data/photo.png"</em>.</p>
         <p>
             Já o atributo <em>alt</em> deve ser preenchido, isto é, como valor, uma descrição da imagem. Essa descrição será exposta, quando a imagem não for carregada pelo navegador, em casos de erro ou de incopatibilidade de formato. Além disso servirá como elemento textual a ser analisado para mecanismos de busca. Também, é um texto lido em programas de acessibilidade.
         </p>
@@ -78,11 +78,11 @@
             </p>
         </aside>
 
-        <img src="https://1.bp.blogspot.com/-TGQt5uRcAkg/XuMIJoAhwnI/AAAAAAAAA38/FaJQpUUDsGEYR1zBK1wqLWUA9DTYp5CiQCPcBGAYYCw/w1200-h630-p-k-no-nu/js.png" alt="Logo do JavaScript" style="display: block; margin: 30px auto;">
+        <img src="sub-pasta/js-cutted.png" alt="Logo do JavaScript" style="display: block; margin: 30px auto;">
 
         <aside style="margin-bottom: 0px;">
             <p>
-                &lt;img <strong>src</strong>="https://1.bp.blogspot.com/-TGQt5uRcAkg/XuMIJoAhwnI/AAAAAAAAA38/ FaJQpUUDsGEYR1zBK1wqLWUA9DTYp5CiQCPcBGAYYCw/ w1200-h630-p-k-no-nu/js.png" <strong>alt</strong>="Logo do JavaScript">
+                &lt;img <strong>src</strong>="https://1.bp.blogspot.com/-TGQt5uRcAkg/XuMIJoAhwnI/AAAAAAAAA38/FaJQpUUDs-GEYR1zBK1wqLWUA9DTY-p5CiQCPcBGAYYCw/w1200-h630-p-k-no-nu/js.png" <strong>alt</strong>="Logo do JavaScript">
             </p>
         </aside>
     </main>
