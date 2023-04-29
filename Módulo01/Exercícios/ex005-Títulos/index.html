@@ -5,19 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Document</title>
+    <title>Hierarquia de Títulos</title>
+
+    <style>
+        :root {
+            --corEscura: #685a63;
+            --corPoucoEscura: #D1D0A3;
+            --corClara: #EBF8B8;
+            --corContraste: #FFE787;
+
+            --fonteTitulo: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        body {
+            background-color: var(--corContraste);
+            padding: 15px;
+            margin: 0px;
+            letter-spacing: 0.5px;
+        }
+        main {
+            background-color: var(--corClara);
+            color: var(--corEscura);
+            padding: 15px;
+            max-width: 550px;
+            margin: auto;
+            font: normal 500 1em "Segoe UI", sans-serif;
+            text-align: justify;
+            border-radius: 80px 0px;
+            box-shadow: 0px 0px 2px 2px #7565702d;
+        }
+        main > h1 {
+            text-align: center;
+            letter-spacing: 8px;
+            font-family: var(--fonteTitulo);
+        }
+        aside {
+            background-color: var(--corPoucoEscura);
+            padding: 15px 15px 15px 20px;
+            border-bottom-right-radius: 80px;
+        }
+        aside > h1, h2, h3, h4 {
+            font-family: var(--fonteTitulo);
+            margin: 10px;
+        }
+        aside > h1 {
+            text-indent: 40px;
+        }
+        aside > h2 {
+            text-indent: 20px;
+        }
+        aside > h3 {
+            text-indent: 10px;
+        }
+        aside > h4 {
+            text-indent: 0px;
+        }
+
+
+    </style>
+
 </head>
 <body>
-    <h1>História Geral de Vertáglia</h1>
-    <h2>Introdução - Barvasso</h2>
-    <h3>As Limitações do Continente Gélido</h3>
-    <h3>A Vanguarda Náutica</h3>
-    <h3>A Guerra dos Desonestos</h3>
-    <h4>Princípios da Guerra</h4>
-    <h4>Aliança Inesperada</h4>
-    <h4>Tratado de Divisão de Vertáglia</h4>
-    <h2>O Século de Desbravamento</h2>
-    <h3>Distribuição do Território</h3>
-    <h3>Achados</h3>
+    <main>
+        <h1 id="titulo">Títulos</h1>
+        <p>
+            Para inserir títulos &#x2013; isto é, vocábulos, expressões ou sentenças que nomeiem uma porção de um texto &#x2013; em um documento HTML, basta o emprego das tags <em><strong>hedings</strong></em>. Existem 6 tags <em>headings</em>, que variam conforme importância. São estes os elementos:
+        </p>
+        <ol style="list-style-type:lower-roman;">
+            <li><strong>&lt;h1&gt;</strong> e <strong>&lt;/h1&gt;</strong>;</li>
+            <li><strong>&lt;h2&gt;</strong> e <strong>&lt;/h2&gt;</strong>;</li>
+            <li><strong>&lt;h3&gt;</strong> e <strong>&lt;/h3&gt;</strong>;</li>
+            <li><strong>&lt;h4&gt;</strong> e <strong>&lt;/h4&gt;</strong></li>
+            <li><strong>&lt;h5&gt;</strong> e <strong>&lt;/h5&gt;</strong>;</li>
+            <li><strong>&lt;h6&gt;</strong> e <strong>&lt;/h6&gt;</strong>;</li>
+        </ol>
+        <p>
+            A hierarquia estabelecida entre esse níveis de títulos deve ser semelhante aos títulos de partes, capítulos e subcapítulos de trabalho científico: o &lt;h2&gt; existe dentro de um &lt;h1&gt;; assim como uma assunto aquém e de igual importância a um &lt;h1&gt; também será um &lt;h1&gt;.
+        </p>
+        <p>
+            Seguem exemplos do emprego de diferente níveis de títulos para, por exemplo, descrever a história de um mundo fictício:
+        </p>
+        <aside>
+            <h1>História Geral de Vertáglia</h1>
+            <h2>Introdução - Barvasso</h2>
+            <h3>As Limitações do Continente Gélido</h3>
+            <h3>A Vanguarda Náutica</h3>
+            <h3>A Guerra dos Desonestos</h3>
+            <h4>Princípios da Guerra</h4>
+            <h4>Aliança Inesperada</h4>
+            <h4>Tratado de Divisão de Vertáglia</h4>
+            <h2>O Século de Desbravamento</h2>
+            <h3>Distribuição do Território</h3>
+            <h3>Achados</h3>
+        </aside>
+    </main>
 </body>
 </html>
