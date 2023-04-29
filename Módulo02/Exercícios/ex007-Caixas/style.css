@@ -14,7 +14,7 @@ body {
 main {
     background-color: #FBFFB9;
     margin: auto;
-    width: 450px;
+    max-width: 450px;
     padding: 40px;
     padding-bottom: 50px;
     border-radius: 15px;
@@ -43,8 +43,9 @@ h1 {
 }
 
 a {
-    margin: 35px;
+    margin: 0px;
     margin-bottom: 5px;
+    margin-top: 30px;
     text-align: center;
     font-family: Koulen, serif;
     font-size: 1.5em;

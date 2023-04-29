@@ -12,7 +12,6 @@ body {
 main {
     background-color:           #eccc9b;
     margin:                     auto;
-    min-width:                  450px;
     max-width:                  500px;
     padding:                    40px;
     padding-top:                10px;
@@ -26,7 +25,6 @@ footer {
     font-size:                  0.8em;
     margin:                     auto;
     margin-top:                 30px;
-    min-width:                  700px;
     max-width:                  700px;
     text-indent:                0px;
 }

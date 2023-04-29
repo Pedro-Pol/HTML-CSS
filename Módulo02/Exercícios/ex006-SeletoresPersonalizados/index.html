@@ -21,22 +21,24 @@
             Por exemplo, o título principal de um documento &#x6 texto esse envelopado por uma tag &lt;h1&gt; &#x6 é de especial importância estética para a apresentação de qualquer portal eletrônico. Portanto, é desejável alterar-lhe o estilo, tornando-o mais chamativo. No entanto, também não é desejável alterar todos os elementos envelopados nas tags &lt;h1&gt;. Para tanto, atribuiremos o atributo global <em>id</em> para o título dessa página, com o valor principal.
         </p>
         <p class="codigo">
-            <pre>&lt;h1 id="principal"><span class="desin">Seletores Personalizados</span>&lt;/h1></pre>
+            <pre>&lt;h1 id="principal"><span class="desin">Seletores
+Personalizados</span>&lt;/h1></pre>
         </p>
         <p>
             Em um segundo momento, realiza-se as mudanças nas CSS, indicando a tag, a cerquilha e o valor com o qual foi nomeado. Neste caso, a alteração para um fonte mais chamativa, procedendo às seguintes alterações no código:
         </p>
-        <p class="codigo">
-            <pre>
-    #principal<span class="desin">
-        {
-            font-family:       'Yeseva One', cursive;
-            text-indent:       0px;
-            margin-top:        30px;
-            margin-bottom:     30px;
-            text-align:        center;
-        }</span></pre>
-        </p>
+    <p class="codigo">
+        <pre>
+#principal<span class="desin">
+    {
+        font-family:   'Yeseva One',
+        cursive;
+        text-indent:   0px;
+        margin-top:    30px;
+        margin-bottom: 30px;
+        text-align:    center;
+    }</span></pre>
+    </p>
         <h2>Classes</h2>
         <p>
             É possível classificar um elemento HTML introduzindo um atributo global denominado <em><strong>class</strong></em>, complementando-o com um valor qualquer desejado. Semelhante ao identificador, sua função é conferir propriedades particulares de estilo aos elementos classificados com esse atributo. Diferente do identificador, a classe pode ser empregada várias tags, iguais ou diferentes.
@@ -46,9 +48,10 @@
         </p>
         <p class="codigo">
             <pre>
-    &lt;p class="codigo">
-        <span class="desin">&lt;h1 id="principal">Seletores Personalizados&lt;/h1></span>
-    &lt;/p></pre>
+&lt;p class="codigo">
+    <span class="desin">&lt;h1 id="principal">Seletores
+    Personalizados&lt;/h1></span>
+&lt;/p></pre>
         </p>
         <p>
             Novamente, em um segundo momento, são configuradas as propriedade especiais desses trechos, isto é, desse parágrafos classificados pelo valor "codigo".
@@ -57,12 +60,12 @@
             <pre>
     .codigo<span class="desin">
     {
-        text-indent:          0px;
-        font-family:          monospace;
-        font-size:            1.1em;
-        margin-left:          30px;
-        margin-top:           20px;
-        margin-bottom:        20px;
+        text-indent:    0px;
+        font-family:    monospace;
+        font-size:      1.1em;
+        margin-left:    30px;
+        margin-top:     20px;
+        margin-bottom:  20px;
     }</span></pre>
         </p>
         <p>

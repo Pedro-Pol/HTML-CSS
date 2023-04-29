@@ -2,6 +2,7 @@
 
 body {
     background-image: linear-gradient(to left, #C44536, #9B2915);
+    background-attachment: fixed;
     color: #283D3B;
     margin: 50px;
     font-size: 13pt;
@@ -11,7 +12,7 @@ main {
     background-color: #EDDDD4;
     padding: 40px;
     border-radius: 15px;
-    width: 500px;
+    max-width: 500px;
     margin: auto;
     box-shadow: 3px 3px 10px #72271f;
 }
