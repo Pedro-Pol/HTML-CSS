@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posição da Imagem de Fundo</title>
+
+    <style>
+        body {
+            background-image: url('imagens/wallpaper005.jpg');
+            background-position: top center;
+            background-repeat: no-repeat;
+
+            font-size: 1.05em;
+            word-spacing: 2px;
+            letter-spacing: 0.5px;
+        }
+        section {
+            width: fit-content;
+            margin: auto;
+        }
+        header {
+            margin: 45px 0px 45px 0px;
+        }
+
+        main {
+            background-color: rgba(139, 139, 139, 0.233);
+            padding: 15px;
+            border-radius: 15px;
+            text-align: justify;
+            margin: 20px auto;
+            max-width: 500px;
+        }
+        p {
+            margin: 0px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0px;
+            letter-spacing: 3px;
+        }
+        h1 + h1 {
+            margin-top: -15px;
+            margin-bottom: 20px;
+        }
+
+
+        aside {
+            display: block;
+            margin: 20px auto;
+            width: fit-content;
+        }
+        div {
+            width: 145px;
+            height: 89px;
+            margin: 0px 0px;
+            border: 3px solid rgba(0, 0, 0, 0.548);
+            display: inline-block;
+            margin-bottom: -4px;
+            margin-left: -5px;
+        }
+        div#tl {
+            background-image: url('imagens/mapa-mundi.png');
+            background-position: left top;
+            border-top-left-radius: 5px;
+        }
+        div#tc {
+            background-image: url('imagens/mapa-mundi.png');
+            background-position: center top;
+            margin-left: -6px;
+        }
+        div#tr {
+            background-image: url('imagens/mapa-mundi.png');
+            background-position: right top;
+            border-top-right-radius: 5px;
+        }
+        div#cl {
+            background-image: url('imagens/mapa-mundi.png');
+            background-position: center left;
+        }
+        div#cc {
+            background-image: url('imagens/mapa-mundi.png');
+            background-position: center;
+            margin-left: -6px;
+        }
+        div#cr {
+            background-image: url('imagens/mapa-mundi.png');
+            background-position: right center;
+        }
+        div#bl {
+            background-image: url('imagens/mapa-mundi.png');
+            background-position: bottom left;
+            border-bottom-left-radius: 5px;
+        }
+        div#bc {
+            background-image: url('imagens/mapa-mundi.png');
+            background-position: bottom center;
+            margin-left: -6px;
+        }
+        div#br {
+            background-image: url('imagens/mapa-mundi.png');
+            background-position: bottom right;
+            border-bottom-right-radius: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <h1>POSIÇÃO DAS</h1>
+        <H1>IMAGENS DE FUNDO</H1>
+    </header>
+
+
+    <main>
+        <p>
+            É possível empregar a propriedade <em>background-position</em> para determinar qual o ponto de ancoragem de uma imagem de fundo. Os valores aceitos são nove: <i>right bottom</i>; <i>right center</i>; <i>right top</i>; <i>center bottom</i>; <i>center center</i> &#x2013; ou, simplesmente, <i>center</i> &#x2013;; <i>center top</i>; <i>left bottom</i>; <i>left center</i>; e o padrão <i>left top</i>. Este documento, por exemplo, emprega o seguinte código:
+        </p>
+    </main>
+    <section>
+        <pre>
+body {
+    background-image: url
+        ('imagens/wallpaper005.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+}</pre>
+    </section>
+    <main>
+        <p>
+            Novamente, é possível aplicar a propriedade <em>background-image</em> tanto no <i>body</i> quanto em qualquer outro elemento do documento. Uma maneira de demonstrar a aplicabilidade do conceito é refazer o <i>desafio de mapa-mundi</i>, com apenas uma imagem, alternando o ponto de ancoragem da propriedade mencionada.
+        </p>
+        <aside>
+            <div class="st" id="tl"></div>
+            <div class="st" id="tc"></div>
+            <div class="st" id="tr"></div> <br>
+            <div class="nd" id="cl"></div>
+            <div class="nd" id="cc"></div>
+            <div class="nd" id="cr"></div> <br>
+            <div class="rd" id="bl"></div>
+            <div class="rd" id="bc"></div>
+            <div class="rd" id="br"></div>
+        </aside>
+        <p>
+            Este é o código necessário para reproduzir o resultado acima, considerando que a imagem original possui 450 por 280 pixels:
+        </p>
+    </main>
+    <section>
+<pre>
+
+aside {
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+div {
+    width: 145px;
+    height: 89px;
+    margin: 0px 0px;
+    border: 3px solid 
+        rgba(0, 0, 0, 0.548);
+    display: inline-block;
+    margin-bottom: -4px;
+    margin-left: -5px;
+}
+
+div#tl {
+    background-image: url
+        ('imagens/mapa-mundi.png');
+    background-position: left top;
+    border-top-left-radius: 5px;
+}
+div#tc {
+    background-image: url
+        ('imagens/mapa-mundi.png');
+    background-position: center top;
+    margin-left: -6px;
+}
+div#tr {
+    background-image: url
+        ('imagens/mapa-mundi.png');
+    background-position: right top;
+    border-top-right-radius: 5px;
+}
+div#cl {
+    background-image: url
+        ('imagens/mapa-mundi.png');
+    background-position: center left;
+}
+div#cc {
+    background-image: url
+        ('imagens/mapa-mundi.png');
+    background-position: center;
+    margin-left: -6px;
+}
+div#cr {
+    background-image: url
+        ('imagens/mapa-mundi.png');
+    background-position: right center;
+}
+div#bl {
+    background-image: url
+        ('imagens/mapa-mundi.png');
+    background-position: bottom left;
+    border-bottom-left-radius: 5px;
+}
+div#bc {
+    background-image: url
+        ('imagens/mapa-mundi.png');
+    background-position: bottom center;
+    margin-left: -6px;
+}
+div#br {
+    background-image: url
+        ('imagens/mapa-mundi.png');
+    background-position: bottom right;
+    border-bottom-right-radius: 5px;
+}
+</pre>
+    </section>
+</body>
+</html>

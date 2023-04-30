@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-Size</title>
+    <style>
+
+        body {
+            height: 93vh;
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
+            margin: 10px;
+            font-size: 1.05em;
+        }
+
+        main {
+            background-color: rgba(255, 255, 255, 0.75);
+            padding: 15px;
+            max-width: 370px;
+            text-align: justify;
+            margin: 30px auto 30px auto;
+            margin-bottom: 30px;
+            border: 3px solid rgba(0, 0, 0, 0.6);
+
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            padding: 0px;
+            line-height: 24px;
+        }
+
+        em {
+            font-weight: bold;
+        }
+        p.deco {
+            text-align: center;
+            margin: 0px;
+        }
+        div.code {
+            display: block;
+            width: fit-content;
+            margin: auto;
+        }
+        span.code {
+            font-family: monospace;
+        }
+        
+        span.desin {
+            color: rgba(0, 0, 0, 0.664);
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Dimenções do<br>Pano de Fundo</h1>
+
+        <p>
+            Conforme já mencionado, é possível alterar as dimenções do pano de fundo, empregando a propriedade <em>background-size</em>. Vale mencionar, complementarmente, os valores <em>cotain</em> e <em>cover</em>. O primeiro irá <i>conter</i> a imagem, fazendo que, independente do tamanho da janela, a imagem sempre seja completamente exibida, sem cortes; enquanto que a segunda irá <i>cobrir</i> toda a página, realizando cortes e raramente mostrando a imagem inteiramente.
+        </p>
+        <p>
+            Neste documento foi empregado o seguinte código:
+        </p>
+
+        <div class="code"><pre><span class="desin">body {
+    height: 93vh;
+    background-color: black;
+    background-image: url
+        ('imagens/wallpaper002.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;</span>
+    background-size: cover;
+}</pre>
+</div>
+
+        <p class="deco">
+            * * *
+        </p>
+
+        <h1>Vínculo do<br>Pano de Fundo</h1>
+
+        <p>
+            É possível ainda determinar como a imagem de fundo deve se comportar, quando é realizada a rolagem vertical. A propriedade <em>background-attachment</em> tem dois valores possíveis: o padrão, <em>scroll</em> e <em>fixed</em>. O primeiro determina que a imagem deve ser rolada, quando houver uma rolagem vertical ou lateral; enquanto que o segundo determina que a imagem deve manter-se fixa, durante a rolagem.
+        </p>
+        <p>
+            Neste documento, foi empregado o seguinte código:
+        </p>
+
+        <div class="code">
+            <pre>
+body {<span class="desin">
+    height: 93vh;
+    background-color: black;
+    background-image: url
+        ('imagens/wallpaper002.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;</span>
+    background-attachment: fixed;
+}</pre>
+        </div>
+
+        <p class="deco">
+            * * *
+        </p>
+
+        <h1><i>Shorthand</i> de<br><i>Background</i></h1>
+
+        <p>
+            Todas essas propriedades relativas à imagem de fundo possuem uma <i>shorthand</i> denominada <em>background</em>. Em ordem, os valores correspondem às propriedades <span class="code">color, image, position, repeat, attachment</span>. 
+        </p>
+        <p>
+            Neste documento, foi empregado o seguinte código:
+        </p>
+
+        <div class="code"><pre><span class="desin">body {
+    height: 93vh;</span>
+    background: black url
+        ('imagens/wallpaper002.jpg') 
+        center center no-repeat fixed;<span class="desin">
+    background-size: cover;
+}</span></pre>
+        </div>
+    </main>
+    <p>
+        .
+    </p>
+</body>
+</html>

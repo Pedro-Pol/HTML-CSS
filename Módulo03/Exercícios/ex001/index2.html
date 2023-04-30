@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-Images</title>
+
+    <style>
+        body {
+            background-image: url('imagens/pattern002.png');
+            background-size: 80px;
+            background-repeat: repeat;
+
+            text-shadow: 1px 1px 0px #ffffff;
+            font-size: 1.03em;
+            text-align: justify;
+            letter-spacing: 0.5px;
+            margin: 0px;
+        }
+
+        main {
+            background-color: #ffffffb4;
+            max-width: 500px;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 10px;
+            margin: auto;
+        }
+        h1 {
+            background-color: #ffffffd3;
+            display: block;
+            padding: 10px;
+            max-width: 400px;
+            text-align: center;
+            margin: 20px auto;
+            letter-spacing: 2px;
+            border-radius: 15px;
+        }
+        p {
+            margin: 0px;
+        }
+        p + p {
+           margin-top: 10px; 
+        }
+        em {
+            font-weight: bold;
+        }
+        section {
+            background-color: #ffffff;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>IMAGENS DE FUNDO</h1>
+<main>
+    
+        <p>
+            A propriedade <em>background-image</em> permite a inserção de um valor como uma URL, selecionando uma imagem interna ou externa.
+        </p>
+        <p>
+            A propriedade <em>background-repeat</em> permite alterar a repetição automática. Como mencionado, o valor padrão é <em>repeat</em>, sendo possível alterar para <em>repeat-x</em>, para repetição lateral; e <em>repeat-y</em> para repetição vertical.
+        </p>
+        <p>
+            A propriedade <em>background-size</em> possibilita inserir como valor as dimenções de comprimento e altura, respectivamente. Se for alterado apenas um número como valor, a imagem será redimencionada proporcionalmente.
+        </p>
+        <p>
+            Por exemplo, para o fundo desse documento, foram empregadas as seguintes configurações:
+        </p>
+</main>   
+
+    <section>
+<div style="max-width: 600px; margin: auto;">
+    <pre>
+    
+        body {
+            background-image:  url
+                ('imagens/pattern002.png');
+            background-size:   80px;
+            background-repeat: repeat;
+        }
+    
+    </pre>
+</div>
+    </section>
+</body>
+</html>
