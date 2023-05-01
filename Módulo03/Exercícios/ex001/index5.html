@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização Vertical</title>
+    <style>
+        body {
+            margin: 10px;
+        }
+        main {
+            margin: 90px auto;
+            width: 80%;
+            height: 150px;
+            background-color: aqua;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+        }
+        section {
+            height: 250px;
+            width: 250px;
+            background-color: cornflowerblue;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            padding: 2%;
+
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        article {
+            height: 150px;
+            width: 150px;
+            background-color: rgb(11, 184, 98);
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        aside {
+            max-width: 600px;
+            margin: auto;
+            text-align: justify;
+            padding: 10px;
+
+            border: 2px solid rgba(0, 0, 0, 0.438);
+        }
+
+        h1 {
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        div {
+            width: fit-content;
+            margin: auto;
+            color: rgba(0, 0, 0, 0.562);
+        }
+        span.impor {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <article></article>
+        </section>
+    </main>
+
+    <aside>
+        <h1>CENTRALIZAÇÃO VERTICAL</h1>
+        <p>
+            Para centralizar um item <i>verticalmente</i>, e não apenas horizontalmente como tem sido feito até agora, é necessário utilizar-se de quatro propriedades. O primeiro é <em>position</em>, cujos valores são <em>relative</em> e <em>absolute</em>. Posição relativa é relativa a caixa que contém o elemento; já posição absoluta considera o total da <i>view port</i>. O primeiro valor deve ser selcionado. Depois utiliza-se a propriedade <em>left</em> e <em>top</em>, que indicará as coordenadas da posição desejada. No entanto, a âncora dessa imagem é o canto superior esquerdo, e não o centro da imagem. Para corrigir isso, adiciona-se a propriedade <em>transform: translate</em>, adicionando os valores <em>(-50%, -50%)</em> que indicam à figura a retornar a uma porcentagem das próprias dimenções.
+        </p>
+        <p>
+            Para fazer as centralizações da imagem presente no canto superior da página, empregou-se o seguinte código:
+        </p>
+
+        <div><pre>
+main {
+    margin: 90px auto;
+    width: 80%;
+    height: 150px;
+    background-color: aqua;
+    background-image: url('imagens/target001.png');
+    background-size: 100% 100%;
+}
+section {
+    height: 250px;
+    width: 250px;
+    background-color: cornflowerblue;
+    background-image: url('imagens/target001.png');
+    background-size: 100% 100%;
+<span class="impor">
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);</span>
+}
+article {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(11, 184, 98);
+    background-image: url('imagens/target001.png');
+    background-size: 100% 100%;
+<span class="impor">
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);</span>
+}</pre></div>
+    </aside>
+</body>
+</html>

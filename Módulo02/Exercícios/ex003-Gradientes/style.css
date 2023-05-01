@@ -9,13 +9,23 @@ body {
     text-align: justify;
     letter-spacing: 1px;
 }
+main {
+    background-color: transparent;
+    height: 96vh;
+    width: 100%;
+}
 section {
-    margin: auto;
     background-color: #F8F2DC;
     padding: 40px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     max-width: 630px;
+
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
 }
 
 p#code {
