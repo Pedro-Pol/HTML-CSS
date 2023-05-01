@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+:root {
+    --corEsc: #050517;
+    --corCla: #D3D5D7;
+    --corCon: #CF5C36;
+    --corIn1: #EFC88B;
+    --corIn2: #F4E3B2;
+
+    --fonTxt: 'Segoe UI', sans-serif;
+    --fonHea: Times, serif
+}
+
+
+
+body {
+    margin: 0px;
+    background-color: var(--corCla);
+}
+h1 {
+    font: normal 900 4vw var(--fonHea);
+}
+p {
+    font: normal 400 2vw var(--fonTxt);
+    letter-spacing: 0.1vw;
+}
+
+
+
+header {
+    text-align: center;
+    background-color: var(--corEsc);
+    color: var(--corCla);
+
+    padding: 30px 0px 25px 0px;
+}
+header > h1 {
+    margin: 0px 0px 5px 0px;
+    letter-spacing: 0.3vw;
+    word-spacing: 1vw;
+}
+header > p {
+    margin: 0px;
+    font-size: 2.1vw;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: var(--corEsc);
+    color: var(--corCla);
+
+    margin: 0px;
+    padding: 1.2vw;
+}
+footer > p {
+    margin: 0px;
+    font-size: 1.5vw;
+    font-weight: 300;
+    letter-spacing: -0.5;
+    word-spacing: 2px;
+
+}
+
+
+a.extre {
+    font-weight: 400;
+    padding: 1px 6px 2px 5px;
+    border-radius: 10px;
+    transition: background-color 1s, color 1.5s;    
+}
+a.extre:link, a.extre:visited {
+    text-decoration: none;
+    color: #D3D5D7;
+}
+a.extre:hover {
+    background-color: var(--corCla);
+    color: var(--corEsc);
+}
+a.extre:active {
+    background-color: var(--corCla);
+    color: var(--corEsc);
+    font-weight: 600;
+}
+
+
+
+section {
+    background-color: var(--corIn2);
+    padding: 3vw 5vw;
+    margin: 0px;
+}
+section > p, section > div > p {
+    line-height: 3.5vw;
+}
+
+section.img {
+    background-color: var(--corCla);
+}
+section.img p {
+    font-weight: 500;
+}
+
+section > div {
+    background-color: #cf5c3667;
+    backdrop-filter: blur(3px);
+    width: fit-content;
+    border-radius: 5vw 0px;
+    padding: 3vw 4vw;
+    margin: 4vw;
+}
+section > div > p {
+    margin: 0vw;
+}
+
+#imgA {
+    background-image: url('imagens/bg01.jpg');
+    background-position: right center;
+    background-attachment: fixed;
+    color: var(--corCla);
+}
+#imgB {
+    background-image: url('imagens/bg02.jpg');
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+#shadowA {
+    box-shadow: 0px 0.8vw 1vw 0px #05051752;
+    position: relative;
+}
+
+#shadowB {
+    box-shadow: 0px 0.8vw 1vw 0px #05051752;
+    position: relative;
+}
