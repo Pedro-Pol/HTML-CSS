@@ -45,4 +45,19 @@ Este é um repositório de exercícios e desafios do **Curso de HTML5 e CSS3**, 
 
 ### Desafios
 
-- <a href="Módulo02/Desafios/des001-BugDroid/index.html" target="_blank" rel="author">Desafio 001 - Artigo sobre o Bugdroid</a>.  
+- <a href="Módulo02/Desafios/des001-BugDroid/index.html" target="_blank" rel="author">Desafio 001 - Artigo sobre o Bugdroid</a>. 
+
+## Módulo 3
+
+### Exercícios
+
+- Exerc. 001 - Imagens de Fundo.
+    - <a href="Módulo03\Exercícios\ex001\index.html" target="_blank" rel="author">Exerc. 001 - Imagens dentro de Caixas</a>;
+    - <a href="Módulo03\Exercícios\ex001\index2.html" target="_blank" rel="author">Exerc. 002 - Repetições de Imagem de Fundo</a> [propriedade *background-repeat*];
+    - <a href="Módulo03\Exercícios\ex001\index3.html" target="_blank" rel="author">Exerc. 003 - Ancoragem de Imagens de Fundo</a> [propriedade *background-position*];
+    - <a href="Módulo03\Exercícios\ex001\index4.html" target="_blank" rel="author">Exerc. 004 - Cobertura, Vínculo e *Shorthand*</a> [valores *contain* e *cover*; propriedade *background-attachment*];
+    - <a href="Módulo03\Exercícios\ex001\index5.html" target="_blank" rel="author">Exerc. 005 - Centralização Vertical</a> [propriedades *position*, *left*, *top* e *transform*].
+
+### Desafios
+
+- <a href="Módulo03\Desafios\des001\index.html" target="_blank" rel="author">Desafio 001 - Cordel Moderno</a>.
