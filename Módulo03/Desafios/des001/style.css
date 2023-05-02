@@ -18,7 +18,8 @@ body {
     background-color: var(--corCla);
 }
 h1 {
-    font: normal 900 4vw var(--fonHea);
+    font: normal 900 5vw var(--fonHea);
+    font-variant: small-caps;
 }
 p {
     font: normal 400 2vw var(--fonTxt);
@@ -119,13 +120,16 @@ section > div > p {
 #imgA {
     background-image: url('imagens/bg01.jpg');
     background-position: right center;
+    background-size: cover;
     background-attachment: fixed;
     color: var(--corCla);
 }
 #imgB {
     background-image: url('imagens/bg02.jpg');
     background-position: center;
+    background-size: cover;
     background-attachment: fixed;
+    color: var(--corCla);
 
 }
 
