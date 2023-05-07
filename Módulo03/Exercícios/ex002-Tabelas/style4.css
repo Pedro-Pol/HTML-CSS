@@ -2,6 +2,18 @@
 
 :root {
     --fonTxt: Cambria, serif;
+
+    --corCla: #e0cfcb;
+        --corClaT: #e0cfcbd9;
+    --corEsc: #04202b;
+    --corIn1: #146E7C;
+        --corIn1T: hsla(188, 72%, 28%, 0.3);
+    --corIn2: #6D6E79;
+    --corCon: #A63519;
+        --corConT: #a6351962;
+
+    --border: 1px solid var(--corConT);
+    --borde2: 1px solid 
 }
 
 * {
@@ -9,6 +21,7 @@
     padding: 0px;
     font-family: var(--fonTxt);
     text-align: justify;
+    color: var(--corEsc);
 }
 
 body {
@@ -16,63 +29,109 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center center;
 }
 
 h1 {
-    background-color: rgba(250, 235, 215, 0.74);
-    backdrop-filter: blur(2px);
+    background-color: var(--corClaT);
+    backdrop-filter: blur(1px);
     width: fit-content;
+    letter-spacing: 5px;
     margin: 25px auto;
     padding: 15px 20px;
     border-radius: 25px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     font-variant: small-caps;
+    color: var(--corCon);
 }
 h2, h3, h4 {
     margin: 15px 0px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--corCon);
 }
 p {
     margin: 10px 0px;
 }
 
 main {
-    background-color: rgba(250, 235, 215, 0.74);
-    backdrop-filter: blur(2px);
+    background-color: var(--corClaT);
+    backdrop-filter: blur(1px);
     max-width: 620px;
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 10px 20px;
     border-radius: 25px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+
+pre {
+    font-family: monospace;
+    width: fit-content;
+    margin: 20px auto;
+    color: var(--corCon);
+}
+
 
 table {
     font-size: 0.9em;
+    width: 100%;
     border-collapse: collapse;
     margin: 20px auto;
-    background-color: rgba(255, 255, 255, 0.308);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 caption {
     text-align: left;
-    border: 1px solid grey;
     border-bottom: none;
     font-variant: small-caps;
     font-size: 1.2em;
     padding: 7px;
     border-radius: 10px 10px 0px 0px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color:   var(--corIn1T);
 }
 td, th {
     padding: 4px 6px 4px 4px;
-    border: 1px solid grey;
 }
 th {
     text-align: center;
     text-transform: uppercase;
     font-size: 0.8em;
-    background-color: rgba(255, 255, 255, 0.384);
+    background-color:   var(--corIn1T);
 }
+
 #col1 {
-    background-color: rgba(255, 0, 0, 0.151);
+    background-color:   var(--corConT);
     font-style: italic;
     font-size: 5em;
+}
+
+#col3 {
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: dotted;
+    font-style: italic;
+}
+
+div#tabela {
+    overflow-x: auto;
+}
+
+section {
+    background-color: var(--corClaT);
+    width: fit-content;
+    margin: 20px auto;
+    padding: 18px 20px 18px 15px;
+    border-radius: 50%;
+
+    font-size: 2.5em;
+}
+section > a {
+    text-decoration: none;
+    color: var(--corEsc);
+}
+
+section > a:hover {
+    color: var(--corIn1);
+}
+
+section > a:active {
+    color: var(--corCon);
 }
