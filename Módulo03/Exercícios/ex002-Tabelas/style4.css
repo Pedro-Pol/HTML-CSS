@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+:root {
+    --fonTxt: Cambria, serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonTxt);
+    text-align: justify;
+}
+
+body {
+    background-image: url('padrao.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    background-color: rgba(250, 235, 215, 0.74);
+    backdrop-filter: blur(2px);
+    width: fit-content;
+    margin: 25px auto;
+    padding: 15px 20px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-variant: small-caps;
+}
+h2, h3, h4 {
+    margin: 15px 0px;
+}
+p {
+    margin: 10px 0px;
+}
+
+main {
+    background-color: rgba(250, 235, 215, 0.74);
+    backdrop-filter: blur(2px);
+    max-width: 620px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+table {
+    font-size: 0.9em;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.308);
+}
+caption {
+    text-align: left;
+    border: 1px solid grey;
+    border-bottom: none;
+    font-variant: small-caps;
+    font-size: 1.2em;
+    padding: 7px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+td, th {
+    padding: 4px 6px 4px 4px;
+    border: 1px solid grey;
+}
+th {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    background-color: rgba(255, 255, 255, 0.384);
+}
+#col1 {
+    background-color: rgba(255, 0, 0, 0.151);
+    font-style: italic;
+    font-size: 5em;
+}

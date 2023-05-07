@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <h1>Tabelas</h1>
+
+    <main>
+        <h2>Edição de Colunas de Tabelas</h2>
+        <p>
+            Para edição de colunas, emprega-se dois elementos de HTML recentemente introduzidas: <strong>colgroup</strong>, <i>column group</i>, e <strong>col</strong>, <i>column</i>. Importante: essas são tags, não confundir com os valores do atributo <em>scope</em>. Em um primeiro momento, abre-se uma tag <em>colgroup</em> no <em>thead</em> e, em um segundo momento, introduzem-se tantas quantas tags <em>col</em> conforme o número de colunas da tabela.
+        </p>
+        <p>
+            Considere a próxima tabela:
+        </p>
+        <table>
+            <caption>
+                Cadastro <br>
+                <small>Conforme o Relatório nº 02.562</small>
+            </caption>
+            <colgroup>
+                <col id="col1">
+                <col id="col2">
+                <col id="col3">
+                <col id="col4">
+                <col id="col5">
+                <col id="col6">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th class="thead" scope="col">Situação</th>
+                    <th class="thead" scope="col">Nome</th>
+                    <th class="thead" scope="col">CPF</th>
+                    <th class="thead" scope="col">Idade</th>
+                    <th class="thead" scope="col">Sexo</th>
+                    <th class="thead" scope="col">Profissão</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="5" scope="rowgroup">Adimplência</th>
+                    <td>Fulano Beltranício do Sicrão</td>
+                    <td>093.505.598-38</td>
+                    <td>34 anos</td>
+                    <td>Masculino</td>
+                    <td>Professor</td>
+                </tr>
+                <tr>
+                    <td>Beltrano Sicranício de Fulão</td>
+                    <td>620.462.807-09</td>
+                    <td>45 anos</td>
+                    <td>Masculino</td>
+                    <td>Médico</td>
+                </tr>
+                <tr>
+                    <td>Sicrano Fulanício de Beltrão</td>
+                    <td>802.129.772-70</td>
+                    <td>27 anos</td>
+                    <td>Masculino</td>
+                    <td>Elestricista</td>
+                </tr>
+                <tr>
+                    <td>Fulana do Beltramento</td>
+                    <td>822.319.455-41</td>
+                    <td>30 anos</td>
+                    <td>Feminino</td>
+                    <td>Engenheira</td>
+                </tr>
+                <tr>
+                    <td>Beltrana do Sicramento</td>
+                    <td>586.008.974-08</td>
+                    <td>24 anos</td>
+                    <td>Feminino</td>
+                    <td>Advogada</td>
+                </tr>
+                <tr>
+                    <th rowspan="5" scope="rowgroup">Inadimplência</th>
+                    <td>Sicrana do Fulamento</td>
+                    <td>288.258.304-40</td>
+                    <td>52 anos</td>
+                    <td>Feminino</td>
+                    <td>Agricutora</td>
+                </tr>
+                <tr>
+                    <td>Fulano Beltrário Sicra</td>
+                    <td>745.148.158-10</td>
+                    <td>18 anos</td>
+                    <td>Masculino</td>
+                    <td>Estudante</td>
+                </tr>
+                <tr>
+                    <td>Beltrano Sicrário Fula</td>
+                    <td>935.259.484-33</td>
+                    <td>60 anos</td>
+                    <td>Masculino</td>
+                    <td>Bancário</td>
+                </tr>
+                <tr>
+                    <td>Sicrano Fulário Beltra</td>
+                    <td>477.134.668-27</td>
+                    <td>36 anos</td>
+                    <td>Masculino</td>
+                    <td>Sapateiro</td>
+                </tr>
+                <tr>
+                    <td>Fulan-Beltrais Sicreaux</td>
+                    <td>186.784.352-83</td>
+                    <td>29 anos</td>
+                    <td>Neutro</td>
+                    <td>Designer</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            As configurações possível do elemento <em>col</em>, no entanto, são limitadas a algumas poucas propriedades, como propriedades de <em>background</em> e <em>border</em>.
+        </p>
+    </main>
+</body>
+</html>

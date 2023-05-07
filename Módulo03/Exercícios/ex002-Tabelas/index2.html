@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Tabelas</title>
+    <style>
+        body {
+            background-image: url('arv.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+
+    <main>
+        <p>
+            No entanto, o modelo empregado anteriormente atende apenas tabelas simples. Tabelas complexas possuem elementos semânticos filhos especializados. No interior de <strong>&lt;table&gt;</strong>, podem ser inseridas o cabeçalho da tabela, o corpo da tabela e o rodapé da tabela; respectivamente, representados pelos elementos <strong>&lt;thead&gt;</strong>, <strong>&lt;tbody&gt;</strong> e <strong>&lt;tfoot&gt;</strong>. Dentro de cada componente, então, é inserida uma <em>table row</em>, isto é, uma linha, com o elemento <strong>&lt;tb&gt;</strong>. Dentro da linha, são inseridos dados com o elemento <strong>&lt;td&gt;</strong>, <em>table data</em>; e categorias com o elemento <strong>&lt;th&gt;</strong>, <em>table head</em>. Além disso, o título da tabela é inserido dentro do elemento <strong>&lt;caption&gt;</strong>.
+        </p>
+        <p>
+            Considere os elementos mencionados na seguinte tabela:
+        </p>
+        <table>
+            <caption>
+                População Brasileira <br>
+                <small>IBGE, 2022</small>
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Porcentagem</th>
+                    <th scope="col">População</th>
+                </tr>
+            </thead>
+
+            <tfoot>
+                <tr>
+                    <th scope="row">Total</th>
+                    <td class="por">100%</td>
+                    <td class="num">208.984.800</td>
+                </tr>
+            </tfoot>
+
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="por">22,2%</td>
+                    <td class="num">46.024.937</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="por">10,0%</td>
+                    <td class="num">20.732.660</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="por">8,0%</td>
+                    <td class="num">16.615.526</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="por">7,1%</td>
+                    <td class="num">14.659.023</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="por">5,7%</td>
+                    <td class="num">11.835.379</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="por">5,3%</td>
+                    <td class="num">11.088.065</td>
+                </tr>
+                <tr>
+                    <td>Pernanbuco</td>
+                    <td class="por">4,4%</td>
+                    <td class="num">9.051.113</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="por">4,3%</td>
+                    <td class="num">8.936.431</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="por">4,1%</td>
+                    <td class="num">8.442.962</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="por">3,7%</td>
+                    <td class="num">7.762.154</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="por">3,3%</td>
+                    <td class="num">6.950.976</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="por">3,3%</td>
+                    <td class="num">6.800.605</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="por">1,9%</td>
+                    <td class="num">4.108.508</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="por">1,9%</td>
+                    <td class="num">4.030.961</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="por">1,9%</td>
+                    <td class="num">3.952.262</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="por">1,8%</td>
+                    <td class="num">3.784.239</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="por">1,6%</td>
+                    <td class="num">3.303.953</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td class="por">1,6%</td>
+                    <td class="num">3.270.174</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="por">1,5%</td>
+                    <td class="num">3.125.254</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="por">1,4%</td>
+                    <td class="num">2.923.369</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="por">1,4%</td>
+                    <td class="num">2.833.742</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="por">1,1%</td>
+                    <td class="num">2.211.868</td>
+                </tr>
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="por">0,8%</td>
+                    <td class="num">1.616.379</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="por">0,8%</td>
+                    <td class="num">1.584.306</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="por">0,4%</td>
+                    <td class="num">829.780</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="por">0,4%</td>
+                    <td class="num">774.268</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="por">0,3%</td>
+                    <td class="num">634.805</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            Vale ressaltar que, como as tags são semânticas, mesmo que o código as coloque em ordem invertida, elas continuam sendo exibidas de maneira ordenada.
+        </p>
+
+        <h2>Atributo <em>scope</em></h2>
+        <p>
+            Há um atributo que define qual o escopo dos elementos de categoria, os &lt;th&gt;, indicando aos mecanismos de busca quais os dados que estão relacionados àquela categoria. Basta incluiro o atributo <strong>scope</strong>, definindo como valor <strong>col</strong>, de <i>column</i>, quando os dados são dispostos de maneira sotoposta, ou <strong>row</strong>, quando os dados relacionados estão dispostos de maneira justaposta.
+        </p>
+        <p>
+            <em>Por exemplo</em>, as categorias <span>estado</span>, <span>porcentagem</span> e <span>população</span> possuem um escopo colunar; enquanto <span>total</span> possui um escopo lateral.
+        </p>
+
+        <h2>Efeito zebrado</h2>
+
+        <p>
+            Para criar o efeito zebrado, que auxilia na leitura de tabelas, em uma tabela, emprega-se os seletores e operadores habituais, no entanto, com a adição de uma pseudo-classe: a <code>:nth-child()</code>. O conteúdo que preenche os parênteses indicará em que intervalo repetitivo as propriedades serão aplicadas. Por exemplo, <code>:nth-child(2n)</code> faz com que as propriedades sejam aplicas uma vez a cada duas repetições de determinado item. Ainda aceita os valores <i>even</i> e <i>odd</i>, isto é, par ou ímpar. 
+        </p>
+        <p>
+            O efeito zebrado exibido na tabela acima foi gerado empregando o seguinte código:
+        </p>
+        <pre>
+<span>tbody > tr:nth-child(odd)</span> {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+<span>tbody > tr:nth-child(even)</span> {
+    background-color: white;
+}
+        </pre>
+
+        <h2>Efeito de cabeçalho flutuante</h2>
+
+        <p>
+            Para criar um efeito em que o cabeçalho flutuante, isto é, de um cabeçalho não fixo à extremidade da tabela e que segue o usuário conforme ele rola verticalmente a página, basta realizar as seguintes alterações:
+        </p>
+        <ul>
+            <li>Altere a posição da tabela para relativa;</li>
+            <li>Altere a posição do cabeçalho para "grudento", <em>sticky</em>;</li>
+            <li>Insira a propriedade <em>top</em>, com o valor adequado;</li>
+            <li>Reinsira outras propriedades já declaradas que devem mover-se junto com o conteúdo do cabeçalho, como, por exemplo, a propriedade <em>background-color</em>.</li>
+        </ul>
+        <p>
+            Esse efeito de cabeçalho flutuante foi inserido na tebala acima, conforme as seguintes declarações:
+        </p>
+
+        <pre>
+<span>table {</span>
+    border-collapse:  collapse;
+    width:            400px;
+    margin:           20px auto;<span>
+    position:         relative;
+}</span>
+<span>
+thead {
+    position:         sticky;
+    top:              -1px;
+    background-color: aaaaaa;
+}
+</span>
+        </pre>
+
+        <div class="link">
+            <a href="index.html" target="_self" rel="previous">◄</a>
+            <a href="index3.html" target="_self" rel="next">►</a>
+        </div>
+    </main>
+</body>
+</html>

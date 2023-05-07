@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de Células</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+
+<body>
+    <header>
+        <h1>Mesclagem de Células</h1>
+    </header>
+    <main>
+        <p>
+            Para mesclar células de uma tabela, não basta apenas excluir células. É necessário acrescentar o atributo <strong>colspan</strong>, <i>column expansion</i>, ou <strong>rowspan</strong>, <i>row expansion</i> ao elemento da célula, isso é, o <em>td</em>. É importante notar que a expansão à coluna ou à linha podem ser contraintuitivo: quando uma célula estende-se para outra coluna, ela se estende lateralmente; enquanto que, quando uma celula extende-se para outra linha, ela se estende verticalmente. Já o valor da propriedade deve ser o número das células <em>somadas</em>. Portanto, a expansão de uma célula (+1 célula) deve ser indicada por 2.
+        </p>
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td colspan="2">3</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td rowspan="2">6</td>
+                <td>7</td>
+                <td rowspan="3">8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td rowspan="2">11</td>
+            </tr>
+            <tr>
+                <td colspan="2">13</td>
+            </tr>
+        </table>
+        <p>
+            Para criar a tabela acimafoi empregado o seguinte código-fonte:
+        </p>
+        <pre><span class="impo">&lt;table>
+        &lt;tr>
+            &lt;td>1&lt;/td>
+            &lt;td>2&lt;/td>
+            &lt;td colspan="2">3&lt;td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>5&lt;/td>
+            &lt;td rowspan="2">6&lt;/td>
+            &lt;td>7&lt;td>
+            &lt;td rowspan="3">8&lt;td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>9&lt;td>
+            &lt;td rowspan="2">11&lt;td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td colspan="2">13&lt;/td>
+        &lt;/tr>
+        &lt;/table></span></pre>
+
+        <div class="link">
+            <a href="index2.html" target="_self" rel="previous">◄</a>
+            <a href="index4.html" target="_self" rel="next">►</a>
+        </div>
+    </main>
+
+        <h2 style="margin-top: 50px;">Tabelas de Prática</h2>
+
+    <main>
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td colspan="3">8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td rowspan="2">10</td>
+                <td colspan="2">11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td colspan="4">A</td>
+                <td rowspan="4">B</td>
+            </tr>
+            <tr>
+                <td rowspan="4">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>L</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td colspan="4">N</td>
+            </tr>
+        </table>
+
+        <table id="notas">
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col class="num">
+            </colgroup>
+            <tr class="th">
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr class="th">
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+            <tr>
+                <th rowspan="4" scope="rowgroup" style="font-weight: normal;">Exatas</th>
+                <td>Matemática</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr class="th">
+                <th colspan="4" scope="row" style="text-align: left;">Média de Exatas</th>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup" style="font-weight: normal;">Humanas</th>
+                <td>História</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr class="th">
+                <th colspan="4" scope="row" style="text-align: left;">Média de Humanas</th>
+                <td class="num">0.0</td>
+            </tr>
+        </table>
+
+
+
+        <table id="filmes">
+            <thead>
+                <tr>
+                    <th scope="col">Grupos</th>
+                    <th scope="col">Nomes</th>
+                    <th colspan="3" scope="colgroup">Filmes Favoritos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Mulheres</th>
+                    <td>Ana Maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingatores</td>
+                </tr>
+                <tr>
+                    <td>Beatriz Souza</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td>Cláudia Melo</td>
+                    <td>Oblivion</td>
+                    <td>Matrix</td>
+                    <td>Big Hero</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Homens</th>
+                    <td>Bruno Mendonça</td>
+                    <td>Intócaveis</td>
+                    <td>Amnésia</td>
+                    <td>Gladiador</td>
+                </tr>
+                <tr>
+                    <td>Daniel Lourenço</td>
+                    <td>Wall-E</td>
+                    <td>Oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+                <tr>
+                    <td>Fabiano Mota</td>
+                    <td>Star Wars</td>
+                    <td>Taxi Driver</td>
+                    <td>Toy Story</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
