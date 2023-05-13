@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+
+
+<body>
+    <h1>IFRAMES</h1>
+    <main>
+        <section class="chapter">
+            <h2>Segurança e Política de Indexação</h2>
+            <p>
+                Entre os problemas que existem no manuseio de <em>iframes</em> é em relação à segurança. Empregar um <em>iframe</em> é permitir que os <em>scripts</em> de outro documento possam também executar documento desenvolvido. Para endereçar esse problemas, temos o atributo <strong>sandbox</strong>.
+            </p>
+            <p>
+                Os outros sites exibidos na janela de <em>iframe</em> também possuem políticas de coleta e indexação de dados dos usuários, para manuseá-los tendo em vista diversos fins, especialmente, os comerciais. Caso discorde da política de dados do site exibido, é possível endereçar esse problema com o atributo <strong>referrerpolicy</strong>.
+            </p>
+        </section>
+        <section class="inchapter">
+            <h3>Atributo <em>sandbox</em></h3>
+            <p>
+                O atributo <strong>sandbox</strong> permite cancelar o acionamento automático de determinadas porções do programa, dos <em>scripts</em>, contidos na página exibida através do <em>iframe</em>. Seus valores são restritivos, retendo tudo, exceto isso ou aquilo &#x2013; como envio formulários (<em>allow-forms</em>), por exemplo. Para bloquear tudo, basta entrar com o valor <abbr title="Neste caso, o atributo e o valor são expressos pelo mesmo termo."><strong>sandbox</strong></abbr>.
+            </p>
+        </section>
+        <section class="inchapter">
+            <h3>Atributo <em>policyreferrer</em></h3>
+            <p>
+                A política de referências aplicado a determinado endereço eletrônico exibido na janela do <em>iframe</em> pode ser definida pelos valores do atributo <strong>referrerpolicy</strong>. O valor padrão é <strong>no-referrer-when-downgrade</strong> que significa que não enviará, exceto em caso de sites seguros (<em>https</em>). Para evitar qualquer intercâmbio de dados, basta inserir o valor <strong>no-referrer</strong>.
+            </p>
+        </section>
+        <section class="chapter">
+            <h2>Melhor emprego do <em>iframe</em></h2>
+            <p>
+                Apesar dos problemas existentes no emprego de elementos <em>iframe</em>, muitos usos são emblemáticos e muito úteis desse elemento; principalmente, tratando-se da exibição de vídeos, mapas e outros documentos incorporáveis. Os itens seguintes são bons exemplos:
+            </p>
+        </section>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.772838871029!2d-51.08629759999995!3d-29.581212099999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95194672bbeb0caf%3A0xe8539eb96acb6754!2sSicredi%20Pioneira%20-%20Ag%C3%AAncia%20Dois%20Irm%C3%A3os!5e0!3m2!1spt-BR!2sbr!4v1683683623616!5m2!1spt-BR!2sbr" width="575" height="325" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+            <iframe width="575" height="325" src="https://www.youtube.com/embed/-2ySzV-HGxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div id="link">
+            <a href="ex001.html">◄</a>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <h1>Iframes</h1>
+    <main>
+        <section class="main">
+            <p>
+                Os elementos <strong>iframe</strong>, <i>inline-frame</i>, são quadros nos quais são exibidos outros documentos, próprios ou de outro endereço da internet. Esses elementos recebem esse nome pois são impressos como elmentos <i>inline-block</i>. Anteriormente, foram empregados dois desses elementos para exibir vídeos do Youtube e do Vimeo.
+            </p>
+            <p>
+                O elemento <strong>iframe</strong> requer uma tag de abertura e outra de fechamento, no qual o atributo <strong>src</strong>, <i>source</i>, deve ser preenchido. Qualquer texto inserido entre as tags será exibido, caso o arquivo relacionado não possa ser exibido.
+            </p>
+            <pre>
+&lt;iframe src="" frameborder="0">&lt;/iframe>
+            </pre>
+            <p>
+                O atributo <strong>scrolling</strong> serve para alterar a rolagem da página carregada no iframe. O valor <strong>yes</strong>, possibilita a rolagem, mesmo sem necessidade; o valor <strong>no</strong> impossibilita a rolagem, mesmo havendo tamanho suficiente para existir rolagem; e <strong>auto</strong>, que permitirá rolagem, apenas se houver tamanho para tanto.
+            </p>
+        </section>
+    </main>
+
+    <h2>•&#8195;Navegação no iframe</h2>
+
+    <main>
+        <p>
+            É possível criar uma janela com o elemento <em>iframe</em> para acessar múltiplas outras páginas, empregando, para isso, links. Basta incluir o atributo <strong>name</strong>, no <em>iframe</em>, deixando o atributo <em>src</em> sem nenhum valor; e atribuir o mesmo valor concedido ao <em>name</em>, no atributo <strong>target</strong> dos links.
+        </p>
+        <p>
+            Po exemplo, considere clicar nos seguintes links, observando os efeitos causados no <em>iframe</em> abaixo:
+        </p>
+        <ul>
+            <li><a href="pag-extra/pag01.html" target="tela">Documento de exemplo I;</a></li>
+            <li><a href="pag-extra/pag02.html" target="tela">Documento de exemplo II;</a></li>
+            <li><a href="pag-extra/pag03.html" target="tela">Documento de exemplo III.</a></li>
+        </ul>
+        <iframe srcdoc="<h1 style='text-align:center;font-variant:small-caps;color:white;font-family:cambria;margin:80px 0px 30px 0px'>Clique em um dos links acima</h1><p style='width:350px;text-align:justify;color:white; margin:auto;letter-spacing:0.5px;font-size:1.2em;font-family:cambria;'>Experimente clicar em um dos links listados acima! Eles reproduzirão outros documentos .html no interior da janela desse <strong>iframe</strong>.</p>" name="tela"></iframe>
+    </main>
+
+    <aside>
+        <section>
+<p>No exemplo acima, foi empregado o seguinte código:</p>
+<pre>
+&lt;ul>
+    &lt;li>
+        &lt;a href="pag-extra/pag01.html" target="tela">
+            Documento de exemplo I;
+        &lt;/a>
+    &lt;/li>
+    &lt;li>
+        &lt;a href="pag-extra/pag02.html" target="tela">
+            Documento de exemplo II;
+        &lt;/a>
+    &lt;/li>
+    &lt;li>
+        &lt;a href="pag-extra/pag03.html" target="tela">
+            Documento de exemplo III.
+        &lt;/a>
+    &lt;/li>
+&lt;/ul>
+
+&lt;iframe src="" name="tela">&lt;/iframe>
+</pre>
+        </section>
+    </aside>
+
+    <h2>
+        Atributo <em>srcdoc</em>
+    </h2>
+
+    <main>
+        <p>
+            Quando uma janela do <em>iframe</em> é carregada, ela pode exibir outro documento indicado no valor <strong>src</strong>, <i>source</i>; o que é mais convencional. Vale ressaltar, no entanto, que o atributo <strong>srcdoc</strong> pode ser empregado para escrever código HTML, como valor.
+        </p>
+        <p>
+            É necessário tomar o cuidado de não realizar quebras de linha e todas as aspas normais, compostas, tornam-se aspas simples.
+        </p>
+        <p>
+            Por exemplo, o exibido automaticamente no <em>iframe</em> acima inserido foi transcrito da seguinte maneira:
+        </p>
+    </main>
+
+    <aside>
+        <section>
+            <pre>
+&lt;iframe srcdoc="&lt;h1 style='text-align:center;
+font-variant:small-caps;color:white;font-family:cambria;
+margin:80px 0px 30px 0px'>Clique em um dos links acima&lt;/h1>
+&lt;p style='width:350px;text-align:justify;color:white;
+margin:auto;letter-spacing:0.5px;font-size:1.2em;
+font-family:cambria;'>Experimente clicar em um dos links
+listados acima! Eles reproduzirão outros documentos .html no
+interior da janela desse &lt;strong>iframe&lt;/strong>.
+&lt;/p>" name="tela">&lt;/iframe></pre>
+        </section>
+    </aside>
+
+    <article>
+        <a href="ex002.html" target="_self" rel="previous">►</a>
+    </article>
+</body>
+</html>
