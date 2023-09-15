@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/*Estilos – Portrait*/
+
+body {
+    background-image: url('../img/cev-portrait.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section {
+    border: 1px solid black;
+    padding: 20px;
+    width: fit-content;
+    margin: 80px auto;
+}
+fieldset {
+    margin: 10px;
+    border: 1px solid rgb(184, 184, 184);
+}
+legend {
+    font-variant: small-caps;
+}

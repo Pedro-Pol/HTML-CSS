@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries Básicas</title>
+    <link rel="stylesheet" href="01-01.css" media="screen">
+    <link rel="stylesheet" href="01-02.css" media="print">
+</head>
+<body>
+    <header>
+        <h1>Media Queries Básicas</h1>
+        <menu>
+            <ul>
+                <li><a href="#">Projeto Final</a></li>
+                <li><a href="#">Esse Artigo</a></li>
+                <li><a href="#">Próximo Artigo</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <h2>O que são?</h2>
+        <p>
+            As <em>media queries</em> &#x2013; algo como <em>requerimentos de mídia</em> &#x2013; são diferentes apresentações do conteúdo do documento, que varia conforme o dispositivo em que será apresentado.
+        </p>
+        <h2>O código correspondente</h2>
+        <p>
+            Para criar <em>media queries</em> basta criar uma série de documentos de estilo que reponderão a determinadas circunstância. Além disso, é necessário introduzir o atributo <strong>media</strong> no link das CSS. Este documento, por exemplo, foi feito para possuir duas apresentações: (i) uma genérica de tela &#x2013; valor <strong>screen</strong> &#x2013; e (ii) outra para impressão &#x2013; valor <strong>print</strong> &#x2013;. confira o código:
+        </p>
+<div><pre>
+&lt;link rel="stylesheet" href="01-01.css" <span>media="screen"</span>>
+&lt;link rel="stylesheet" href="01-02.css" <span>media="print"</span>></pre></div>
+        <p>
+            Para testar, pressione <em>Ctrl + P</em> e veja as diferenças de estilo exibidas em ambos os documentos. Por exemplo, o menu meramente ornamental acima é desnecessário na maioria das impressões, pois o usuário do site está salvando um documento para consevar o conteúdo e não menus e outros itens típicos de um endereço da internet.
+        </p>
+
+    </main>
+</body>
+</html>

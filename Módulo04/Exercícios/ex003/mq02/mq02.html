@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <link rel="stylesheet" href="css/generico.css" media="all">
+    <link rel="stylesheet" href="css/landscape.css" media="screen and (orientation: landscape)">
+    <link rel="stylesheet" href="css/portrait.css" media="screen and (orientation: portrait)">
+</head>
+<body>
+    <section id="all">
+        <header>
+            <h1>Media Queries</h1>
+        </header>
+        <main>
+            <section>
+                <p>
+                    As <strong>media queries</strong> &#x2013; algo como <em>requerimentos de mídia</em> &#x2013; são a combinação entre <strong>media types</strong> e <strong>media features</strong>; <em>tipos</em> e <em>características de mída</em>, respectivamente. Essa combinação orienta o documento ser exibido com diferentes estilos, orientado por muitos documentos de CSS, dependendo do tipo de mídia em que é exibida (impressão, telas, entre outros) e as características dessas mídas (considere o tamanho de telas de celular, telas de computador, telas de TV).
+                </p>
+                <p>
+                    Em termos de código, as <em>media queries</em> são transcritas como valor no atributo <strong>media</strong> do link dos documentos de CSS. Os <em>media types</em> são transcritas em suas categorias; enquanto que as <em>media features</em> são transcritas entre parênteses. É possivel usar combinadores para declarar simultaneamente ambas as mídias: <strong>and</strong>, <strong>or</strong>, etc.
+                </p>
+                <p>
+                    Veja como as <em>media queries</em> foram declaradas neste documento:
+                </p>
+                <div><pre>
+&lt;link rel="stylesheet" href="css/generico.css"
+    <span>media="all"></span>
+&lt;link rel="stylesheet" href="css/landscape.css"
+    <span>media="screen and (orientation: landscape)"></span>
+&lt;link rel="stylesheet" href="css/portrait.css"
+    <span>media="screen and (orientation: portrait)"></span></pre></div>
+            </section>
+        </main>
+    </section>
+</body>
+</html>

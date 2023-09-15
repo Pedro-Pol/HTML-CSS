@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulário</h1>
+    <main>
+        <p>
+            Formulários são todos os componente de HTML que interagem com o usuário, para que esse possa inserir dados; seja transcrevendo texto ou números, seja optando por alternativas disponíves. Os principais elementos são <strong>&lt;form&gt;</strong>, <strong>&lt;input&gt;</strong>, <strong>&lt;select&gt;</strong>, <strong>&lt;datalist&gt;</strong> e <strong>&lt;textarea&gt;</strong>. Além disso, a legenda, que denomina cada espeço do formulário é denominada pelo elemento <strong>&lt;label&gt;</strong>.
+        </p>
+
+
+        <h2>O elemento &lt;form&gt;</h2>
+        <p>
+            O formulário, <strong>&lt;form&gt;</strong>, abrange todos os demais itens de formulário, entre seu início e encerramento, envelopando-os. Seus atributos são: (i) <strong>action</strong>, cujo valor indica qual documento de linguagem de programação processará os dados inseridos; (ii) <strong>method</strong>, que determina o método de envio; sendo <strong>get</strong> e <strong>post</strong> seus valores. Toda etiqueta possuirá um atributo indicando a qual campo corresponde. Esse atributo é o <strong>for</strong>, e o seu valor deve ser igual ao <strong>id</strong> do elemento de formulário ao qual a etiqueta faz referência.
+        </p>
+        <p>
+            Além disso, é possível atribuir uma divisão interna aos formulários muito grandes, destacando a semelhança dessas informações. Para isso, emprega-se o elemento <strong>&lt;fieldset&gt;</strong>, que criará uma caixa contendo aquelas informações. É possível, ainda, atribuir uma legenda a esse campo de informações com o elemento <strong>&lt;legend&gt;</strong>.
+        </p>
+
+        <h2>O elemento &lt;label&gt;</h2>
+        <p>
+            Os campos de formulários, normalmente, possuem um texto imediatamente adjacente indicando com qual informação o campo deve ser preenchido. Em um primeiro momento, poder-se-ia pensar em adicionar um parágrafo ou outro elemento de texto <i>inline</i>; no entanto, para conferir uma denominação a um elemento de formulário emprega-se uma etiqueta, o elemento <strong>&lt;label&gt;</strong>.
+        </p>
+        
+        
+        <h2>O elemento &lt;input&gt;</h2>
+        <p>
+            O elemtno <strong>&lt;input&gt;</strong> possui vários tipos, sendo expressos por seu atributo, e correspondente valor, <strong>type</strong>. Estes são alguns dos mais relevantes:
+        </p>
+        <ul>
+            <li>
+                <strong>text</strong>: 
+            </li>
+            <li>
+                <strong>number</strong>:
+            </li>
+            <li>
+                <strong>password</strong>:
+            </li>
+            <li>
+                <strong>checkbox</strong>;
+            </li>
+            <li>
+                <strong>radio</strong> &#x2013; estabelece alternativas com as quais o usuário poderá escolher apenas uma opção. Para tanto, é necessário criar vários elementos <i>input</i> com o mesmo valor transcrito no atributo <strong>name</strong>;
+            </li>
+            <li>
+                <strong>time</strong>;
+            </li>
+            <li>
+                <strong>date</strong>;
+            </li>
+            <li>
+                <strong>month</strong>;
+            </li>
+            <li>
+                <strong>color</strong>;
+            </li>
+            <li>
+                <strong>range</strong>;
+            </li>
+            <li>
+                <strong>file</strong>;
+            </li>
+            <li>
+                <strong>submit</strong>;
+            </li>
+            <li>
+                <strong>reset</strong>.
+            </li>
+        </ul>
+        <h3>Atributos</h3>
+        <p>
+            Alguns atributos relevantes do elemento &lt;input&gt; são: <strong>required</strong>, que torna o campo de formulário obrigatório, não podendo enviar dados sem o seu preenchimento; <strong>minlength</strong> e <strong>maxlength</strong> que estabelecem o número mínimo e máximo, respectivamente, de caracteres que devem ser observados ao preencher um campo; <strong>size</strong>, que indica qual o tamanho da caixa de texto, conforme o número de caracteres cabíveis; <strong>placeholder</strong>, que exibe um texto padrão no campo, indicando sobre o que se trata, que logo desaparece assim que a primeira letra ou número é inserido; <strong>autocomplete</strong>, que indicará ao histórico do navegador qual o tipo de dados deverá autopreencher aquele campo em particular. Em campos de formulário de mútlipla escolha, o campo pode estar marcado, como padrão, introduzindo o atributo <strong>checked</strong>.
+        </p>
+        <p>
+            Em formulário numéricos, os atributos <strong>min</strong> e <strong>max</strong> estabelecem entre qual intervalo um campo deve ser preenchido; <strong>set</strong> determinará de quantos em quantos passos os números aumentam ou diminuem, conforme as setas auxiliares à direita.
+        </p>
+
+        <h2>O elemento &lt;select&gt;</h2>
+        <p>
+            O elemento &lt;select&gt; possibilita disponibilizar ao usuário um campo com múltiplas alternativas, empregando para isso o elemento <strong>&lt;option&gt;</strong>, escolhendo apenas um entre as diponíveis. É possível ainda, determinar, entre as alternativas, grupos de alternativas comuns com o elemento <strong>&lt;optgroup&gt;</strong>, nomeando cada grupo com a inserção do valor do atributo <strong>label</strong>.
+        </p>
+
+        <h2>O elemento &lt;datalist&gt;</h2>
+        <p>
+            O elemento &lt;datalist&gt; é empregado conjuntamente com um elemento &lt;input&gt;, para sugerir uma série de opções, sem excluir a possibilidade do usuário preencher o campo, transcrevendo-o como desejar. É um bom item de formulário para sugerir; ao invés de demandar a escolhar de uma lista exaustiva. O valor do atributo <strong>id</strong> da &lt;datalist&gt; deve ser o mesmo que o valor do atributo <strong>list</strong>, no &lt;input&gt;.
+        </p>
+        <p>
+            Diferentemente do elemento &lt;option&gt; dentro de &lt;select&gt;, o elemento &lt;option&gt; dentro do &lt;datalist&gt; não terá tag de fechamento, exibindo aquilo que for introduzido como valor do atributo <strong>value</strong>.
+        </p>
+
+        <h2>O elemento &lt;textarea&gt;</h2>
+        <p>
+            Como o nome sugere, trata-se de uma área de texto, com atributos <strong>cols</strong> e <strong>rows</strong> para definir o tamanho da janela de texto.
+        </p>
+        
+        
+        <section>
+            <h3 style="text-align: center; margin: 0px;">Formulário Geral</h3>
+            <form action="cadastro.php" autocomplete="on" method="get">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <p>
+                        <label for="inome">Nome: </label>
+                        <input type="text" name="nome" id="inome" maxlength="30" size="30" required placeholder="nome completo" autocomplete="name">
+                    </p>
+                    <p>
+                        <label for="iemail">E-mail: </label>
+                        <input type="email" name="email" id="iemail" autocomplete="email" placeholder="nome@email.com">
+                    </p>
+                    <p>
+                        <label for="itelefone">Telefone: </label>
+                        <input type="tel" name="telefone" id="itelefone" autocomplete="tel" placeholder="(xx)xxxxx-xxxx">
+                    </p>
+                    <!--Estudar RegEx (expressões regulares)-->
+                    <p>
+                        <label for="ianiver">Data de nascimento:</label>
+                        <input type="date" name="aniver" id="ianiver" autocomplete="bday">
+                    </p>
+                    <p>
+                        Sexo:
+                        <input type="radio" name="sexo" id="sexo_masc" value="masculino" required>
+                        <label for="sexo_masc">Masculino</label>
+                        <input type="radio" name="sexo" id="sexo_femi" value="feminino">
+                        <label for="sexo_femi">Feminino</label>
+                        <input type="radio" name="sexo" id="sexo_neut" value="neutro">
+                        <label for="sexo_neut">Neutro</label>
+                    </p>
+                    <p>
+                        <label for="iestado">Estado de origem:</label>
+                        <select name="estado" id="iestado">
+                            <optgroup label="Região Norte">
+                                <option value="RO">Rondônia</option>
+                                <option value="AC">Acre</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="RR">Roraima</option>
+                                <option value="AP">Amapá</option>
+                                <option value="PA">Pará</option>
+                                <option value="TO">Tocantins</option>
+                            </optgroup>
+
+                            <optgroup label="Região Nordeste">
+                                <option value="MA">Maranhão</option>
+                                <option value="CE">Ceará</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="BA">Bahia</option>
+                            </optgroup>
+
+                            <optgroup label="Região Centro-Oeste">
+                                <option value="DF">Distrito Federal</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                            </optgroup>
+
+                            <optgroup label="Sudeste">
+                                <option value="ES">Espírito Santo</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="SP">São Paulo</option>
+                            </optgroup>
+
+                            <optgroup label="Sul">
+                                <option value="PR">Paraná</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="iprof">Profissão: </label>
+                        <input type="text" name="prof" id="iprof" list="pfli">
+                        <datalist id="pfli">
+                            <option value="Advogado">
+                            <option value="Desenvolvedor">
+                            <option value="Cozinheiro">
+                            <option value="Engenheiro">
+                            <option value="Estudante">
+                            <option value="Faxineiro">
+                            <option value="Gari">
+                            <option value="Mecânico">
+                            <option value="Médico">
+                            <option value="Vendedor">
+                        </datalist>
+                    </p>
+                    <p style="line-height: 25px;">
+                        <label for="icertificado">Faça upload do seu certificado de escolaridade:</label> <br>
+                        <input type="file" name="certificado" id="icertificado">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Descrição Pessoal</legend>
+                    <label for="idescrip">Descreva a sua personalidade, brevemente:</label> <br>
+                    <textarea name="descrip" id="idescrip" cols="51" rows="10" maxlength="400"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Outros</legend>
+                    <p>
+                        <label for="inota">Nota: </label>
+                        <input type="number" name="nota" id="inota" required placeholder="nota do semestre" min="0" max="10" step="0.1">
+                    </p>
+                    <p>
+                        <label for="itempo">Hora: </label>
+                        <input type="time" name="tempo" id="itempo">
+                    </p>
+                    <p>
+                        <label for="imes">Mês: </label>
+                        <input type="month" name="mes" id="imes">
+                    </p>
+                    <p>
+                        <label for="icor">Cor favorita: </label>
+                        <input type="color" name="cor" id="icor">
+                    </p>
+                    <p>
+                        <label for="ialcance">Alcance: </label>
+                        <input type="range" name="alcance" id="ialcance" min="0" max="4">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados de Usuário</legend>
+                    <p>
+                        <label for="iusuario">Usuário: </label>
+                        <input type="text" name="usuario" id="iusuario" minlength="6" maxlength="20" size="20" required placeholder="insira seu nome de usuário" autocomplete="username">
+                    </p>
+                    <p>
+                        <label for="isenha">Senha: </label>
+                        <input type="password" name="senha" id="isenha" minlength="6" maxlength="12" size="12" required placeholder="mínimo de 6 dígitos">
+                    </p>
+                </fieldset>
+                <input type="checkbox" name="termo" id="itermo" required>
+                <label for="itermo">Aceito os termos e condições.</label> <br>
+                <input type="checkbox" name="publi" id="ipubli" checked>
+                <label for="ipubli">Desejo receber notícias.</label>
+                <p style="margin-bottom: 0px;">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </section>
+        <h2>O elemento &lt;output&gt;</h2>
+        <p>
+            O elemento <strong>&lt;output&gt;</strong> é um componente de HTML desenvolvido para responder à linguagem de programação atuante no documento. É literalmente, uma <em>saída</em> para o que for programado no <i>script</i> do documento.
+        </p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*Estilos – Geral*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #3b3bc2;
+}
+
+#all {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: rgba(240, 248, 255, 0.7);
+    backdrop-filter: blur(15px);
+}
+
+header > h1 {
+    width: fit-content;
+    margin: 20px auto;
+}
+
+main {
+    max-width: 450px;
+    margin: auto;
+}
+
+p + p {
+    margin-top: 15px;
+}
+
+pre {
+    font-family: monospace;
+    color: rgb(39, 39, 39);
+    font-size: 0.9em;
+    width: fit-content;
+    margin: 15px auto;
+}
+pre > span {
+    font-family: monospace;
+    color: black;
+    font-weight: bold;
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Output</title>
+    <style>
+        main {
+            margin: 50px 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testes de Output</h1>
+    <main>
+        <h2>Soma</h2>
+        <form action="cadastro.php" method="get">
+            <p>
+                <label for="n1">Input 01: </label>
+                <input type="number" name="num1" id="n1" oninput="out.innerHTML = Number(n1.value) + Number(n2.value)">
+            </p>
+            <p>
+            </p>
+                <label for="n2">Input 02: </label>
+                <input type="number" name="num2" id="n2" oninput="out.innerHTML = Number(n1.value) + Number(n2.value)">
+            <p>
+            </p>
+                <label for="out">Output: </label>
+                <output id="out">0</output>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar" onclick="out.innerHTML='0'">
+            </p>
+        </form>
+    </main>
+
+    <main>
+        <h2>Valor de <i>range</i></h2>
+
+        <form action="cadastro.php" method="get">
+            <p>
+                <label for="range">Tamanho</label>
+                <input type="range" name="range" id="ran" max="10" min="1" step="1" value="6" oninput="outp.innerHTML = Number(ran.value);
+                if (Number(ran.value)==1) {unit.innerHTML=' inch'}
+                else {unit.innerHTML=' inches'};
+                if(Number(ran.value)>=8) {res.innerHTML='O seu pênis é enorme!'}
+                else if (Number(ran.value)>=6) {res.innerHTML='O seu pênis é grande.'}
+                else if (Number(ran.value)>=4) {res.innerHTML='O seu pênis tem um tamanho normal. Cerca de 90% da população se enquadra nessa categoria.'}
+                else if (Number(ran.value)>=3) {res.innerHTML='O seu pênis é pequeno.'}
+                else {res.innerHTML='O seu pênis é classificado como micropênis. Por favor, considere visitar um urologista. Normalmente, um membro tão diminuto é resultado de deficiência hormonal.'}">
+                <output id="outp">6</output><span id="unit"> inches</span>
+                <div id="res"></div>
+                <p><input type="reset" value="Limpar" onclick="res.innerHTML=''; outp.innerHTML='6'; unit.innerHTML=' inches'"></p>
+        </form>
+        </p>
+    </main>
+    <main>
+        <h2>Cálculo de Idade</h2>
+        <form action="cadastro.php" method="get">
+            <p>
+                <label for="ano">Qual o ano do seu nascimento? </label>
+                <input type="number" name="anos" id="ano" min="1900" max="2023" oninput="calcIdade()"> <br>
+                <output id="outpu"></output>
+            </p>
+            <p>
+                <input type="reset" value="Limpar" onclick="outpu.innerHTML='';">
+            </p>
+        </form>
+    </main>
+    <script>
+        function calcIdade() {
+            outpu.innerHTML = 'A sua idade é de '
+            var anoAtual = new Date().getFullYear()
+            outpu.innerHTML += Number(anoAtual) - Number(ano.value)
+            outpu.innerHTML += ' anos.'
+        }
+    </script>
+</body>
+</html>

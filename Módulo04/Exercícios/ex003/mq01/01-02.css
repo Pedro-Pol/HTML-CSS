@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*CSS de PRINT*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.2em;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px;
+}
+
+h2 {
+    margin: 15px 0px;
+}
+
+menu {
+    display: none;
+}
+
+p {
+    text-align: justify;
+}
+
+div {
+    width: fit-content;
+    margin: 20px auto;
+}
+pre {
+    font-family: monospace;
+    color: rgb(71, 71, 71);
+}
+pre > span {
+    color: black;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+main::after {
+    content: 'Essa página foi impressa diretamente de um exercício de desenvolvimento web.';
+}
